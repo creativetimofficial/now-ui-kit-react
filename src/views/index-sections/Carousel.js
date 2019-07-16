@@ -7,8 +7,7 @@ import {
   Col,
   Carousel,
   CarouselItem,
-  CarouselIndicators,
-  CarouselCaption
+  CarouselIndicators
 } from "reactstrap";
 
 // core components
@@ -81,11 +80,9 @@ function CarouselSection() {
                       key={item.src}
                     >
                       <img src={item.src} alt={item.altText} />
-                      <CarouselCaption
-                        tag="h5"
-                        captionText={<h5>{item.caption}</h5>}
-                        captionHeader=""
-                      />
+                      <div className="carousel-caption d-none d-md-block">
+                        <h5>{item.caption}</h5>
+                      </div>
                     </CarouselItem>
                   );
                 })}

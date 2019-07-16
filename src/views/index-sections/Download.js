@@ -26,13 +26,13 @@ function Download() {
             </Col>
             <Col className="text-center" lg="8" md="12">
               <Button
-                className="btn-round"
-                color="primary"
-                href="https://www.creative-tim.com/product/now-ui-kit"
+                className="btn-round mr-1"
+                color="info"
+                href="https://www.creative-tim.com/product/now-ui-kit-react"
                 role="button"
                 size="lg"
               >
-                Download HTML
+                Download React
               </Button>
               <Button
                 className="btn-round"
@@ -54,26 +54,27 @@ function Download() {
             <Col className="ml-auto mr-auto" md="8">
               <h2>Want more?</h2>
               <h5 className="description">
-                We've just launched{" "}
+                We're going to launch{" "}
                 <a
-                  href="http://demos.creative-tim.com/now-ui-kit-pro/presentation.html"
-                  target="_blank"
+                  href="http://demos.creative-tim.com/now-ui-kit-pro-react/#/presentation"
+                  onClick={e => e.preventDefault()}
                 >
-                  Now UI Kit PRO
+                  Now UI Kit PRO React
                 </a>
-                . It has a huge number of components, sections and example
-                pages. Start Your Development With A Badass Bootstrap 4 UI Kit.
+                . It will have huge number of components, sections and example
+                pages so you can start your development with a badass Bootstrap
+                4 UI Kit.
               </h5>
             </Col>
             <Col md="12">
               <Button
                 className="btn-neutral btn-round"
                 color="default"
-                href="http://demos.creative-tim.com/now-ui-kit-pro/presentation.html"
+                href="http://demos.creative-tim.com/now-ui-kit-pro-react/#/presentation"
                 size="lg"
-                target="_blank"
+                disabled
               >
-                <i className="now-ui-icons arrows-1_share-66"></i>
+                <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
                 Upgrade to PRO
               </Button>
             </Col>
@@ -127,7 +128,7 @@ function Download() {
               <Button
                 className="btn-neutral btn-icon btn-round"
                 color="github"
-                href="https://github.com/creativetimofficial/now-ui-kit"
+                href="https://github.com/creativetimofficial/now-ui-kit-react"
                 id="tooltip331904895"
                 size="lg"
                 target="_blank"

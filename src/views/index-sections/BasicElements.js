@@ -56,29 +56,20 @@ function BasicElements() {
           <p className="category">Pick your style</p>
           <Row>
             <Col md="10">
-              <Button color="primary" type="button">
+              <Button color="info" type="button">
                 Default
               </Button>
-              <Button className="btn-round" color="primary" type="button">
+              <Button className="btn-round" color="info" type="button">
                 Round
               </Button>
-              <Button className="btn-round" color="primary" type="button">
+              <Button className="btn-round" color="info" type="button">
                 <i className="now-ui-icons ui-2_favourite-28"></i>
                 With Icon
               </Button>
-              <Button
-                className="btn-icon btn-round"
-                color="primary"
-                type="button"
-              >
+              <Button className="btn-icon btn-round" color="info" type="button">
                 <i className="now-ui-icons ui-2_favourite-28"></i>
               </Button>
-              <Button
-                className="btn-round"
-                color="primary"
-                outline
-                type="button"
-              >
+              <Button className="btn-round" color="info" outline type="button">
                 Outline
               </Button>
             </Col>
@@ -86,11 +77,11 @@ function BasicElements() {
           <p className="category">Pick your size</p>
           <Row>
             <Col md="10">
-              <Button color="primary" size="sm">
+              <Button color="info" size="sm">
                 Small
               </Button>
-              <Button color="primary">Regular</Button>
-              <Button color="primary" size="lg">
+              <Button color="info">Regular</Button>
+              <Button color="info" size="lg">
                 Large
               </Button>
             </Col>

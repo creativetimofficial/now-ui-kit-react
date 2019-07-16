@@ -21,7 +21,7 @@ function NucleoIcons() {
               </h5>
               <Button
                 className="btn-round mr-1"
-                color="primary"
+                color="info"
                 href="/nucleo-icons"
                 size="lg"
                 target="_blank"
@@ -30,7 +30,7 @@ function NucleoIcons() {
               </Button>
               <Button
                 className="btn-round"
-                color="primary"
+                color="info"
                 href="https://nucleoapp.com/?ref=1712"
                 outline
                 size="lg"

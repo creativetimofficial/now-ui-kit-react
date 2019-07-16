@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // reactstrap components
 import { Button, Container, Row } from "reactstrap";
 
@@ -23,8 +23,9 @@ function Examples() {
               <Button
                 className="btn-round"
                 color="default"
-                href="examples/landing-page.html"
+                to="/landing-page"
                 outline
+                tag={Link}
               >
                 View Landing Page
               </Button>
@@ -40,8 +41,9 @@ function Examples() {
               <Button
                 className="btn-round"
                 color="default"
-                href="examples/profile-page.html"
+                to="/profile-page"
                 outline
+                tag={Link}
               >
                 View Profile Page
               </Button>

@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 
 // reactstrap components
@@ -10,23 +11,24 @@ function TransparentFooter() {
         <nav>
           <ul>
             <li>
-              <a href="https://www.creative-tim.com">Creative Tim</a>
+              <a href="https://www.creative-tim.com" target="_blank">
+                Creative Tim
+              </a>
             </li>
             <li>
-              <a href="http://presentation.creative-tim.com">About Us</a>
+              <a href="http://presentation.creative-tim.com" target="_blank">
+                About Us
+              </a>
             </li>
             <li>
-              <a href="http://blog.creative-tim.com">Blog</a>
+              <a href="http://blog.creative-tim.com" target="_blank">
+                Blog
+              </a>
             </li>
           </ul>
         </nav>
         <div className="copyright" id="copyright">
-          ©{" "}
-          <script>
-            document.getElementById('copyright').appendChild(document.createTextNode(new
-            Date().getFullYear()))
-          </script>
-          , Designed by{" "}
+          © {new Date().getFullYear()}, Designed by{" "}
           <a href="https://www.invisionapp.com" target="_blank">
             Invision
           </a>
