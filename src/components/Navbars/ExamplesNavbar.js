@@ -1,8 +1,8 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // reactstrap components
 import {
-  UncontrolledCollapse,
+  Collapse,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
@@ -12,25 +12,52 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container
+  Container,
+  UncontrolledTooltip
 } from "reactstrap";
 
 function ExamplesNavbar() {
+  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [collapseOpen, setCollapseOpen] = React.useState(false);
+  React.useEffect(() => {
+    const updateNavbarColor = () => {
+      if (
+        document.documentElement.scrollTop > 399 ||
+        document.body.scrollTop > 399
+      ) {
+        setNavbarColor("");
+      } else if (
+        document.documentElement.scrollTop < 400 ||
+        document.body.scrollTop < 400
+      ) {
+        setNavbarColor("navbar-transparent");
+      }
+    };
+    window.addEventListener("scroll", updateNavbarColor);
+    return function cleanup() {
+      window.removeEventListener("scroll", updateNavbarColor);
+    };
+  });
   return (
     <>
-      <Navbar
-        className="bg-primary fixed-top navbar-transparent"
-        color-on-scroll="400"
-        expand="lg"
-      >
+      {collapseOpen ? (
+        <div
+          id="bodyClick"
+          onClick={() => {
+            document.documentElement.classList.toggle("nav-open");
+            setCollapseOpen(false);
+          }}
+        />
+      ) : null}
+      <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
         <Container>
           <UncontrolledDropdown className="button-dropdown">
             <DropdownToggle
               caret
-              color="default"
               data-toggle="dropdown"
               href="#pablo"
               id="navbarDropdown"
+              tag="a"
               onClick={e => e.preventDefault()}
             >
               <span className="button-bar"></span>
@@ -38,7 +65,9 @@ function ExamplesNavbar() {
               <span className="button-bar"></span>
             </DropdownToggle>
             <DropdownMenu aria-labelledby="navbarDropdown">
-              <DropdownItem header>Dropdown header</DropdownItem>
+              <DropdownItem header tag="a">
+                Dropdown header
+              </DropdownItem>
               <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                 Action
               </DropdownItem>
@@ -60,21 +89,22 @@ function ExamplesNavbar() {
           </UncontrolledDropdown>
           <div className="navbar-translate">
             <NavbarBrand
-              data-placement="bottom"
-              href="https://demos.creative-tim.com/now-ui-kit/index.html"
+              href="https://demos.creative-tim.com/now-ui-kit-react/index"
               target="_blank"
-              title="Designed by Invision. Coded by Creative Tim"
+              id="navbar-brand"
             >
               Now Ui Kit
             </NavbarBrand>
+            <UncontrolledTooltip target="#navbar-brand">
+              Designed by Invision. Coded by Creative Tim
+            </UncontrolledTooltip>
             <button
-              aria-controls="navigation-index"
-              aria-expanded={false}
-              aria-label="Toggle navigation"
               className="navbar-toggler navbar-toggler"
-              data-target="#navigation"
-              data-toggle="collapse"
-              id="navigation"
+              onClick={() => {
+                document.documentElement.classList.toggle("nav-open");
+                setCollapseOpen(!collapseOpen);
+              }}
+              aria-expanded={collapseOpen}
               type="button"
             >
               <span className="navbar-toggler-bar top-bar"></span>
@@ -82,16 +112,16 @@ function ExamplesNavbar() {
               <span className="navbar-toggler-bar bottom-bar"></span>
             </button>
           </div>
-          <UncontrolledCollapse
+          <Collapse
             className="justify-content-end"
-            data-nav-image="../assets/img/blurred-image-1.jpg"
-            id="navigation"
+            isOpen={collapseOpen}
             navbar
-            toggler="#navigation"
           >
             <Nav navbar>
               <NavItem>
-                <NavLink href="../index.html">Back to Kit</NavLink>
+                <NavLink to="/index" tag={Link}>
+                  Back to Kit
+                </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/creativetimofficial/now-ui-kit/issues">
@@ -100,39 +130,45 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  data-placement="bottom"
                   href="https://twitter.com/CreativeTim"
                   target="_blank"
-                  title="Follow us on Twitter"
+                  id="twitter-tooltip"
                 >
                   <i className="fab fa-twitter"></i>
                   <p className="d-lg-none d-xl-none">Twitter</p>
                 </NavLink>
+                <UncontrolledTooltip target="#twitter-tooltip">
+                  Follow us on Twitter
+                </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
-                  data-placement="bottom"
                   href="https://www.facebook.com/CreativeTim"
                   target="_blank"
-                  title="Like us on Facebook"
+                  id="facebook-tooltip"
                 >
                   <i className="fab fa-facebook-square"></i>
                   <p className="d-lg-none d-xl-none">Facebook</p>
                 </NavLink>
+                <UncontrolledTooltip target="#facebook-tooltip">
+                  Like us on Facebook
+                </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
-                  data-placement="bottom"
                   href="https://www.instagram.com/CreativeTimOfficial"
                   target="_blank"
-                  title="Follow us on Instagram"
+                  id="instagram-tooltip"
                 >
                   <i className="fab fa-instagram"></i>
                   <p className="d-lg-none d-xl-none">Instagram</p>
                 </NavLink>
+                <UncontrolledTooltip target="#instagram-tooltip">
+                  Follow us on Instagram
+                </UncontrolledTooltip>
               </NavItem>
             </Nav>
-          </UncontrolledCollapse>
+          </Collapse>
         </Container>
       </Navbar>
     </>
