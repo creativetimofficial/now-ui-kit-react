@@ -77,7 +77,7 @@ function IndexNavbar() {
                   </DropdownItem>
                   <DropdownItem
                     href="https://demos.creative-tim.com/now-ui-kit/docs/1.0/getting-started/introduction.html"
-                    rel="noopener noreferrer"
+
                     target="_blank"
                   >
                     <i className="now-ui-icons design_bullet-list-67"></i>
@@ -87,8 +87,8 @@ function IndexNavbar() {
               </UncontrolledDropdown>
               <NavItem>
                 <Button
-                  className="nav-link"
-                  color="neutral"
+                  className="nav-link btn-neutral"
+                  color="default"
                   href="#pablo"
                   id="upgrade-to-pro"
                   onClick={e => e.preventDefault()}
@@ -104,7 +104,7 @@ function IndexNavbar() {
                 <NavLink
                   data-placement="bottom"
                   href="https://twitter.com/CreativeTim"
-                  rel="noopener noreferrer"
+
                   target="_blank"
                   title="Follow us on Twitter"
                 >
@@ -116,7 +116,7 @@ function IndexNavbar() {
                 <NavLink
                   data-placement="bottom"
                   href="https://www.facebook.com/CreativeTim"
-                  rel="noopener noreferrer"
+
                   target="_blank"
                   title="Like us on Facebook"
                 >
@@ -128,7 +128,7 @@ function IndexNavbar() {
                 <NavLink
                   data-placement="bottom"
                   href="https://www.instagram.com/CreativeTimOfficial"
-                  rel="noopener noreferrer"
+
                   target="_blank"
                   title="Follow us on Instagram"
                 >

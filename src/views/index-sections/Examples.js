@@ -15,7 +15,7 @@ function Examples() {
             <div className="col">
               <a
                 href="examples/landing-page.html"
-                rel="noopener noreferrer"
+                
                 target="_blank"
               >
                 <img
@@ -36,7 +36,7 @@ function Examples() {
             <div className="col">
               <a
                 href="examples/profile-page.html"
-                rel="noopener noreferrer"
+                
                 target="_blank"
               >
                 <img

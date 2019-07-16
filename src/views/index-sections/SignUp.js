@@ -113,7 +113,7 @@ function SignUp() {
               color="default"
               href="examples/login-page.html"
               outline
-              rel="noopener noreferrer"
+              
               size="lg"
               target="_blank"
             >

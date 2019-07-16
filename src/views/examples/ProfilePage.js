@@ -78,7 +78,7 @@ function ProfilePage() {
             <NavbarBrand
               data-placement="bottom"
               href="https://demos.creative-tim.com/now-ui-kit/index.html"
-              rel="noopener noreferrer"
+              
               target="_blank"
               title="Designed by Invision. Coded by Creative Tim"
             >
@@ -119,7 +119,7 @@ function ProfilePage() {
                 <NavLink
                   data-placement="bottom"
                   href="https://twitter.com/CreativeTim"
-                  rel="noopener noreferrer"
+                  
                   target="_blank"
                   title="Follow us on Twitter"
                 >
@@ -131,7 +131,7 @@ function ProfilePage() {
                 <NavLink
                   data-placement="bottom"
                   href="https://www.facebook.com/CreativeTim"
-                  rel="noopener noreferrer"
+                  
                   target="_blank"
                   title="Like us on Facebook"
                 >
@@ -143,7 +143,7 @@ function ProfilePage() {
                 <NavLink
                   data-placement="bottom"
                   href="https://www.instagram.com/CreativeTimOfficial"
-                  rel="noopener noreferrer"
+                  
                   target="_blank"
                   title="Follow us on Instagram"
                 >
@@ -397,7 +397,7 @@ function ProfilePage() {
               , Designed by{" "}
               <a
                 href="https://www.invisionapp.com"
-                rel="noopener noreferrer"
+                
                 target="_blank"
               >
                 Invision
@@ -405,7 +405,7 @@ function ProfilePage() {
               . Coded by{" "}
               <a
                 href="https://www.creative-tim.com"
-                rel="noopener noreferrer"
+                
                 target="_blank"
               >
                 Creative Tim

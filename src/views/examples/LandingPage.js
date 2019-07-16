@@ -351,7 +351,7 @@ function LandingPage() {
               , Designed by{" "}
               <a
                 href="https://www.invisionapp.com"
-                rel="noopener noreferrer"
+                
                 target="_blank"
               >
                 Invision
@@ -359,7 +359,7 @@ function LandingPage() {
               . Coded by{" "}
               <a
                 href="https://www.creative-tim.com"
-                rel="noopener noreferrer"
+                
                 target="_blank"
               >
                 Creative Tim

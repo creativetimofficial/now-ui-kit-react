@@ -29,7 +29,7 @@ function IndexHeader() {
             Designed by{" "}
             <a
               href="http://invisionapp.com/"
-              rel="noopener noreferrer"
+              
               target="_blank"
             >
               <img
@@ -41,7 +41,7 @@ function IndexHeader() {
             . Coded by{" "}
             <a
               href="https://www.creative-tim.com"
-              rel="noopener noreferrer"
+              
               target="_blank"
             >
               <img

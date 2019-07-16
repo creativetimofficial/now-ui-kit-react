@@ -62,7 +62,7 @@ function ExamplesNavbar() {
             <NavbarBrand
               data-placement="bottom"
               href="https://demos.creative-tim.com/now-ui-kit/index.html"
-              rel="noopener noreferrer"
+              
               target="_blank"
               title="Designed by Invision. Coded by Creative Tim"
             >
@@ -103,7 +103,7 @@ function ExamplesNavbar() {
                 <NavLink
                   data-placement="bottom"
                   href="https://twitter.com/CreativeTim"
-                  rel="noopener noreferrer"
+                  
                   target="_blank"
                   title="Follow us on Twitter"
                 >
@@ -115,7 +115,7 @@ function ExamplesNavbar() {
                 <NavLink
                   data-placement="bottom"
                   href="https://www.facebook.com/CreativeTim"
-                  rel="noopener noreferrer"
+                  
                   target="_blank"
                   title="Like us on Facebook"
                 >
@@ -127,7 +127,7 @@ function ExamplesNavbar() {
                 <NavLink
                   data-placement="bottom"
                   href="https://www.instagram.com/CreativeTimOfficial"
-                  rel="noopener noreferrer"
+                  
                   target="_blank"
                   title="Follow us on Instagram"
                 >
