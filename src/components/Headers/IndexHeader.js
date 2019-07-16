@@ -7,11 +7,13 @@ import { Container } from "reactstrap";
 function IndexHeader() {
   return (
     <>
-      <div className="page-header clear-filter" filter-color="orange">
+      <div className="page-header clear-filter" filter-color="blue">
         <div
           className="page-header-image"
           data-parallax={true}
-          style={{ backgroundImage: "url("+require('assets/img/header.jpg')+")" }}
+          style={{
+            backgroundImage: "url(" + require("assets/img/header.jpg") + ")"
+          }}
         ></div>
         <Container>
           <div className="content-center brand">

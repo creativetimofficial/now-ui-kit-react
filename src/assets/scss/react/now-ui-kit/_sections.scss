@@ -1,0 +1,3 @@
+.clear-filter[filter-color="blue"] {
+  @include linear-gradient(rgba($black-color,.20), rgba(3, 161, 224, 0.6));
+}
