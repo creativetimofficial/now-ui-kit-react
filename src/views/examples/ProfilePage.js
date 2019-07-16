@@ -163,7 +163,9 @@ function ProfilePage() {
           <div
             className="page-header-image"
             data-parallax={true}
-            style={{ backgroundImage: "url("+require('assets/img/bg5.jpg')+")" }}
+            style={{
+              backgroundImage: "url(" + require("assets/img/bg5.jpg") + ")"
+            }}
           ></div>
           <Container>
             <div className="photo-container">

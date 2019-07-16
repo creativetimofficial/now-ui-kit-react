@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
@@ -13,7 +13,8 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container
+  Container,
+  UncontrolledTooltip
 } from "reactstrap";
 
 function IndexNavbar() {
@@ -27,21 +28,17 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              data-placement="bottom"
-              href="https://demos.creative-tim.com/now-ui-kit/index.html"
-              rel="noopener noreferrer"
+              href="https://demos.creative-tim.com/now-ui-kit-react/#/index"
               target="_blank"
-              title="Designed by Invision. Coded by Creative Tim"
+              id="navbar-brand"
             >
               Now Ui Kit
             </NavbarBrand>
+            <UncontrolledTooltip target="#navbar-brand">
+              Designed by Invision. Coded by Creative Tim
+            </UncontrolledTooltip>
             <button
-              aria-controls="navigation-index"
-              aria-expanded={false}
-              aria-label="Toggle navigation"
               className="navbar-toggler navbar-toggler"
-              data-target="#navigation"
-              data-toggle="collapse"
               id="navigation"
               type="button"
             >
@@ -52,8 +49,6 @@ function IndexNavbar() {
           </div>
           <UncontrolledCollapse
             className="justify-content-end"
-            data-nav-image="./assets/img/blurred-image-1.jpg"
-            id="navigation"
             navbar
             toggler="#navigation"
           >
@@ -68,17 +63,15 @@ function IndexNavbar() {
                 <DropdownToggle
                   caret
                   color="default"
-                  data-toggle="dropdown"
                   href="#pablo"
-                  id="navbarDropdownMenuLink1"
                   nav
                   onClick={e => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app"></i>
                   <p>Components</p>
                 </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem href="./index.html">
+                <DropdownMenu>
+                  <DropdownItem to="/index" tag={Link}>
                     <i className="now-ui-icons business_chart-pie-36"></i>
                     All components
                   </DropdownItem>
@@ -94,15 +87,18 @@ function IndexNavbar() {
               </UncontrolledDropdown>
               <NavItem>
                 <Button
-                  className="nav-link btn-neutral"
-                  color="default"
-                  href="https://www.creative-tim.com/product/now-ui-kit-pro"
-                  rel="noopener noreferrer"
-                  target="_blank"
+                  className="nav-link"
+                  color="neutral"
+                  href="#pablo"
+                  id="upgrade-to-pro"
+                  onClick={e => e.preventDefault()}
                 >
                   <i className="now-ui-icons arrows-1_share-66"></i>
                   <p>Upgrade to PRO</p>
                 </Button>
+                <UncontrolledTooltip target="#upgrade-to-pro">
+                  Cooming soon!
+                </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
