@@ -1,5 +1,4 @@
 import React from "react";
-
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
@@ -21,9 +20,9 @@ function NucleoIcons() {
                 most.
               </h5>
               <Button
-                className="btn-round"
+                className="btn-round mr-1"
                 color="primary"
-                href="nucleo-icons.html"
+                href="/nucleo-icons"
                 size="lg"
                 target="_blank"
               >

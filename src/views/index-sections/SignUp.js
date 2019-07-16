@@ -111,7 +111,7 @@ function SignUp() {
             <Button
               className="btn-round btn-white"
               color="default"
-              href="examples/login-page.html"
+              href="/login-page"
               outline
               size="lg"
               target="_blank"

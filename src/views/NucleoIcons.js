@@ -1,12 +1,28 @@
 import React from "react";
 
 function NucleoIcons() {
+  React.useEffect(() => {
+    let head = document.head;
+    let link = document.createElement("link");
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.id = "nucleo-icons-page-styles-id";
+    link.href = require("assets/demo/nucleo-icons-page-styles.css");
+    head.appendChild(link);
+
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+
+    return function cleanup() {
+      document.getElementById("nucleo-icons-page-styles-id").remove();
+    };
+  });
   return (
     <>
       <header>
         <h1>Nucleo Outline Web Font v2.9</h1>
         <p>
-          <a href="https://nucleoapp.com/?ref=creativetim">nucleoapp.com</a>
+          <a href="https://nucleoapp.com/?ref=1712">nucleoapp.com</a>
         </p>
       </header>
       <div id="cd-nav">
