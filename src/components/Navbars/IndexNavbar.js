@@ -74,6 +74,7 @@ function IndexNavbar() {
                 document.documentElement.classList.toggle("nav-open");
                 setCollapseOpen(!collapseOpen);
               }}
+              aria-expanded={collapseOpen}
               type="button"
             >
               <span className="navbar-toggler-bar top-bar"></span>

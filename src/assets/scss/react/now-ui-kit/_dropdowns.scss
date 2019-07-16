@@ -1,0 +1,11 @@
+.dropdown-menu a.dropdown-header[tabindex="-1"]{
+  color: hsla(0,0%,71%,.6);
+  font-size: .7142em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.dropdown-menu.dropdown-menu-right{
+  right: 0 !important;
+  left: auto !important;
+}

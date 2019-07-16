@@ -2,7 +2,7 @@ import React from "react";
 
 // reactstrap components
 import {
-  UncontrolledCollapse,
+  Collapse,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
@@ -20,6 +20,7 @@ import {
 // core components
 
 function Navbars() {
+  const [collapseOpen, setCollapseOpen] = React.useState(false);
   return (
     <>
       <div className="section section-navbars">
@@ -33,25 +34,18 @@ function Navbars() {
                     Menu
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
+                    onClick={() => {
+                      document.documentElement.classList.toggle("nav-open");
+                      setCollapseOpen(!collapseOpen);
+                    }}
+                    aria-expanded={collapseOpen}
                     className="navbar-toggler"
-                    data-target="#example-navbar"
-                    data-toggle="collapse"
-                    id="example-navbar"
-                    type="button"
                   >
                     <span className="navbar-toggler-bar bar1"></span>
                     <span className="navbar-toggler-bar bar2"></span>
                     <span className="navbar-toggler-bar bar3"></span>
                   </button>
-                  <UncontrolledCollapse
-                    data-nav-image="assets/img/blurred-image-1.jpg"
-                    id="example-navbar"
-                    navbar
-                    toggler="#example-navbar"
-                  >
+                  <Collapse isOpen={collapseOpen} navbar>
                     <Nav navbar>
                       <NavItem className="active">
                         <NavLink
@@ -71,18 +65,15 @@ function Navbars() {
                       </NavItem>
                       <UncontrolledDropdown nav>
                         <DropdownToggle
-                          aria-expanded={false}
                           aria-haspopup={true}
                           caret
                           color="default"
-                          data-toggle="dropdown"
                           href="http://example.com"
-                          id="navbarDropdownMenuLink"
                           nav
                         >
                           <p>Dropdown</p>
                         </DropdownToggle>
-                        <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
+                        <DropdownMenu>
                           <DropdownItem
                             href="#pablo"
                             onClick={e => e.preventDefault()}
@@ -104,7 +95,7 @@ function Navbars() {
                         </DropdownMenu>
                       </UncontrolledDropdown>
                     </Nav>
-                  </UncontrolledCollapse>
+                  </Collapse>
                 </Container>
               </Navbar>
             </Col>
@@ -116,24 +107,19 @@ function Navbars() {
                     Icons
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
+                    onClick={() => {
+                      document.documentElement.classList.toggle("nav-open");
+                      setCollapseOpen(!collapseOpen);
+                    }}
+                    aria-expanded={collapseOpen}
                     className="navbar-toggler"
-                    data-target="#example-navbar-icons"
-                    data-toggle="collapse"
-                    id="example-navbar-icons"
                     type="button"
                   >
                     <span className="navbar-toggler-bar bar1"></span>
                     <span className="navbar-toggler-bar bar2"></span>
                     <span className="navbar-toggler-bar bar3"></span>
                   </button>
-                  <UncontrolledCollapse
-                    id="example-navbar-icons"
-                    navbar
-                    toggler="#example-navbar-icons"
-                  >
+                  <Collapse isOpen={collapseOpen} navbar>
                     <Nav className="ml-auto" navbar>
                       <NavItem>
                         <NavLink
@@ -161,9 +147,7 @@ function Navbars() {
                         <DropdownToggle
                           caret
                           color="default"
-                          data-toggle="dropdown"
                           href="#pablo"
-                          id="navbarDropdownMenuLink"
                           nav
                           onClick={e => e.preventDefault()}
                         >
@@ -172,11 +156,10 @@ function Navbars() {
                             className="now-ui-icons ui-1_settings-gear-63"
                           ></i>
                         </DropdownToggle>
-                        <DropdownMenu
-                          aria-labelledby="navbarDropdownMenuLink"
-                          right
-                        >
-                          <DropdownItem header>Dropdown header</DropdownItem>
+                        <DropdownMenu right>
+                          <DropdownItem header tag="a">
+                            Dropdown header
+                          </DropdownItem>
                           <DropdownItem
                             href="#pablo"
                             onClick={e => e.preventDefault()}
@@ -212,7 +195,7 @@ function Navbars() {
                         </DropdownMenu>
                       </UncontrolledDropdown>
                     </Nav>
-                  </UncontrolledCollapse>
+                  </Collapse>
                 </Container>
               </Navbar>
             </Col>
@@ -222,7 +205,9 @@ function Navbars() {
         <div id="navbar">
           <div
             className="navigation-example"
-            style={{ backgroundImage: "url('assets/img/bg7.jpg')" }}
+            style={{
+              backgroundImage: "url(" + require("assets/img/bg7.jpg") + ")"
+            }}
           >
             <Navbar className="bg-primary" expand="lg">
               <Container>
@@ -231,13 +216,12 @@ function Navbars() {
                     Primary color
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
+                    onClick={() => {
+                      document.documentElement.classList.toggle("nav-open");
+                      setCollapseOpen(!collapseOpen);
+                    }}
+                    aria-expanded={collapseOpen}
                     className="navbar-toggler"
-                    data-target="#example-navbar-primary"
-                    data-toggle="collapse"
-                    id="example-navbar-primary"
                     type="button"
                   >
                     <span className="navbar-toggler-bar bar1"></span>
@@ -245,11 +229,7 @@ function Navbars() {
                     <span className="navbar-toggler-bar bar3"></span>
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-primary"
-                  navbar
-                  toggler="#example-navbar-primary"
-                >
+                <Collapse isOpen={collapseOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -270,7 +250,7 @@ function Navbars() {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
             <Navbar className="bg-info" expand="lg">
@@ -280,13 +260,12 @@ function Navbars() {
                     Info Color
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
+                    onClick={() => {
+                      document.documentElement.classList.toggle("nav-open");
+                      setCollapseOpen(!collapseOpen);
+                    }}
+                    aria-expanded={collapseOpen}
                     className="navbar-toggler"
-                    data-target="#example-navbar-info"
-                    data-toggle="collapse"
-                    id="example-navbar-info"
                     type="button"
                   >
                     <span className="navbar-toggler-bar bar1"></span>
@@ -294,11 +273,7 @@ function Navbars() {
                     <span className="navbar-toggler-bar bar3"></span>
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-info"
-                  navbar
-                  toggler="#example-navbar-info"
-                >
+                <Collapse isOpen={collapseOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -316,7 +291,7 @@ function Navbars() {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
             <Navbar className="bg-success" expand="lg">
@@ -326,13 +301,12 @@ function Navbars() {
                     Success Color
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
+                    onClick={() => {
+                      document.documentElement.classList.toggle("nav-open");
+                      setCollapseOpen(!collapseOpen);
+                    }}
+                    aria-expanded={collapseOpen}
                     className="navbar-toggler"
-                    data-target="#example-navbar-success"
-                    data-toggle="collapse"
-                    id="example-navbar-success"
                     type="button"
                   >
                     <span className="navbar-toggler-bar bar1"></span>
@@ -340,11 +314,7 @@ function Navbars() {
                     <span className="navbar-toggler-bar bar3"></span>
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-success"
-                  navbar
-                  toggler="#example-navbar-success"
-                >
+                <Collapse isOpen={collapseOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem className="active">
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -362,7 +332,7 @@ function Navbars() {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
             <Navbar className="bg-warning" expand="lg">
@@ -372,13 +342,12 @@ function Navbars() {
                     Warning Color
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
+                    onClick={() => {
+                      document.documentElement.classList.toggle("nav-open");
+                      setCollapseOpen(!collapseOpen);
+                    }}
+                    aria-expanded={collapseOpen}
                     className="navbar-toggler"
-                    data-target="#example-navbar-warning"
-                    data-toggle="collapse"
-                    id="example-navbar-warning"
                     type="button"
                   >
                     <span className="navbar-toggler-bar bar1"></span>
@@ -386,11 +355,7 @@ function Navbars() {
                     <span className="navbar-toggler-bar bar3"></span>
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-warning"
-                  navbar
-                  toggler="#example-navbar-warning"
-                >
+                <Collapse isOpen={collapseOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -413,7 +378,7 @@ function Navbars() {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
             <Navbar className="bg-danger" expand="lg">
@@ -423,13 +388,12 @@ function Navbars() {
                     Danger Color
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
+                    onClick={() => {
+                      document.documentElement.classList.toggle("nav-open");
+                      setCollapseOpen(!collapseOpen);
+                    }}
+                    aria-expanded={collapseOpen}
                     className="navbar-toggler"
-                    data-target="#example-navbar-danger"
-                    data-toggle="collapse"
-                    id="example-navbar-danger"
                     type="button"
                   >
                     <span className="navbar-toggler-bar bar1"></span>
@@ -437,11 +401,7 @@ function Navbars() {
                     <span className="navbar-toggler-bar bar3"></span>
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-danger"
-                  navbar
-                  toggler="#example-navbar-danger"
-                >
+                <Collapse isOpen={collapseOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -462,7 +422,7 @@ function Navbars() {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
             <Navbar className="navbar-transparent" expand="lg">
@@ -472,13 +432,12 @@ function Navbars() {
                     Transparent
                   </NavbarBrand>
                   <button
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded={false}
-                    aria-label="Toggle navigation"
+                    onClick={() => {
+                      document.documentElement.classList.toggle("nav-open");
+                      setCollapseOpen(!collapseOpen);
+                    }}
+                    aria-expanded={collapseOpen}
                     className="navbar-toggler"
-                    data-target="#example-navbar-transparent"
-                    data-toggle="collapse"
-                    id="example-navbar-transparent"
                     type="button"
                   >
                     <span className="navbar-toggler-bar bar1"></span>
@@ -486,11 +445,7 @@ function Navbars() {
                     <span className="navbar-toggler-bar bar3"></span>
                   </button>
                 </div>
-                <UncontrolledCollapse
-                  id="example-navbar-transparent"
-                  navbar
-                  toggler="#example-navbar-transparent"
-                >
+                <Collapse isOpen={collapseOpen} navbar>
                   <Nav className="ml-auto" navbar>
                     <NavItem>
                       <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -511,7 +466,7 @@ function Navbars() {
                       </NavLink>
                     </NavItem>
                   </Nav>
-                </UncontrolledCollapse>
+                </Collapse>
               </Container>
             </Navbar>
           </div>
