@@ -39,7 +39,6 @@ function Download() {
                 color="primary"
                 href="https://www.invisionapp.com/now"
                 outline
-                
                 role="button"
                 size="lg"
                 target="_blank"
@@ -58,7 +57,6 @@ function Download() {
                 We've just launched{" "}
                 <a
                   href="http://demos.creative-tim.com/now-ui-kit-pro/presentation.html"
-                  
                   target="_blank"
                 >
                   Now UI Kit PRO
@@ -72,7 +70,6 @@ function Download() {
                 className="btn-neutral btn-round"
                 color="default"
                 href="http://demos.creative-tim.com/now-ui-kit-pro/presentation.html"
-                
                 size="lg"
                 target="_blank"
               >

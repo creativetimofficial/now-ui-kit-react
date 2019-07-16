@@ -24,7 +24,6 @@ function NucleoIcons() {
                 className="btn-round"
                 color="primary"
                 href="nucleo-icons.html"
-                
                 size="lg"
                 target="_blank"
               >
@@ -35,7 +34,6 @@ function NucleoIcons() {
                 color="primary"
                 href="https://nucleoapp.com/?ref=1712"
                 outline
-                
                 size="lg"
                 target="_blank"
               >
