@@ -1,0 +1,29 @@
+.popover-primary{
+  .popover{
+    @include popover-color($primary-color, $white-color);
+  }
+}
+
+.popover-info{
+  .popover{
+    @include popover-color($info-color, $white-color);
+  }
+}
+
+.popover-warning{
+  .popover{
+    @include popover-color($warning-color, $white-color);
+  }
+}
+
+.popover-danger{
+  .popover{
+    @include popover-color($danger-color, $white-color);
+  }
+}
+
+.popover-success{
+  .popover{
+    @include popover-color($success-color, $white-color);
+  }
+}

@@ -1,10 +1,10 @@
 import React from "react";
-
+// react plugins that creates an input with a date picker
+import Datetime from "react-datetime";
 // reactstrap components
 import {
   Button,
   FormGroup,
-  Input,
   Container,
   Modal,
   ModalBody,
@@ -106,16 +106,17 @@ function Javascript() {
               <h4>Popovers</h4>
               <Button
                 color="default"
-                data-color="primary"
-                data-container="body"
-                data-content="Here will be some very useful information about his popover."
-                data-placement="left"
                 id="tooltip175489643"
                 type="button"
+                className="mr-1"
               >
                 On left
               </Button>
-              <UncontrolledPopover placement="left" target="tooltip175489643">
+              <UncontrolledPopover
+                placement="left"
+                target="tooltip175489643"
+                className="popover-primary"
+              >
                 <PopoverHeader>Popover On Left</PopoverHeader>
                 <PopoverBody>
                   Here will be some very useful information about his popover.
@@ -123,11 +124,9 @@ function Javascript() {
               </UncontrolledPopover>
               <Button
                 color="default"
-                data-container="body"
-                data-content="Here will be some very useful information about his popover."
-                data-placement="top"
                 id="tooltip768569110"
                 type="button"
+                className="mr-1"
               >
                 On top
               </Button>
@@ -139,9 +138,9 @@ function Javascript() {
               </UncontrolledPopover>
               <Button
                 color="default"
-                data-placement="right"
                 id="tooltip966745638"
                 type="button"
+                className="mr-1"
               >
                 On right
               </Button>
@@ -153,14 +152,7 @@ function Javascript() {
                   popover.
                 </PopoverBody>
               </UncontrolledPopover>
-              <Button
-                color="default"
-                data-container="body"
-                data-content="Here will be some very useful information about his popover."
-                data-placement="bottom"
-                id="tooltip822900491"
-                type="button"
-              >
+              <Button color="default" id="tooltip822900491" type="button">
                 On bottom
               </Button>
               <UncontrolledPopover placement="bottom" target="tooltip822900491">
@@ -178,12 +170,10 @@ function Javascript() {
                 <Col md="6">
                   <div className="datepicker-container">
                     <FormGroup>
-                      <Input
-                        className="date-picker"
-                        data-datepicker-color="primary"
-                        defaultValue="10/05/2016"
-                        type="text"
-                      ></Input>
+                      <Datetime
+                        timeFormat={false}
+                        inputProps={{ placeholder: "Datetime Picker Here" }}
+                      />
                     </FormGroup>
                   </div>
                 </Col>
@@ -192,12 +182,8 @@ function Javascript() {
             <Col md="6">
               <h4>Tooltips</h4>
               <Button
-                className="btn-tooltip"
+                className="btn-tooltip mr-1"
                 color="default"
-                data-animation={true}
-                data-container="body"
-                data-delay="100"
-                data-placement="left"
                 id="tooltip116884155"
                 type="button"
               >
@@ -211,11 +197,8 @@ function Javascript() {
                 Tooltip on left
               </UncontrolledTooltip>
               <Button
-                className="btn-tooltip"
+                className="btn-tooltip mr-1"
                 color="default"
-                data-animation={true}
-                data-container="body"
-                data-placement="top"
                 id="tooltip502327420"
                 type="button"
               >
@@ -229,11 +212,8 @@ function Javascript() {
                 Tooltip on top
               </UncontrolledTooltip>
               <Button
-                className="btn-tooltip"
+                className="btn-tooltip mr-1"
                 color="default"
-                data-animation={true}
-                data-container="body"
-                data-placement="bottom"
                 id="tooltip243887155"
                 type="button"
               >
@@ -249,9 +229,6 @@ function Javascript() {
               <Button
                 className="btn-tooltip"
                 color="default"
-                data-animation={true}
-                data-container="body"
-                data-placement="right"
                 id="tooltip542703310"
                 type="button"
               >
