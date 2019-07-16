@@ -33,10 +33,12 @@ function LoginPage() {
   return (
     <>
       <ExamplesNavbar />
-      <div className="page-header clear-filter" filter-color="orange">
+      <div className="page-header clear-filter" filter-color="blue">
         <div
           className="page-header-image"
-          style={{ backgroundImage: "url(../assets/img/login.jpg)" }}
+          style={{
+            backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
+          }}
         ></div>
         <div className="content">
           <Container>
