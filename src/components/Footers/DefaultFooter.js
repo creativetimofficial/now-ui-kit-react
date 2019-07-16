@@ -31,12 +31,7 @@ function DefaultFooter() {
             </ul>
           </nav>
           <div className="copyright" id="copyright">
-            ©{" "}
-            <script>
-              document.getElementById('copyright').appendChild(document.createTextNode(new
-              Date().getFullYear()))
-            </script>
-            , Designed by{" "}
+            © {new Date().getFullYear()}, Designed by{" "}
             <a href="https://www.invisionapp.com" target="_blank">
               Invision
             </a>

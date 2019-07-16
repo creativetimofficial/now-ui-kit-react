@@ -14,8 +14,12 @@ import {
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import LandingPageHeader from "components/Headers/LandingPageHeader.js";
+import DefaultFooter from "components/Footers/DefaultFooter.js";
 
 function LandingPage() {
+  const [firstFocus, setFirstFocus] = React.useState(false);
+  const [lastFocus, setLastFocus] = React.useState(false);
   React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -30,44 +34,7 @@ function LandingPage() {
     <>
       <ExamplesNavbar />
       <div className="wrapper">
-        <div className="page-header page-header-small">
-          <div
-            className="page-header-image"
-            data-parallax={true}
-            style={{ backgroundImage: "url('../assets/img/bg6.jpg')" }}
-          ></div>
-          <div className="content-center">
-            <Container>
-              <h1 className="title">This is our great company.</h1>
-              <div className="text-center">
-                <Button
-                  className="btn-icon btn-round"
-                  color="primary"
-                  href="#pablo"
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className="fab fa-facebook-square"></i>
-                </Button>
-                <Button
-                  className="btn-icon btn-round"
-                  color="primary"
-                  href="#pablo"
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className="fab fa-twitter"></i>
-                </Button>
-                <Button
-                  className="btn-icon btn-round"
-                  color="primary"
-                  href="#pablo"
-                  onClick={e => e.preventDefault()}
-                >
-                  <i className="fab fa-google-plus"></i>
-                </Button>
-              </div>
-            </Container>
-          </div>
-        </div>
+        <LandingPageHeader />
         <div className="section section-about-us">
           <Container>
             <Row>
@@ -89,10 +56,11 @@ function LandingPage() {
                   <div
                     className="image-container image-left"
                     style={{
-                      backgroundImage: "url('../assets/img/login.jpg')"
+                      backgroundImage:
+                        "url(" + require("assets/img/login.jpg") + ")"
                     }}
                   >
-                    <p className="blockquote blockquote-primary">
+                    <p className="blockquote blockquote-info">
                       "Over the span of the satellite record, Arctic sea ice has
                       been declining significantly, while sea ice in the
                       Antarctichas increased very slightly" <br></br>
@@ -102,13 +70,19 @@ function LandingPage() {
                   </div>
                   <div
                     className="image-container"
-                    style={{ backgroundImage: "url('../assets/img/bg3.jpg')" }}
+                    style={{
+                      backgroundImage:
+                        "url(" + require("assets/img/bg3.jpg") + ")"
+                    }}
                   ></div>
                 </Col>
                 <Col md="5">
                   <div
                     className="image-container image-right"
-                    style={{ backgroundImage: "url('../assets/img/bg1.jpg')" }}
+                    style={{
+                      backgroundImage:
+                        "url(" + require("assets/img/bg1.jpg") + ")"
+                    }}
                   ></div>
                   <h3>
                     So what does the new record for the lowest level of winter
@@ -161,19 +135,19 @@ function LandingPage() {
                       src={require("assets/img/avatar.jpg")}
                     ></img>
                     <h4 className="title">Romina Hadid</h4>
-                    <p className="category text-primary">Model</p>
+                    <p className="category text-info">Model</p>
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                       add some{" "}
                       <a href="#pablo" onClick={e => e.preventDefault()}>
                         links
-                      </a>
+                      </a>{" "}
                       for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="primary"
+                      color="info"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
@@ -181,7 +155,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="primary"
+                      color="info"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
@@ -189,7 +163,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="primary"
+                      color="info"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
@@ -205,19 +179,19 @@ function LandingPage() {
                       src={require("assets/img/ryan.jpg")}
                     ></img>
                     <h4 className="title">Ryan Tompson</h4>
-                    <p className="category text-primary">Designer</p>
+                    <p className="category text-info">Designer</p>
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                       add some{" "}
                       <a href="#pablo" onClick={e => e.preventDefault()}>
                         links
-                      </a>
+                      </a>{" "}
                       for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="primary"
+                      color="info"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
@@ -225,7 +199,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="primary"
+                      color="info"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
@@ -241,19 +215,19 @@ function LandingPage() {
                       src={require("assets/img/eva.jpg")}
                     ></img>
                     <h4 className="title">Eva Jenner</h4>
-                    <p className="category text-primary">Fashion</p>
+                    <p className="category text-info">Fashion</p>
                     <p className="description">
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                       add some{" "}
                       <a href="#pablo" onClick={e => e.preventDefault()}>
                         links
-                      </a>
+                      </a>{" "}
                       for people to be able to follow them outside the site.
                     </p>
                     <Button
                       className="btn-icon btn-round"
-                      color="primary"
+                      color="info"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
@@ -261,7 +235,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="primary"
+                      color="info"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
@@ -269,7 +243,7 @@ function LandingPage() {
                     </Button>
                     <Button
                       className="btn-icon btn-round"
-                      color="primary"
+                      color="info"
                       href="#pablo"
                       onClick={e => e.preventDefault()}
                     >
@@ -287,21 +261,39 @@ function LandingPage() {
             <p className="description">Your project is very important to us.</p>
             <Row>
               <Col className="text-center ml-auto mr-auto" lg="6" md="8">
-                <InputGroup className="input-lg">
+                <InputGroup
+                  className={
+                    "input-lg" + (firstFocus ? " input-group-focus" : "")
+                  }
+                >
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
                       <i className="now-ui-icons users_circle-08"></i>
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="First Name..." type="text"></Input>
+                  <Input
+                    placeholder="First Name..."
+                    type="text"
+                    onFocus={() => setFirstFocus(true)}
+                    onBlur={() => setFirstFocus(false)}
+                  ></Input>
                 </InputGroup>
-                <InputGroup className="input-lg">
+                <InputGroup
+                  className={
+                    "input-lg" + (lastFocus ? " input-group-focus" : "")
+                  }
+                >
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
                       <i className="now-ui-icons ui-1_email-85"></i>
                     </InputGroupText>
                   </InputGroupAddon>
-                  <Input placeholder="Email..." type="text"></Input>
+                  <Input
+                    placeholder="Email..."
+                    type="text"
+                    onFocus={() => setLastFocus(true)}
+                    onBlur={() => setLastFocus(false)}
+                  ></Input>
                 </InputGroup>
                 <div className="textarea-container">
                   <Input
@@ -309,13 +301,14 @@ function LandingPage() {
                     name="name"
                     placeholder="Type a message..."
                     rows="4"
+                    type="textarea"
                   ></Input>
                 </div>
                 <div className="send-button">
                   <Button
                     block
                     className="btn-round"
-                    color="primary"
+                    color="info"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                     size="lg"
@@ -327,39 +320,7 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <footer className="footer footer-default">
-          <Container>
-            <nav>
-              <ul>
-                <li>
-                  <a href="https://www.creative-tim.com">Creative Tim</a>
-                </li>
-                <li>
-                  <a href="http://presentation.creative-tim.com">About Us</a>
-                </li>
-                <li>
-                  <a href="http://blog.creative-tim.com">Blog</a>
-                </li>
-              </ul>
-            </nav>
-            <div className="copyright" id="copyright">
-              ©{" "}
-              <script>
-                document.getElementById('copyright').appendChild(document.createTextNode(new
-                Date().getFullYear()))
-              </script>
-              , Designed by{" "}
-              <a href="https://www.invisionapp.com" target="_blank">
-                Invision
-              </a>
-              . Coded by{" "}
-              <a href="https://www.creative-tim.com" target="_blank">
-                Creative Tim
-              </a>
-              .
-            </div>
-          </Container>
-        </footer>
+        <DefaultFooter />
       </div>
     </>
   );
