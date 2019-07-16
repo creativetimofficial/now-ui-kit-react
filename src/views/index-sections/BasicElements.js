@@ -19,6 +19,8 @@ import {
 // core components
 
 function BasicElements() {
+  const [leftFocus, setLeftFocus] = React.useState(false);
+  const [rightFocus, setRightFocus] = React.useState(false);
   return (
     <>
       <div className="section section-basic" id="basic-elements">
@@ -135,7 +137,7 @@ function BasicElements() {
                 </FormGroup>
               </Col>
               <Col lg="3" sm="6">
-                <InputGroup>
+                <InputGroup className={leftFocus ? "input-group-focus" : ""}>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
                       <i className="fa fa-user-circle"></i>
@@ -144,12 +146,19 @@ function BasicElements() {
                   <Input
                     placeholder="Left Font Awesome Icon"
                     type="text"
+                    onFocus={() => setLeftFocus(true)}
+                    onBlur={() => setLeftFocus(false)}
                   ></Input>
                 </InputGroup>
               </Col>
               <Col lg="3" sm="6">
-                <InputGroup>
-                  <Input placeholder="Right Nucleo Icon" type="text"></Input>
+                <InputGroup className={rightFocus ? "input-group-focus" : ""}>
+                  <Input
+                    placeholder="Right Nucleo Icon"
+                    type="text"
+                    onFocus={() => setRightFocus(true)}
+                    onBlur={() => setRightFocus(false)}
+                  ></Input>
                   <InputGroupAddon addonType="append">
                     <InputGroupText>
                       <i className="now-ui-icons users_single-02"></i>
