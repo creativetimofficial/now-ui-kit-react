@@ -7,6 +7,7 @@ import {
   Input,
   Container,
   Modal,
+  ModalBody,
   Row,
   Col,
   UncontrolledTooltip,
@@ -18,6 +19,8 @@ import {
 // core components
 
 function Javascript() {
+  const [modal1, setModal1] = React.useState(false);
+  const [modal2, setModal2] = React.useState(false);
   return (
     <>
       <div className="section section-javascript" id="javascriptComponents">
@@ -28,31 +31,26 @@ function Javascript() {
               <h4>Modal</h4>
               <Button
                 color="primary"
-                data-target="#myModal"
-                data-toggle="modal"
+                className="mr-1"
+                onClick={() => setModal1(true)}
               >
                 Launch Modal
               </Button>
-              <Button
-                color="warning"
-                data-target="#myModal1"
-                data-toggle="modal"
-              >
+              <Button color="info" onClick={() => setModal2(true)}>
                 Launch Modal Mini
               </Button>
-              <Modal>
+              <Modal isOpen={modal1} toggle={() => setModal1(false)}>
                 <div className="modal-header justify-content-center">
                   <button
-                    aria-hidden={true}
                     className="close"
-                    data-dismiss="modal"
                     type="button"
+                    onClick={() => setModal1(false)}
                   >
                     <i className="now-ui-icons ui-1_simple-remove"></i>
                   </button>
                   <h4 className="title title-up">Modal title</h4>
                 </div>
-                <div className="modal-body">
+                <ModalBody>
                   <p>
                     Far far away, behind the word mountains, far from the
                     countries Vokalia and Consonantia, there live the blind
@@ -62,25 +60,33 @@ function Javascript() {
                     the necessary regelialia. It is a paradisematic country, in
                     which roasted parts of sentences fly into your mouth.
                   </p>
-                </div>
+                </ModalBody>
                 <div className="modal-footer">
                   <Button color="default" type="button">
                     Nice Button
                   </Button>
-                  <Button color="danger" data-dismiss="modal" type="button">
+                  <Button
+                    color="danger"
+                    type="button"
+                    onClick={() => setModal1(false)}
+                  >
                     Close
                   </Button>
                 </div>
               </Modal>
-              <Modal modalclassName="modal-mini modal-primary">
+              <Modal
+                modalClassName="modal-mini modal-info"
+                toggle={() => setModal2(false)}
+                isOpen={modal2}
+              >
                 <div className="modal-header justify-content-center">
                   <div className="modal-profile">
                     <i className="now-ui-icons users_circle-08"></i>
                   </div>
                 </div>
-                <div className="modal-body">
+                <ModalBody>
                   <p>Always have an access to your profile</p>
-                </div>
+                </ModalBody>
                 <div className="modal-footer">
                   <Button className="btn-neutral" color="link" type="button">
                     Back
@@ -88,8 +94,8 @@ function Javascript() {
                   <Button
                     className="btn-neutral"
                     color="link"
-                    data-dismiss="modal"
                     type="button"
+                    onClick={() => setModal2(false)}
                   >
                     Close
                   </Button>

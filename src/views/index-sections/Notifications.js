@@ -22,11 +22,11 @@ function Notifications() {
             alert message.
             <button
               type="button"
-              class="close"
+              className="close"
               onClick={() => setAlert1(false)}
             >
               <span aria-hidden="true">
-                <i class="now-ui-icons ui-1_simple-remove"></i>
+                <i className="now-ui-icons ui-1_simple-remove"></i>
               </span>
             </button>
           </Container>
@@ -40,11 +40,11 @@ function Notifications() {
             not super important.
             <button
               type="button"
-              class="close"
+              className="close"
               onClick={() => setAlert2(false)}
             >
               <span aria-hidden="true">
-                <i class="now-ui-icons ui-1_simple-remove"></i>
+                <i className="now-ui-icons ui-1_simple-remove"></i>
               </span>
             </button>
           </Container>
@@ -58,11 +58,11 @@ function Notifications() {
             too good.
             <button
               type="button"
-              class="close"
+              className="close"
               onClick={() => setAlert3(false)}
             >
               <span aria-hidden="true">
-                <i class="now-ui-icons ui-1_simple-remove"></i>
+                <i className="now-ui-icons ui-1_simple-remove"></i>
               </span>
             </button>
           </Container>
@@ -76,11 +76,11 @@ function Notifications() {
             again.
             <button
               type="button"
-              class="close"
+              className="close"
               onClick={() => setAlert4(false)}
             >
               <span aria-hidden="true">
-                <i class="now-ui-icons ui-1_simple-remove"></i>
+                <i className="now-ui-icons ui-1_simple-remove"></i>
               </span>
             </button>
           </Container>
