@@ -18,6 +18,7 @@ import {
 // core components
 
 function PaginationSection() {
+  const [pills, setPills] = React.useState("1");
   return (
     <>
       <div className="section section-pagination">
@@ -31,8 +32,8 @@ function PaginationSection() {
                   <span className="progress-value">25%</span>
                 </Progress>
               </div>
-              <div className="progress-container progress-primary">
-                <span className="progress-badge">Primary</span>
+              <div className="progress-container progress-info">
+                <span className="progress-badge">Info</span>
                 <Progress max="100" value="60">
                   <span className="progress-value">60%</span>
                 </Progress>
@@ -40,48 +41,54 @@ function PaginationSection() {
               <br></br>
               <h4>Navigation Pills</h4>
               <Nav
-                className="nav-pills-primary nav-pills-just-icons"
+                className="nav-pills-info nav-pills-just-icons"
                 pills
                 role="tablist"
               >
                 <NavItem>
                   <NavLink
-                    data-toggle="tab"
+                    className={pills === "1" ? "active" : ""}
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
-                    role="tablist"
+                    onClick={e => {
+                      e.preventDefault();
+                      setPills("1");
+                    }}
                   >
                     <i className="far fa-gem"></i>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className="active"
-                    data-toggle="tab"
+                    className={pills === "2" ? "active" : ""}
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
-                    role="tablist"
+                    onClick={e => {
+                      e.preventDefault();
+                      setPills("2");
+                    }}
                   >
                     <i className="fa fa-thermometer-full"></i>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    data-toggle="tab"
+                    className={pills === "3" ? "active" : ""}
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
-                    role="tablist"
+                    onClick={e => {
+                      e.preventDefault();
+                      setPills("3");
+                    }}
                   >
                     <i className="fa fa-suitcase"></i>
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className="disabled"
-                    data-toggle="tab"
+                    className={pills === "4" ? "active" : ""}
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
-                    role="tablist"
+                    onClick={e => {
+                      e.preventDefault();
+                      setPills("4");
+                    }}
                   >
                     <i className="fa fa-exclamation"></i>
                   </NavLink>
@@ -91,8 +98,8 @@ function PaginationSection() {
             <Col sm="6">
               <h4>Pagination</h4>
               <Pagination
-                className="pagination pagination-primary"
-                listClassName="pagination-primary"
+                className="pagination pagination-info"
+                listClassName="pagination-info"
               >
                 <PaginationItem className="active">
                   <PaginationLink
@@ -191,13 +198,25 @@ function PaginationSection() {
               </Pagination>
               <br></br>
               <h4>Labels</h4>
-              <Badge className="badge-default">Default</Badge>
-              <Badge color="primary">Primary</Badge>
-              <Badge color="success">Success</Badge>
-              <Badge color="info">Info</Badge>
-              <Badge color="warning">Warning</Badge>
-              <Badge color="danger">Danger</Badge>
-              <Badge className="badge-neutral">Neutral</Badge>
+              <Badge color="default" className="mr-1">
+                Default
+              </Badge>
+              <Badge color="primary" className="mr-1">
+                Primary
+              </Badge>
+              <Badge color="success" className="mr-1">
+                Success
+              </Badge>
+              <Badge color="info" className="mr-1">
+                Info
+              </Badge>
+              <Badge color="warning" className="mr-1">
+                Warning
+              </Badge>
+              <Badge color="danger" className="mr-1">
+                Danger
+              </Badge>
+              <Badge color="neutral">Neutral</Badge>
             </Col>
           </Row>
           <br></br>
