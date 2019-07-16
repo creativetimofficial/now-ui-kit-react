@@ -7,7 +7,7 @@ import React from "react";
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import IndexHeader from "components/Headers/IndexHeader.js";
-import TransparentFooter from "components/Footers/TransparentFooter.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
 import Images from "./index-sections/Images.js";
@@ -57,7 +57,7 @@ function Index() {
           <Examples />
           <Download />
         </div>
-        <TransparentFooter />
+        <DarkFooter />
       </div>
     </>
   );

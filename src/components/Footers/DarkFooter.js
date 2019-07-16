@@ -4,9 +4,9 @@ import React from "react";
 // reactstrap components
 import { Container } from "reactstrap";
 
-function TransparentFooter() {
+function DarkFooter() {
   return (
-    <footer className="footer">
+    <footer className="footer" data-background-color="black">
       <Container>
         <nav>
           <ul>
@@ -43,4 +43,4 @@ function TransparentFooter() {
   );
 }
 
-export default TransparentFooter;
+export default DarkFooter;
