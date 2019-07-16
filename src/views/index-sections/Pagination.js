@@ -92,7 +92,7 @@ function PaginationSection() {
               <h4>Pagination</h4>
               <Pagination
                 className="pagination pagination-primary"
-                listclassName="pagination-primary"
+                listClassName="pagination-primary"
               >
                 <PaginationItem className="active">
                   <PaginationLink

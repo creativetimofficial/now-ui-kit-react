@@ -11,7 +11,7 @@ function Download() {
       <div
         className="section section-download"
         data-background-color="black"
-        id="#download-section"
+        id="download-section"
       >
         <Container>
           <Row className="justify-content-md-center">

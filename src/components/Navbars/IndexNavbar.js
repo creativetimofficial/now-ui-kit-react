@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // reactstrap components
 import {
   Button,
-  UncontrolledCollapse,
+  Collapse,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
@@ -18,12 +18,43 @@ import {
 } from "reactstrap";
 
 function IndexNavbar() {
+  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [collapseOpen, setCollapseOpen] = React.useState(false);
+  React.useEffect(() => {
+    const updateNavbarColor = () => {
+      if (
+        document.documentElement.scrollTop > 399 ||
+        document.body.scrollTop > 399
+      ) {
+        setNavbarColor("");
+      } else if (
+        document.documentElement.scrollTop < 400 ||
+        document.body.scrollTop < 400
+      ) {
+        setNavbarColor("navbar-transparent");
+      }
+    };
+    window.addEventListener("scroll", updateNavbarColor);
+    return function cleanup() {
+      window.removeEventListener("scroll", updateNavbarColor);
+    };
+  });
   return (
     <>
+      {collapseOpen ? (
+        <div
+          id="bodyClick"
+          onClick={() => {
+            document.documentElement.classList.toggle("nav-open");
+            setCollapseOpen(false);
+          }}
+        />
+      ) : null}
       <Navbar
-        className="bg-primary fixed-top navbar-transparent"
+        className={"fixed-top " + navbarColor}
         color-on-scroll="400"
         expand="lg"
+        color="info"
       >
         <Container>
           <div className="navbar-translate">
@@ -32,14 +63,17 @@ function IndexNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-              Now Ui Kit
+              Now UI Kit React
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
               Designed by Invision. Coded by Creative Tim
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
-              id="navigation"
+              onClick={() => {
+                document.documentElement.classList.toggle("nav-open");
+                setCollapseOpen(!collapseOpen);
+              }}
               type="button"
             >
               <span className="navbar-toggler-bar top-bar"></span>
@@ -47,14 +81,22 @@ function IndexNavbar() {
               <span className="navbar-toggler-bar bottom-bar"></span>
             </button>
           </div>
-          <UncontrolledCollapse
+          <Collapse
             className="justify-content-end"
+            isOpen={collapseOpen}
             navbar
-            toggler="#navigation"
           >
             <Nav navbar>
               <NavItem>
-                <NavLink href="#pablo" onClick="scrollToDownload()">
+                <NavLink
+                  href="#pablo"
+                  onClick={e => {
+                    e.preventDefault();
+                    document
+                      .getElementById("download-section")
+                      .scrollIntoView();
+                  }}
+                >
                   <i className="now-ui-icons arrows-1_cloud-download-93"></i>
                   <p>Download</p>
                 </NavLink>
@@ -67,19 +109,19 @@ function IndexNavbar() {
                   nav
                   onClick={e => e.preventDefault()}
                 >
-                  <i className="now-ui-icons design_app"></i>
+                  <i className="now-ui-icons design_app mr-1"></i>
                   <p>Components</p>
                 </DropdownToggle>
                 <DropdownMenu>
                   <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
+                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     All components
                   </DropdownItem>
                   <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit/docs/1.0/getting-started/introduction.html"
+                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction"
                     target="_blank"
                   >
-                    <i className="now-ui-icons design_bullet-list-67"></i>
+                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
                     Documentation
                   </DropdownItem>
                 </DropdownMenu>
@@ -92,7 +134,7 @@ function IndexNavbar() {
                   id="upgrade-to-pro"
                   onClick={e => e.preventDefault()}
                 >
-                  <i className="now-ui-icons arrows-1_share-66"></i>
+                  <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
                   <p>Upgrade to PRO</p>
                 </Button>
                 <UncontrolledTooltip target="#upgrade-to-pro">
@@ -101,39 +143,45 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  data-placement="bottom"
                   href="https://twitter.com/CreativeTim"
                   target="_blank"
-                  title="Follow us on Twitter"
+                  id="twitter-tooltip"
                 >
                   <i className="fab fa-twitter"></i>
                   <p className="d-lg-none d-xl-none">Twitter</p>
                 </NavLink>
+                <UncontrolledTooltip target="#twitter-tooltip">
+                  Follow us on Twitter
+                </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
-                  data-placement="bottom"
                   href="https://www.facebook.com/CreativeTim"
                   target="_blank"
-                  title="Like us on Facebook"
+                  id="facebook-tooltip"
                 >
                   <i className="fab fa-facebook-square"></i>
                   <p className="d-lg-none d-xl-none">Facebook</p>
                 </NavLink>
+                <UncontrolledTooltip target="#facebook-tooltip">
+                  Like us on Facebook
+                </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
-                  data-placement="bottom"
                   href="https://www.instagram.com/CreativeTimOfficial"
                   target="_blank"
-                  title="Follow us on Instagram"
+                  id="instagram-tooltip"
                 >
                   <i className="fab fa-instagram"></i>
                   <p className="d-lg-none d-xl-none">Instagram</p>
                 </NavLink>
+                <UncontrolledTooltip target="#instagram-tooltip">
+                  Follow us on Instagram
+                </UncontrolledTooltip>
               </NavItem>
             </Nav>
-          </UncontrolledCollapse>
+          </Collapse>
         </Container>
       </Navbar>
     </>
