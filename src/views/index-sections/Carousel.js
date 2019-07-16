@@ -1,11 +1,59 @@
 import React from "react";
 
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Carousel,
+  CarouselItem,
+  CarouselIndicators,
+  CarouselCaption
+} from "reactstrap";
 
 // core components
 
+const items = [
+  {
+    src: require("assets/img/bg1.jpg"),
+    altText: "Nature, United States",
+    caption: "Nature, United States"
+  },
+  {
+    src: require("assets/img/bg3.jpg"),
+    altText: "Somewhere Beyond, United States",
+    caption: "Somewhere Beyond, United States"
+  },
+  {
+    src: require("assets/img/bg4.jpg"),
+    altText: "Yellowstone National Park, United States",
+    caption: "Yellowstone National Park, United States"
+  }
+];
+
 function CarouselSection() {
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [animating, setAnimating] = React.useState(false);
+  const onExiting = () => {
+    setAnimating(true);
+  };
+  const onExited = () => {
+    setAnimating(false);
+  };
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+  const goToIndex = newIndex => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
   return (
     <>
       <div className="section" id="carousel">
@@ -15,63 +63,40 @@ function CarouselSection() {
           </div>
           <Row className="justify-content-center">
             <Col lg="8" md="12">
-              <div
-                className="carousel slide"
-                data-ride="carousel"
-                id="carouselExampleIndicators"
+              <Carousel
+                activeIndex={activeIndex}
+                next={next}
+                previous={previous}
               >
-                <ol className="carousel-indicators">
-                  <li
-                    className="active"
-                    data-slide-to="0"
-                    data-target="#carouselExampleIndicators"
-                  ></li>
-                  <li
-                    data-slide-to="1"
-                    data-target="#carouselExampleIndicators"
-                  ></li>
-                  <li
-                    data-slide-to="2"
-                    data-target="#carouselExampleIndicators"
-                  ></li>
-                </ol>
-                <div className="carousel-inner" role="listbox">
-                  <div className="carousel-item active">
-                    <img
-                      alt="..."
-                      className="d-block"
-                      src={require("assets/img/bg1.jpg")}
-                    ></img>
-                    <div className="carousel-caption d-none d-md-block">
-                      <h5>Nature, United States</h5>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      alt="..."
-                      className="d-block"
-                      src={require("assets/img/bg3.jpg")}
-                    ></img>
-                    <div className="carousel-caption d-none d-md-block">
-                      <h5>Somewhere Beyond, United States</h5>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <img
-                      alt="..."
-                      className="d-block"
-                      src={require("assets/img/bg4.jpg")}
-                    ></img>
-                    <div className="carousel-caption d-none d-md-block">
-                      <h5>Yellowstone National Park, United States</h5>
-                    </div>
-                  </div>
-                </div>
+                <CarouselIndicators
+                  items={items}
+                  activeIndex={activeIndex}
+                  onClickHandler={goToIndex}
+                />
+                {items.map(item => {
+                  return (
+                    <CarouselItem
+                      onExiting={onExiting}
+                      onExited={onExited}
+                      key={item.src}
+                    >
+                      <img src={item.src} alt={item.altText} />
+                      <CarouselCaption
+                        tag="h5"
+                        captionText={<h5>{item.caption}</h5>}
+                        captionHeader=""
+                      />
+                    </CarouselItem>
+                  );
+                })}
                 <a
                   className="carousel-control-prev"
                   data-slide="prev"
                   href="#pablo"
-                  onClick={e => e.preventDefault()}
+                  onClick={e => {
+                    e.preventDefault();
+                    previous();
+                  }}
                   role="button"
                 >
                   <i className="now-ui-icons arrows-1_minimal-left"></i>
@@ -80,12 +105,15 @@ function CarouselSection() {
                   className="carousel-control-next"
                   data-slide="next"
                   href="#pablo"
-                  onClick={e => e.preventDefault()}
+                  onClick={e => {
+                    e.preventDefault();
+                    next();
+                  }}
                   role="button"
                 >
                   <i className="now-ui-icons arrows-1_minimal-right"></i>
                 </a>
-              </div>
+              </Carousel>
             </Col>
           </Row>
         </Container>
