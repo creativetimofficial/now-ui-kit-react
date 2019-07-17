@@ -125,7 +125,7 @@ function IndexNavbar() {
               <NavItem>
                 <Button
                   className="nav-link btn-neutral"
-                  color="default"
+                  color="info"
                   href="#pablo"
                   id="upgrade-to-pro"
                   onClick={e => e.preventDefault()}
