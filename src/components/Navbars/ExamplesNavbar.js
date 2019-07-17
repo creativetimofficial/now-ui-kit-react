@@ -89,7 +89,7 @@ function ExamplesNavbar() {
           </UncontrolledDropdown>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/index"
+              href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
               target="_blank"
               id="navbar-brand"
             >
@@ -124,13 +124,13 @@ function ExamplesNavbar() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues">
+                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
                   Have an issue?
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim"
+                  href="https://twitter.com/CreativeTim?ref=creativetim"
                   target="_blank"
                   id="twitter-tooltip"
                 >
@@ -143,7 +143,7 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim"
+                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
                   target="_blank"
                   id="facebook-tooltip"
                 >
@@ -156,7 +156,7 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial"
+                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
                   target="_blank"
                   id="instagram-tooltip"
                 >
