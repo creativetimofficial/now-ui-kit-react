@@ -1,6 +1,8 @@
 import React from "react";
 
 function NucleoIcons() {
+  const [open, setOpen] = React.useState(false);
+
   React.useEffect(() => {
     let head = document.head;
     let link = document.createElement("link");
@@ -9,11 +11,8 @@ function NucleoIcons() {
     link.id = "nucleo-icons-page-styles-id";
     link.href = require("assets/demo/nucleo-icons-page-styles.css");
     head.appendChild(link);
-
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-
     return function cleanup() {
+      setOpen(!open);
       document.getElementById("nucleo-icons-page-styles-id").remove();
     };
   });
@@ -27,117 +26,267 @@ function NucleoIcons() {
       </header>
       <div id="cd-nav">
         <a
-          className="cd-nav-trigger"
+          className={"cd-nav-trigger" + (open ? " menu-is-open" : "")}
           href="#pablo"
           id="cd-nav-trigger"
-          onClick={e => e.preventDefault()}
+          onClick={e => {
+            e.preventDefault();
+            setOpen(!open);
+          }}
         >
           Menu <span></span>
         </a>
         <nav>
-          <ul id="cd-main-nav">
+          <ul id="cd-main-nav" class={open ? "is-visible" : ""}>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("arrows").scrollIntoView();
+                }}
+              >
                 Arrows
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("business").scrollIntoView();
+                }}
+              >
                 Business &amp; Finance
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("clothes").scrollIntoView();
+                }}
+              >
                 Clothes &amp; Accessories
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("design").scrollIntoView();
+                }}
+              >
                 Design &amp; Development
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("emoticons").scrollIntoView();
+                }}
+              >
                 Emoticons
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("files").scrollIntoView();
+                }}
+              >
                 Files &amp; Folders
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("medical").scrollIntoView();
+                }}
+              >
                 Healthcare &amp; Medical
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("loaders").scrollIntoView();
+                }}
+              >
                 Loaders
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("maps").scrollIntoView();
+                }}
+              >
                 Maps &amp; Location
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("media").scrollIntoView();
+                }}
+              >
                 Media
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("objects").scrollIntoView();
+                }}
+              >
                 Objects
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("school").scrollIntoView();
+                }}
+              >
                 School &amp; Education
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("shopping").scrollIntoView();
+                }}
+              >
                 Shopping
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("sport").scrollIntoView();
+                }}
+              >
                 Sport
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("technology").scrollIntoView();
+                }}
+              >
                 Technology
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("text").scrollIntoView();
+                }}
+              >
                 Text Editing
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("gestures").scrollIntoView();
+                }}
+              >
                 Touch Gestures
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("transportation").scrollIntoView();
+                }}
+              >
                 Transportation
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("travel").scrollIntoView();
+                }}
+              >
                 Travel
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("interface").scrollIntoView();
+                }}
+              >
                 User Interface
               </a>
             </li>
             <li>
-              <a href="#pablo" onClick={e => e.preventDefault()}>
+              <a
+                href="#pablo"
+                onClick={e => {
+                  e.preventDefault();
+                  setOpen(!open);
+                  document.getElementById("users").scrollIntoView();
+                }}
+              >
                 Users
               </a>
             </li>
