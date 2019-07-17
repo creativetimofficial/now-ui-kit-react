@@ -16,30 +16,32 @@
 
 */
 // getting started
-import Tutorial from "layouts/Documentation/Sections/Tutorial.jsx";
-import RoutingSystem from "layouts/Documentation/Sections/RoutingSystem.jsx";
-import Variables from "layouts/Documentation/Sections/Variables.jsx";
-import BuildTools from "layouts/Documentation/Sections/BuildTools.jsx";
-// components
-import Alerts from "layouts/Documentation/Sections/Alerts.jsx";
-import Breadcrumb from "layouts/Documentation/Sections/Breadcrumb.jsx";
-import Buttons from "layouts/Documentation/Sections/Buttons.jsx";
-import Cards from "layouts/Documentation/Sections/Cards.jsx";
-import Dropdown from "layouts/Documentation/Sections/Dropdown.jsx";
-import Footers from "layouts/Documentation/Sections/Footers.jsx";
-import Icons from "layouts/Documentation/Sections/Icons.jsx";
-import Navigation from "layouts/Documentation/Sections/Navigation.jsx";
-import Navs from "layouts/Documentation/Sections/Navs.jsx";
-import Notifications from "layouts/Documentation/Sections/Notifications.jsx";
-import Sidebar from "layouts/Documentation/Sections/Sidebar.jsx";
-import Tables from "layouts/Documentation/Sections/Tables.jsx";
-import Tooltips from "layouts/Documentation/Sections/Tooltips.jsx";
-import Typography from "layouts/Documentation/Sections/Typography.jsx";
+import Tutorial from "views/docs/Sections/getting-started/Tutorial.jsx";
+import RoutingSystem from "views/docs/Sections/getting-started/RoutingSystem.jsx";
+import Variables from "views/docs/Sections/getting-started/Variables.jsx";
+import BuildTools from "views/docs/Sections/getting-started/BuildTools.jsx";
+// core components
+
+// restyled components
+import Alerts from "views/docs/Sections/restyled-components/Alerts.jsx";
+import Breadcrumb from "views/docs/Sections/restyled-components/Breadcrumb.jsx";
+import Buttons from "views/docs/Sections/restyled-components/Buttons.jsx";
+import Cards from "views/docs/Sections/restyled-components/Cards.jsx";
+import Dropdown from "views/docs/Sections/restyled-components/Dropdown.jsx";
+import Footers from "views/docs/Sections/restyled-components/Footers.jsx";
+import Icons from "views/docs/Sections/restyled-components/Icons.jsx";
+import Navigation from "views/docs/Sections/restyled-components/Navigation.jsx";
+import Navs from "views/docs/Sections/restyled-components/Navs.jsx";
+import Notifications from "views/docs/Sections/restyled-components/Notifications.jsx";
+import Sidebar from "views/docs/Sections/restyled-components/Sidebar.jsx";
+import Tables from "views/docs/Sections/restyled-components/Tables.jsx";
+import Tooltips from "views/docs/Sections/restyled-components/Tooltips.jsx";
+import Typography from "views/docs/Sections/restyled-components/Typography.jsx";
 // plugins
-import Charts from "layouts/Documentation/Sections/Charts.jsx";
-import GoogleMaps from "layouts/Documentation/Sections/GoogleMaps.jsx";
-import PerfectScrollbar from "layouts/Documentation/Sections/PerfectScrollbar.jsx";
-import Switch from "layouts/Documentation/Sections/Switch.jsx";
+import Charts from "views/docs/Sections/plugins/Charts.jsx";
+import GoogleMaps from "views/docs/Sections/plugins/GoogleMaps.jsx";
+import PerfectScrollbar from "views/docs/Sections/plugins/PerfectScrollbar.jsx";
+import Switch from "views/docs/Sections/plugins/Switch.jsx";
 
 var componentsRoutes = [
   {
@@ -69,7 +71,7 @@ var componentsRoutes = [
     ]
   },
   {
-    name: "Components",
+    name: "Restyled Components",
     path: "/documentation/accordion",
     routes: [
       { path: "/documentation/alerts", component: Alerts, name: "Alerts" },
