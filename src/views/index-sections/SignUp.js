@@ -96,7 +96,7 @@ function SignUp() {
                 <CardFooter className="text-center">
                   <Button
                     className="btn-neutral btn-round"
-                    color="default"
+                    color="info"
                     href="#pablo"
                     onClick={e => e.preventDefault()}
                     size="lg"
