@@ -20,6 +20,9 @@ import {
 // core components
 
 function SignUp() {
+  const [firstFocus, setFirstFocus] = React.useState(false);
+  const [lastFocus, setLastFocus] = React.useState(false);
+  const [emailFocus, setEmailFocus] = React.useState(false);
   return (
     <>
       <div
@@ -68,29 +71,41 @@ function SignUp() {
                   </div>
                 </CardHeader>
                 <CardBody>
-                  <InputGroup className="no-border">
+                  <InputGroup className={
+                    "no-border" +
+                    (firstFocus ? " input-group-focus" : "")
+                  }>
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
                         <i className="now-ui-icons users_circle-08"></i>
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input placeholder="First Name..." type="text"></Input>
+                    <Input placeholder="First Name..." type="text" onFocus={() => setFirstFocus(true)}
+                    onBlur={() => setFirstFocus(false)}></Input>
                   </InputGroup>
-                  <InputGroup className="no-border">
+                  <InputGroup  className={
+                    "no-border" +
+                    (lastFocus ? " input-group-focus" : "")
+                  }>
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
                         <i className="now-ui-icons text_caps-small"></i>
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input placeholder="Last Name..." type="text"></Input>
+                    <Input placeholder="Last Name..." type="text" onFocus={() => setLastFocus(true)}
+                    onBlur={() => setLastFocus(false)}></Input>
                   </InputGroup>
-                  <InputGroup className="no-border">
+                  <InputGroup className={
+                    "no-border" +
+                    (emailFocus ? " input-group-focus" : "")
+                  }>
                     <InputGroupAddon addonType="prepend">
                       <InputGroupText>
                         <i className="now-ui-icons ui-1_email-85"></i>
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input placeholder="Email..." type="text"></Input>
+                    <Input placeholder="Email..." type="text"  onFocus={() => setEmailFocus(true)}
+                    onBlur={() => setEmailFocus(false)}></Input>
                   </InputGroup>
                 </CardBody>
                 <CardFooter className="text-center">

@@ -7,3 +7,9 @@
 .section-nucleo-icons .icons-container i:nth-child(6) {
   color: $info-color;
 }
+.page-header{
+  &.page-header-small{
+    min-height: 60vh;
+    max-height: 640px;
+  }
+}
