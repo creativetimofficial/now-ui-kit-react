@@ -12,6 +12,8 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
+// others
+import Documentation from "views/docs/Documentation.js";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -31,6 +33,7 @@ ReactDOM.render(
           render={props => <ProfilePage {...props} />}
         />
         <Route path="/login-page" render={props => <LoginPage {...props} />} />
+        <Route path="/documentation" render={props => <Documentation {...props} />} />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
       </Switch>
