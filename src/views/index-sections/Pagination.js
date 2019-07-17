@@ -28,7 +28,7 @@ function PaginationSection() {
               <h4>Progress Bars</h4>
               <div className="progress-container">
                 <span className="progress-badge">Default</span>
-                <Progress max="100" value="60">
+                <Progress max="100" value="25">
                   <span className="progress-value">25%</span>
                 </Progress>
               </div>
