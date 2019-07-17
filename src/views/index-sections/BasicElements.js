@@ -30,7 +30,7 @@ function BasicElements() {
         .classList.contains("noUi-target")
     ) {
       Slider.create(document.getElementById("sliderRegular"), {
-        start: [37.5],
+        start: [50],
         connect: [true, false],
         step: 0.5,
         range: { min: 0, max: 100 }
