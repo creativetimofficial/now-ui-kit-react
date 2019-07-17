@@ -37,7 +37,7 @@ function NucleoIcons() {
           Menu <span></span>
         </a>
         <nav>
-          <ul id="cd-main-nav" class={open ? "is-visible" : ""}>
+          <ul id="cd-main-nav" className={open ? "is-visible" : ""}>
             <li>
               <a
                 href="#pablo"
