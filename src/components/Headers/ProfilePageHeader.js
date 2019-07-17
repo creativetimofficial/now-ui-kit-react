@@ -6,6 +6,21 @@ import { Container } from "reactstrap";
 // core components
 
 function ProfilePageHeader() {
+  let pageHeader = React.createRef();
+
+  React.useEffect(() => {
+    if (window.innerWidth > 991) {
+      const updateScroll = () => {
+        let windowScrollTop = window.pageYOffset / 3;
+        pageHeader.current.style.transform =
+          "translate3d(0," + windowScrollTop + "px,0)";
+      };
+      window.addEventListener("scroll", updateScroll);
+      return function cleanup() {
+        window.removeEventListener("scroll", updateScroll);
+      };
+    }
+  });
   return (
     <>
       <div
@@ -14,10 +29,10 @@ function ProfilePageHeader() {
       >
         <div
           className="page-header-image"
-          data-parallax={true}
           style={{
             backgroundImage: "url(" + require("assets/img/bg5.jpg") + ")"
           }}
+          ref={pageHeader}
         ></div>
         <Container>
           <div className="photo-container">

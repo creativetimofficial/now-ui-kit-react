@@ -82,10 +82,7 @@ function PaginationSection() {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink
-                    href="#pablo"
-                    disabled
-                  >
+                  <NavLink href="#pablo" disabled>
                     <i className="fa fa-exclamation"></i>
                   </NavLink>
                 </NavItem>
