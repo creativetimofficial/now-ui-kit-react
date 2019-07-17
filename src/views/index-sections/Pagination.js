@@ -18,7 +18,7 @@ import {
 // core components
 
 function PaginationSection() {
-  const [pills, setPills] = React.useState("1");
+  const [pills, setPills] = React.useState("2");
   return (
     <>
       <div className="section section-pagination">
@@ -83,12 +83,8 @@ function PaginationSection() {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={pills === "4" ? "active" : ""}
                     href="#pablo"
-                    onClick={e => {
-                      e.preventDefault();
-                      setPills("4");
-                    }}
+                    disabled
                   >
                     <i className="fa fa-exclamation"></i>
                   </NavLink>
