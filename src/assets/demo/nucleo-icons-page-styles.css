@@ -1,21 +1,16 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+ v2.0 | 20110126
+ License: none (public domain)
+ */
+html.nucleo-icons-page-styles {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.nucleo-icons-page-styles body, .nucleo-icons-page-styles div, .nucleo-icons-page-styles span, .nucleo-icons-page-styles applet, .nucleo-icons-page-styles object, .nucleo-icons-page-styles iframe, .nucleo-icons-page-styles h1, .nucleo-icons-page-styles h2, .nucleo-icons-page-styles h3, .nucleo-icons-page-styles h4, .nucleo-icons-page-styles h5, .nucleo-icons-page-styles h6, .nucleo-icons-page-styles p, .nucleo-icons-page-styles blockquote, .nucleo-icons-page-styles pre, .nucleo-icons-page-styles a, .nucleo-icons-page-styles abbr, .nucleo-icons-page-styles acronym, .nucleo-icons-page-styles address, .nucleo-icons-page-styles big, .nucleo-icons-page-styles cite, .nucleo-icons-page-styles code, .nucleo-icons-page-styles del, .nucleo-icons-page-styles dfn, .nucleo-icons-page-styles em, .nucleo-icons-page-styles img, .nucleo-icons-page-styles ins, .nucleo-icons-page-styles kbd, .nucleo-icons-page-styles q, .nucleo-icons-page-styles s, .nucleo-icons-page-styles samp, .nucleo-icons-page-styles small, .nucleo-icons-page-styles strike, .nucleo-icons-page-styles strong, .nucleo-icons-page-styles sub, .nucleo-icons-page-styles sup, .nucleo-icons-page-styles tt, .nucleo-icons-page-styles var, .nucleo-icons-page-styles b, .nucleo-icons-page-styles u, .nucleo-icons-page-styles i, .nucleo-icons-page-styles center, .nucleo-icons-page-styles dl, .nucleo-icons-page-styles dt, .nucleo-icons-page-styles dd, .nucleo-icons-page-styles ol, .nucleo-icons-page-styles ul, .nucleo-icons-page-styles li, .nucleo-icons-page-styles fieldset, .nucleo-icons-page-styles form, .nucleo-icons-page-styles label, .nucleo-icons-page-styles legend, .nucleo-icons-page-styles table, .nucleo-icons-page-styles caption, .nucleo-icons-page-styles tbody, .nucleo-icons-page-styles tfoot, .nucleo-icons-page-styles thead, .nucleo-icons-page-styles tr, .nucleo-icons-page-styles th, .nucleo-icons-page-styles td, .nucleo-icons-page-styles article, .nucleo-icons-page-styles aside, .nucleo-icons-page-styles canvas, .nucleo-icons-page-styles details, .nucleo-icons-page-styles embed, .nucleo-icons-page-styles figure, .nucleo-icons-page-styles figcaption, .nucleo-icons-page-styles footer, .nucleo-icons-page-styles header, .nucleo-icons-page-styles hgroup, .nucleo-icons-page-styles menu, .nucleo-icons-page-styles nav, .nucleo-icons-page-styles output, .nucleo-icons-page-styles ruby, .nucleo-icons-page-styles section, .nucleo-icons-page-styles summary, .nucleo-icons-page-styles time, .nucleo-icons-page-styles mark, .nucleo-icons-page-styles audio, .nucleo-icons-page-styles video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,106 +19,88 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
+.nucleo-icons-page-styles article, .nucleo-icons-page-styles aside, .nucleo-icons-page-styles details, .nucleo-icons-page-styles figcaption, .nucleo-icons-page-styles figure, .nucleo-icons-page-styles footer, .nucleo-icons-page-styles header, .nucleo-icons-page-styles hgroup, .nucleo-icons-page-styles menu, .nucleo-icons-page-styles nav, .nucleo-icons-page-styles section, .nucleo-icons-page-styles main {
   display: block;
 }
-body {
+.nucleo-icons-page-styles body {
   line-height: 1;
 }
-ol, ul {
+.nucleo-icons-page-styles ol, .nucleo-icons-page-styles ul {
   list-style: none;
 }
-blockquote, q {
+.nucleo-icons-page-styles blockquote, .nucleo-icons-page-styles q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+.nucleo-icons-page-styles blockquote:before, .nucleo-icons-page-styles blockquote:after, .nucleo-icons-page-styles q:before, .nucleo-icons-page-styles q:after {
   content: '';
   content: none;
 }
-table {
+.nucleo-icons-page-styles table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-
-
 /* --------------------------------
-
-Nucleo Outline Web Font - nucleoapp.com/
-License - nucleoapp.com/license/
-Created using IcoMoon - icomoon.io
-
--------------------------------- */
-
+ Nucleo Outline Web Font - nucleoapp.com/
+ License - nucleoapp.com/license/
+ Created using IcoMoon - icomoon.io
+ -------------------------------- */
 /* --------------------------------
-
-Primary style
-
--------------------------------- */
-*, *::after, *::before {
+ Primary style
+ -------------------------------- */
+.nucleo-icons-page-styles *, .nucleo-icons-page-styles *::after, .nucleo-icons-page-styles *::before {
   box-sizing: border-box;
 }
-
-html {
+html.nucleo-icons-page-styles {
   font-size: 62.5%;
 }
-
-body {
+.nucleo-icons-page-styles body {
   font-size: 1.6rem;
   font-family: sans-serif;
-  color: #333333;
+  color: #333;
   background: #efefef;
 }
-
-a {
+.nucleo-icons-page-styles a {
   color: #766acf;
   text-decoration: none;
 }
-
 /* --------------------------------
-
-Main components
-
--------------------------------- */
-header {
+ Main components
+ -------------------------------- */
+.nucleo-icons-page-styles header {
   text-align: center;
   padding: 120px 0 0;
 }
-header h1 {
+.nucleo-icons-page-styles header h1 {
   font-size: 2rem;
 }
-header p {
+.nucleo-icons-page-styles header p {
   font-size: 1.4rem;
-  margin-top: .6em;
+  margin-top: 0.6em;
 }
-header a:hover {
+.nucleo-icons-page-styles header a:hover {
   text-decoration: underline;
 }
-
-section {
+.nucleo-icons-page-styles section {
   width: 90%;
   max-width: 1200px;
   margin: 50px auto;
 }
-section h2 {
+.nucleo-icons-page-styles section h2 {
   border-bottom: 1px solid #e2e2e2;
-  padding: 0 0 1em .2em;
+  padding: 0 0 1em 0.2em;
   margin-bottom: 1em;
 }
-
-ul::after {
+.nucleo-icons-page-styles ul::after {
   clear: both;
   content: "";
   display: table;
 }
-ul li {
+.nucleo-icons-page-styles ul li {
   width: 25%;
   float: left;
   padding: 16px 0;
   text-align: center;
-  border-radius: .25em;
+  border-radius: 0.25em;
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   transition: background 0.2s;
@@ -133,13 +110,13 @@ ul li {
   user-select: none;
   overflow: hidden;
 }
-ul li:hover {
+.nucleo-icons-page-styles ul li:hover {
   background: #dbdbdb;
 }
-ul p, ul em, ul input  {
+.nucleo-icons-page-styles ul p, .nucleo-icons-page-styles ul em, .nucleo-icons-page-styles ul input {
   display: inline-block;
   font-size: 1rem;
-  color: #999999;
+  color: #999;
   -webkit-user-select: auto;
   -moz-user-select: auto;
   -ms-user-select: auto;
@@ -150,57 +127,50 @@ ul p, ul em, ul input  {
   text-overflow: ellipsis;
   cursor: pointer;
 }
-
-ul p {
+.nucleo-icons-page-styles ul p {
   padding: 10px;
   margin-top: 10px;
 }
-
-ul p::selection, ul em::selection {
+.nucleo-icons-page-styles ul p::selection, .nucleo-icons-page-styles ul em::selection {
   background: #766acf;
   color: #efefef;
 }
-
-ul em {
+.nucleo-icons-page-styles ul em {
   margin-bottom: 8px;
 }
-ul em::before {
+.nucleo-icons-page-styles ul em::before {
   content: '[';
 }
-ul em::after {
+.nucleo-icons-page-styles ul em::after {
   content: ']';
 }
-
-ul input {
+.nucleo-icons-page-styles ul input {
   text-align: center;
   background: transparent;
   border: none;
   box-shadow: none;
   outline: none;
 }
-
 @media only screen and (min-width: 768px) {
-  ul li {
+  .nucleo-icons-page-styles ul li {
     width: 20%;
     float: left;
   }
 }
 @media only screen and (min-width: 1024px) {
-  ul li {
+  .nucleo-icons-page-styles ul li {
     width: 12.5%;
     float: left;
     padding: 32px 0;
   }
 }
-
 /* --------------------------------
-
-Smart fixed navigation
-
--------------------------------- */
-
-#cd-nav ul {
+ Smart fixed navigation
+ -------------------------------- */
+.nucleo-icons-page-styles {
   /* mobile first */
+}
+.nucleo-icons-page-styles #cd-nav ul {
   position: fixed;
   width: 90%;
   max-width: 400px;
@@ -208,7 +178,7 @@ Smart fixed navigation
   right: 5%;
   bottom: 5%;
   border-radius: 0.25em;
-  box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: white;
   visibility: hidden;
   /* remove overflow:hidden if you want to create a drop-down menu - but then remember to fix/eliminate the list items animation */
@@ -232,7 +202,7 @@ Smart fixed navigation
   -moz-transition: -moz-transform 0.3s, visibility 0s 0.3s;
   transition: transform 0.3s, visibility 0s 0.3s;
 }
-#cd-nav ul li {
+.nucleo-icons-page-styles #cd-nav ul li {
   /* Force Hardware Acceleration in WebKit */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -241,10 +211,10 @@ Smart fixed navigation
   padding: 0;
   text-align: left;
 }
-#cd-nav ul li:hover {
-  background-color: #FFF;
+.nucleo-icons-page-styles #cd-nav ul li:hover {
+  background-color: #fff;
 }
-#cd-nav ul.is-visible {
+.nucleo-icons-page-styles #cd-nav ul.is-visible {
   visibility: visible;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -255,20 +225,19 @@ Smart fixed navigation
   -moz-transition: -moz-transform 0.3s, visibility 0s 0s;
   transition: transform 0.3s, visibility 0s 0s;
 }
-#cd-nav li a {
+.nucleo-icons-page-styles #cd-nav li a {
   display: block;
   padding: 1em;
   font-size: 1.2rem;
   border-bottom: 1px solid #eff2f6;
 }
-#cd-nav li a:hover {
-  color: #333333;
+.nucleo-icons-page-styles #cd-nav li a:hover {
+  color: #333;
 }
-#cd-nav li:last-child a {
+.nucleo-icons-page-styles #cd-nav li:last-child a {
   border-bottom: none;
 }
-
-.cd-nav-trigger {
+.nucleo-icons-page-styles .cd-nav-trigger {
   position: fixed;
   bottom: 5%;
   right: 5%;
@@ -276,20 +245,20 @@ Smart fixed navigation
   height: 44px;
   background: white;
   border-radius: 0.25em;
-  box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
   z-index: 2;
 }
-.cd-nav-trigger span {
+.nucleo-icons-page-styles .cd-nav-trigger span {
   /* the span element is used to create the menu icon */
   position: absolute;
   display: block;
   width: 20px;
   height: 2px;
-  background: #333333;
+  background: #333;
   top: 50%;
   margin-top: -1px;
   left: 50%;
@@ -298,7 +267,7 @@ Smart fixed navigation
   -moz-transition: background 0.3s;
   transition: background 0.3s;
 }
-.cd-nav-trigger span::before, .cd-nav-trigger span::after {
+.nucleo-icons-page-styles .cd-nav-trigger span::before, .nucleo-icons-page-styles .cd-nav-trigger span::after {
   content: '';
   position: absolute;
   left: 0;
@@ -317,7 +286,7 @@ Smart fixed navigation
   -moz-transition: -moz-transform 0.3s, background 0s;
   transition: transform 0.3s, background 0s;
 }
-.cd-nav-trigger span::before {
+.nucleo-icons-page-styles .cd-nav-trigger span::before {
   top: -6px;
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
@@ -325,7 +294,7 @@ Smart fixed navigation
   -o-transform: rotate(0);
   transform: rotate(0);
 }
-.cd-nav-trigger span::after {
+.nucleo-icons-page-styles .cd-nav-trigger span::after {
   bottom: -6px;
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
@@ -333,16 +302,16 @@ Smart fixed navigation
   -o-transform: rotate(0);
   transform: rotate(0);
 }
-.cd-nav-trigger.menu-is-open {
+.nucleo-icons-page-styles .cd-nav-trigger.menu-is-open {
   box-shadow: none;
 }
-.cd-nav-trigger.menu-is-open span {
+.nucleo-icons-page-styles .cd-nav-trigger.menu-is-open span {
   background: rgba(232, 74, 100, 0);
 }
-.cd-nav-trigger.menu-is-open span::before, .cd-nav-trigger.menu-is-open span::after {
-  background: #333333;
+.nucleo-icons-page-styles .cd-nav-trigger.menu-is-open span::before, .nucleo-icons-page-styles .cd-nav-trigger.menu-is-open span::after {
+  background: #333;
 }
-.cd-nav-trigger.menu-is-open span::before {
+.nucleo-icons-page-styles .cd-nav-trigger.menu-is-open span::before {
   top: 0;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -350,7 +319,7 @@ Smart fixed navigation
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-.cd-nav-trigger.menu-is-open span::after {
+.nucleo-icons-page-styles .cd-nav-trigger.menu-is-open span::after {
   bottom: 0;
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
@@ -358,8 +327,7 @@ Smart fixed navigation
   -o-transform: rotate(225deg);
   transform: rotate(225deg);
 }
-
-.now-ui-icons{
+.nucleo-icons-page-styles .now-ui-icons {
   display: inline-block;
   font: normal normal normal 32px/1 'Nucleo Outline';
   speak: none;
