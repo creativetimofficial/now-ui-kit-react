@@ -17,7 +17,9 @@ function Footers() {
           It is used inside:
           <ul>
             <li>
-              <Link to="/index">Index page</Link>
+              <Link to="/index" target="_blank">
+                Index page
+              </Link>
             </li>
           </ul>
         </li>
@@ -29,10 +31,14 @@ function Footers() {
           It is used inside:
           <ul>
             <li>
-              <Link to="/landing-page">Landing page</Link>
+              <Link to="/landing-page" target="_blank">
+                Landing page
+              </Link>
             </li>
             <li>
-              <Link to="/profile-page">Profile page</Link>
+              <Link to="/profile-page" target="_blank">
+                Profile page
+              </Link>
             </li>
           </ul>
         </li>
@@ -44,7 +50,9 @@ function Footers() {
           It is used inside:
           <ul>
             <li>
-              <Link to="/login-page">Login page</Link>
+              <Link to="/login-page" target="_blank">
+                Login page
+              </Link>
             </li>
           </ul>
         </li>

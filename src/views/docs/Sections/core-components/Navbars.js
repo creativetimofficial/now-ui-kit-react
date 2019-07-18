@@ -24,8 +24,8 @@ function Navbars() {
       </ul>
       <p>
         These are the upper navigation for the{" "}
-        <Link to="/register-page" target="_blank">
-          register
+        <Link to="/login-page" target="_blank">
+          login
         </Link>
         ,{" "}
         <Link to="/landing-page" target="_blank">
