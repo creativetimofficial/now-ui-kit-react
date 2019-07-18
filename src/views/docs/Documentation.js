@@ -10,43 +10,47 @@ import "./assets-for-demo/docs.css";
 
 import docRoutes from "documentation.js";
 
-class Documentation extends React.Component {
-  render() {
-    return (
-      <div>
-        <Header {...this.props} />
-        <Container fluid>
-          <Row className="flex-xl-nowrap">
-            <Col xs={12} md={3} xl={2} className="bd-sidebar">
-              <Sidebar />
-            </Col>
-            <Col xs={12} xl={2} className="d-none d-xl-block bd-toc" />
-            <Col
-              xs={12}
-              md={9}
-              xl={8}
-              className="py-md-3 pl-md-5 bd-content"
-              tag="main"
-            >
-              <Switch>
-                {docRoutes.map((prop, key) => {
-                  if (prop.redirect)
-                    return (
-                      <Redirect from={prop.path} to={prop.pathTo} key={key} />
-                    );
-                  return prop.routes.map((p, k) => {
-                    return (
-                      <Route path={p.path} component={p.component} key={k} />
-                    );
-                  });
-                })}
-              </Switch>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-    );
-  }
+function Documentation(props) {
+  React.useEffect(() => {
+    document.body.classList.add("bd-docs");
+    return function cleanup() {
+      document.body.classList.remove("bd-docs");
+    };
+  });
+  return (
+    <div>
+      <Header {...props} />
+      <Container fluid>
+        <Row className="flex-xl-nowrap">
+          <Col xs={12} md={3} xl={2} className="bd-sidebar">
+            <Sidebar />
+          </Col>
+          <Col xs={12} xl={2} className="d-none d-xl-block bd-toc" />
+          <Col
+            xs={12}
+            md={9}
+            xl={8}
+            className="py-md-3 pl-md-5 bd-content"
+            tag="main"
+          >
+            <Switch>
+              {docRoutes.map((prop, key) => {
+                if (prop.redirect)
+                  return (
+                    <Redirect from={prop.path} to={prop.pathTo} key={key} />
+                  );
+                return prop.routes.map((p, k) => {
+                  return (
+                    <Route path={p.path} component={p.component} key={k} />
+                  );
+                });
+              })}
+            </Switch>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
 }
 
 export default Documentation;

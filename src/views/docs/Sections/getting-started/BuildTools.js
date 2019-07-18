@@ -5,14 +5,6 @@ import React from "react";
 import { Table } from "reactstrap";
 
 function BuildTools() {
-  React.useEffect(() => {
-    document.body.classList.add("bd-docs");
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-    return function cleanup() {
-      document.body.classList.remove("bd-docs");
-    };
-  });
   return (
     <>
       <div className="bd-page-title">

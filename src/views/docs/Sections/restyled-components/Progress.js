@@ -15,14 +15,6 @@ import {
 } from "reactstrap";
 
 function Progresses() {
-  React.useEffect(() => {
-    document.body.classList.add("bd-docs");
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-    return function cleanup() {
-      document.body.classList.remove("bd-docs");
-    };
-  });
   return (
     <>
       <h1 className=" bd-title" id="content">

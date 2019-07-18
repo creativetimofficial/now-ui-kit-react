@@ -1,27 +1,152 @@
+/*eslint-disable*/
 import React from "react";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
+// reactstrap components
+import { Carousel, CarouselItem, CarouselIndicators } from "reactstrap";
+
+// core components
+const items = [
+  {
+    src: require("assets/img/bg1.jpg"),
+    altText: "Nature, United States",
+    caption: "Nature, United States"
+  },
+  {
+    src: require("assets/img/bg3.jpg"),
+    altText: "Somewhere Beyond, United States",
+    caption: "Somewhere Beyond, United States"
+  },
+  {
+    src: require("assets/img/bg4.jpg"),
+    altText: "Yellowstone National Park, United States",
+    caption: "Yellowstone National Park, United States"
+  }
+];
+
+const codeExample = `import React from "react";
 
 // reactstrap components
-import {
-  UncontrolledCollapse,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
+import { Carousel, CarouselItem, CarouselIndicators } from "reactstrap";
+
+// core components
+const items = [
+  {
+    src: require("assets/img/bg1.jpg"),
+    altText: "Nature, United States",
+    caption: "Nature, United States"
+  },
+  {
+    src: require("assets/img/bg3.jpg"),
+    altText: "Somewhere Beyond, United States",
+    caption: "Somewhere Beyond, United States"
+  },
+  {
+    src: require("assets/img/bg4.jpg"),
+    altText: "Yellowstone National Park, United States",
+    caption: "Yellowstone National Park, United States"
+  }
+];
+
+function Example(){
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [animating, setAnimating] = React.useState(false);
+  const onExiting = () => {
+    setAnimating(true);
+  };
+  const onExited = () => {
+    setAnimating(false);
+  };
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+  const goToIndex = newIndex => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
+  return (
+    <>
+      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+        <CarouselIndicators
+          items={items}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
+        {items.map(item => {
+          return (
+            <CarouselItem
+              onExiting={onExiting}
+              onExited={onExited}
+              key={item.src}
+            >
+              <img src={item.src} alt={item.altText} />
+              <div className="carousel-caption d-none d-md-block">
+                <h5>{item.caption}</h5>
+              </div>
+            </CarouselItem>
+          );
+        })}
+        <a
+          className="carousel-control-prev"
+          data-slide="prev"
+          href="#pablo"
+          onClick={e => {
+            e.preventDefault();
+            previous();
+          }}
+          role="button"
+        >
+          <i className="now-ui-icons arrows-1_minimal-left"></i>
+        </a>
+        <a
+          className="carousel-control-next"
+          data-slide="next"
+          href="#pablo"
+          onClick={e => {
+            e.preventDefault();
+            next();
+          }}
+          role="button"
+        >
+          <i className="now-ui-icons arrows-1_minimal-right"></i>
+        </a>
+      </Carousel>
+    </>
+  );
+}
+
+export default Example;`;
 
 function Carousels() {
-  React.useEffect(() => {
-    document.body.classList.add("bd-docs");
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-    return function cleanup() {
-      document.body.classList.remove("bd-docs");
-    };
-  });
+  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [animating, setAnimating] = React.useState(false);
+  const onExiting = () => {
+    setAnimating(true);
+  };
+  const onExited = () => {
+    setAnimating(false);
+  };
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
+  const previous = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    setActiveIndex(nextIndex);
+  };
+  const goToIndex = newIndex => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
   return (
     <>
       <h1 className=" bd-title" id="content">
@@ -49,10 +174,6 @@ function Carousels() {
         Please be aware that nested carousels are not supported, and carousels
         are generally not compliant with accessibility standards.
       </p>
-      <p>
-        Lastly, if you’re building our JavaScript from source, it requires{" "}
-        <code className=" highlighter-rouge">util.js</code>
-      </p>
       <h2 id="example">Example</h2>
       <p>
         Carousels don’t automatically normalize slide dimensions. As such, you
@@ -61,90 +182,71 @@ function Carousels() {
         indicators, they’re not explicitly required. Add and customize as you
         see fit.
       </p>
-      <p>
-        Be sure to set a unique id on the{" "}
-        <code className=" highlighter-rouge">.carousel</code>
-        for optional controls, especially if you’re using multiple carousels on
-        a single page.
-      </p>
       <h3 id="with-indicators">With indicators</h3>
       <p>
         You can also add the indicators to the carousel, alongside the controls,
         too.
       </p>
       <div className=" bd-example" data-example-id="">
-        <div
-          className=" carousel slide"
-          data-ride="carousel"
-          id="carouselExampleIndicators"
-        >
-          <ol className=" carousel-indicators">
-            <li data-slide-to="0" data-target="#carouselExampleIndicators"></li>
-            <li
-              className=" active"
-              data-slide-to="1"
-              data-target="#carouselExampleIndicators"
-            ></li>
-            <li data-slide-to="2" data-target="#carouselExampleIndicators"></li>
-          </ol>
-          <div className=" carousel-inner" role="listbox">
-            <div className=" carousel-item">
-              <img
-                alt="..."
-                className=" d-block"
-                src={require("assets/img/bg1.jpg")}
-              ></img>
-              <div className=" carousel-caption d-none d-md-block">
-                <h5>Nature, United States</h5>
-              </div>
-            </div>
-            <div className=" carousel-item active">
-              <img
-                alt="..."
-                className=" d-block"
-                src={require("assets/img/bg3.jpg")}
-              ></img>
-              <div className=" carousel-caption d-none d-md-block">
-                <h5>Somewhere Beyond, United States</h5>
-              </div>
-            </div>
-            <div className=" carousel-item">
-              <img
-                alt="..."
-                className=" d-block"
-                src={require("assets/img/bg4.jpg")}
-              ></img>
-              <div className=" carousel-caption d-none d-md-block">
-                <h5>Yellowstone National Park, United States</h5>
-              </div>
-            </div>
-          </div>
+        <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+          <CarouselIndicators
+            items={items}
+            activeIndex={activeIndex}
+            onClickHandler={goToIndex}
+          />
+          {items.map(item => {
+            return (
+              <CarouselItem
+                onExiting={onExiting}
+                onExited={onExited}
+                key={item.src}
+              >
+                <img src={item.src} alt={item.altText} />
+                <div className="carousel-caption d-none d-md-block">
+                  <h5>{item.caption}</h5>
+                </div>
+              </CarouselItem>
+            );
+          })}
           <a
-            className=" carousel-control-prev"
+            className="carousel-control-prev"
             data-slide="prev"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={e => {
+              e.preventDefault();
+              previous();
+            }}
             role="button"
           >
-            <i className=" now-ui-icons arrows-1_minimal-left"></i>
+            <i className="now-ui-icons arrows-1_minimal-left"></i>
           </a>
           <a
-            className=" carousel-control-next"
+            className="carousel-control-next"
             data-slide="next"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={e => {
+              e.preventDefault();
+              next();
+            }}
             role="button"
           >
-            <i className=" now-ui-icons arrows-1_minimal-right"></i>
+            <i className="now-ui-icons arrows-1_minimal-right"></i>
           </a>
-        </div>
+        </Carousel>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeExample}
+      </SyntaxHighlighter>
+      <h3>Props</h3>
       <p>
-        If you want to see more examples and properties please check the
-        official{" "}
-        <a href="http://getbootstrap.com/docs/4.0/components/carousel/">
-          Bootstrap Documentation
+        For props, please read the{" "}
+        <a
+          href="https://reactstrap.github.io/components/card/?ref=creativetim"
+          target="_blank"
+        >
+          official reactstrap documentation
         </a>
+        .
       </p>
     </>
   );
