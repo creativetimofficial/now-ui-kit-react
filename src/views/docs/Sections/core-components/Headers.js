@@ -60,6 +60,10 @@ function Headers() {
         They come with a title and a subtitle, over an image that fits the
         entire screen.
       </p>
+      <p>
+        The also come with a{" "}
+        <Link to="/documentation/parallax">scrolling parallax</Link> effect.
+      </p>
     </>
   );
 }

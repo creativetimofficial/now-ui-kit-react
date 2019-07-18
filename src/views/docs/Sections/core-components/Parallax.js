@@ -7,15 +7,14 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // } from "reactstrap";
 
 const codeParallax = `import React from "react";
-// reactstrap components
-// core components
-function LandingPageHeader() {
-  let pageHeader = React.createRef();
+... other code
+function ParallaxComponent() {
+  let parallaxComponent = React.createRef();
   React.useEffect(() => {
-    if (window.innerWidth < 991) {
+    if (window.innerWidth > 991) {
       const updateScroll = () => {
         let windowScrollTop = window.pageYOffset / 3;
-        pageHeader.current.style.transform =
+        parallaxComponent.current.style.transform =
           "translate3d(0," + windowScrollTop + "px,0)";
       };
       window.addEventListener("scroll", updateScroll);
@@ -26,20 +25,23 @@ function LandingPageHeader() {
   });
   return (
     <>
-      <div
-        style={{
-          backgroundImage: "url(" + require("assets/img/daniel-olahh.jpg") + ")"
-        }}
-        className="page-header"
-        data-parallax={true}
-        ref={pageHeader}
-      >
-        ... other code
+      <div className="page-header page-header-small">
+        <div
+          className="page-header-image"
+          style={{
+            backgroundImage: "url(" + require("assets/img/bg6.jpg") + ")"
+          }}
+          ref={parallaxComponent}
+        ></div>
+        <div className="content-center">
+          ... other code
+        </div>
       </div>
     </>
   );
 }
-export default LandingPageHeader;
+
+export default ParallaxComponent;
 `;
 
 class Parallax extends React.Component {
@@ -59,6 +61,11 @@ class Parallax extends React.Component {
         </SyntaxHighlighter>
         <p>You can check it out in these components:</p>
         <ul>
+          <li>
+            <code className="highlighter-rouge">
+              src/components/Headers/IndexHeader.js
+            </code>
+          </li>
           <li>
             <code className="highlighter-rouge">
               src/components/Headers/LandingPageHeader.js
