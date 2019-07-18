@@ -1,5 +1,7 @@
+/*eslint-disable*/
 import React from "react";
-
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
 import {
   Button,
@@ -17,10 +19,301 @@ import {
   ListGroup,
   NavItem,
   NavLink,
-  Nav,
+  Nav
 } from "reactstrap";
 
+const codeExample = `import React from "react";
+// reactstrap components
+import{
+  Card,
+  CardImg,
+  CardBody,
+  CardTitle,
+  CardText,
+  Button
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Card style={{ width: "20rem" }}>
+        <CardImg alt="..." data-src="holder.js/100px180/" top></CardImg>
+        <CardBody>
+          <CardTitle tag="h4">Card title</CardTitle>
+          <CardText>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </CardText>
+          <Button
+            color="primary"
+            href="#pablo"
+            onClick={e => e.preventDefault()}
+          >
+            Go somewhere
+          </Button>
+        </CardBody>
+      </Card>
+    </>
+  );
+}
+
+export default Example`;
+const codeBody = `import React from "react";
+// reactstrap components
+import{
+ Card,
+ CardBody
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Card>
+        <CardBody>This is some text within a card body.</CardBody>
+      </Card>
+    </>
+  );
+}
+
+export default Example`;
+const codeTitlesTextAndLinks = `import React from "react";
+// reactstrap components
+import{
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  CardText,
+  CardLink
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Card style={{ width: "20rem" }}>
+        <CardBody>
+          <CardTitle tag="h4">Card title</CardTitle>
+          <CardSubtitle className="mb-2 text-muted">
+            Card subtitle
+          </CardSubtitle>
+          <CardText>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </CardText>
+          <CardLink href="#pablo" onClick={e => e.preventDefault()}>
+            Card link
+          </CardLink>
+          <CardLink href="#pablo" onClick={e => e.preventDefault()}>
+            Another link
+          </CardLink>
+        </CardBody>
+      </Card>
+    </>
+  );
+}
+
+export default Example`;
+const codeImage = `import React from "react";
+// reactstrap components
+import{
+  Card,
+  CardImg,
+  CardBody,
+  CardText
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Card style={{ width: "20rem" }}>
+        <CardImg
+          alt="..."
+          data-src="holder.js/100px180/?text=Image cap"
+          top
+        ></CardImg>
+        <CardBody>
+          <CardText>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </CardText>
+        </CardBody>
+      </Card>
+    </>
+  );
+}
+
+export default Example`;
+const codeListGroups1 = `import React from "react";
+// reactstrap components
+import{
+  Card,
+  ListGroup,
+  ListGroupItem
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Card style={{ width: "20rem" }}>
+        <ListGroup flush>
+          <ListGroupItem>Cras justo odio</ListGroupItem>
+          <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
+          <ListGroupItem>Vestibulum at eros</ListGroupItem>
+        </ListGroup>
+      </Card>
+    </>
+  );
+}
+
+export default Example`;
+const codeListGroups2 = `import React from "react";
+// reactstrap components
+import{
+
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+
+    </>
+  );
+}
+
+export default Example`;
+const codeListGroups3 = `import React from "react";
+// reactstrap components
+import{
+
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+
+    </>
+  );
+}
+
+export default Example`;
+const codeListGroups4 = `import React from "react";
+// reactstrap components
+import{
+
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+
+    </>
+  );
+}
+
+export default Example`;
+const codeTextAlignment = `import React from "react";
+// reactstrap components
+import{
+
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+
+    </>
+  );
+}
+
+export default Example`;
+const codeNavigation1 = `import React from "react";
+// reactstrap components
+import{
+
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+
+    </>
+  );
+}
+
+export default Example`;
+const codeNavigation2 = `import React from "react";
+// reactstrap components
+import{
+
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+
+    </>
+  );
+}
+
+export default Example`;
+const codeImageCaps = `import React from "react";
+// reactstrap components
+import{
+
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+
+    </>
+  );
+}
+
+export default Example`;
+const codeImageOverlays = `import React from "react";
+// reactstrap components
+import{
+
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+
+    </>
+  );
+}
+
+export default Example`;
+
 function Cards() {
+  React.useEffect(() => {
+    var my_awesome_script = document.createElement("script");
+    my_awesome_script.setAttribute(
+      "src",
+      "https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.6/holder.min.js"
+    );
+    my_awesome_script.setAttribute("id", "holder-id");
+    document.body.appendChild(my_awesome_script);
+    return function cleanup() {
+      var element = document.getElementById("holder-id");
+      element.parentNode.removeChild(element);
+    };
+  });
   return (
     <>
       <h1 className="bd-title" id="content">
@@ -71,6 +364,9 @@ function Cards() {
           </CardBody>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeExample}
+      </SyntaxHighlighter>
       <h2 id="content-types">Content types</h2>
       <p>
         Cards support a wide variety of content, including images, text, list
@@ -87,6 +383,9 @@ function Cards() {
           <CardBody>This is some text within a card body.</CardBody>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeBody}
+      </SyntaxHighlighter>
       <h3 id="titles-text-and-links">Titles, text, and links</h3>
       <p>
         Card titles are used by adding{" "}
@@ -125,6 +424,9 @@ function Cards() {
           </CardBody>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeTitlesTextAndLinks}
+      </SyntaxHighlighter>
       <h3 id="images">Images</h3>
       <p>
         <code className="highlighter-rouge">.card-img-top</code> places an image
@@ -149,6 +451,9 @@ function Cards() {
           </CardBody>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeImage}
+      </SyntaxHighlighter>
       <h3 id="list-groups">List groups</h3>
       <p>Create lists of content in a card with a flush list group.</p>
       <div className="bd-example" data-example-id="">
@@ -160,6 +465,9 @@ function Cards() {
           </ListGroup>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeListGroups1}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <Card style={{ width: "20rem" }}>
           <CardBody>Featured</CardBody>
@@ -170,6 +478,9 @@ function Cards() {
           </ListGroup>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeListGroups2}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <Card>
           <CardBody>
@@ -185,6 +496,9 @@ function Cards() {
           </CardBody>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeListGroups3}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <Card className="text-center">
           <CardHeader className="mt-2">Featured</CardHeader>
@@ -205,6 +519,9 @@ function Cards() {
           <CardFooter className="text-muted mb-2">2 days ago</CardFooter>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeListGroups4}
+      </SyntaxHighlighter>
       <h2 id="text-alignment">Text alignment</h2>
       <p>
         You can quickly change the text alignment of any card—in its entirety.
@@ -259,6 +576,9 @@ function Cards() {
           </CardBody>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeTextAlignment}
+      </SyntaxHighlighter>
       <h2 id="navigation">Navigation</h2>
       <p>
         Add some navigation to a card’s header (or block) with Reactstrap's{" "}
@@ -315,6 +635,9 @@ function Cards() {
           </CardBody>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeNavigation1}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <Card className="text-center">
           <CardHeader>
@@ -363,6 +686,9 @@ function Cards() {
           </CardBody>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeNavigation2}
+      </SyntaxHighlighter>
       <h2 id="images-1">Images</h2>
       <p>
         Cards include a few options for working with images. Choose from
@@ -404,6 +730,9 @@ function Cards() {
           <CardImg alt="..." bottom data-src="holder.js/100px180/"></CardImg>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeImageCaps}
+      </SyntaxHighlighter>
       <h3 id="image-overlays">Image overlays</h3>
       <p>
         Turn an image into a card background and overlay your card’s text.
@@ -411,7 +740,7 @@ function Cards() {
         utilities.
       </p>
       <div className="bd-example" data-example-id="">
-        <Card className="bg-dark text-white">
+        <Card className="bg-dark">
           <CardImg
             alt="..."
             data-src="holder.js/100px270/#55595c:#373a3c/text:Card image"
@@ -427,6 +756,21 @@ function Cards() {
           </CardImgOverlay>
         </Card>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeImageOverlays}
+      </SyntaxHighlighter>
+      <h3>Props</h3>
+      <p>
+        For props, please read the{" "}
+        <a
+          href="https://reactstrap.github.io/components/card/?ref=creativetim"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          official reactstrap documentation
+        </a>
+        .
+      </p>
     </>
   );
 }
