@@ -38,10 +38,10 @@ import FileStructure from "views/docs/Sections/getting-started/FileStructure.js"
 // import Tooltips from "views/docs/Sections/restyled-components/Tooltips.js";
 // import Typography from "views/docs/Sections/restyled-components/Typography.js";
 // plugins
-// import Charts from "views/docs/Sections/plugins/Charts.js";
-// import GoogleMaps from "views/docs/Sections/plugins/GoogleMaps.js";
-// import PerfectScrollbar from "views/docs/Sections/plugins/PerfectScrollbar.js";
-// import Switch from "views/docs/Sections/plugins/Switch.js";
+import Nouislider from "views/docs/Sections/plugins/Nouislider.js";
+import NucleoIcons from "views/docs/Sections/plugins/NucleoIcons.js";
+import ReactBootstrapSwitch from "views/docs/Sections/plugins/ReactBootstrapSwitch.js";
+import ReactDatetime from "views/docs/Sections/plugins/ReactDatetime.js";
 
 var componentsRoutes = [
   {
@@ -66,7 +66,7 @@ var componentsRoutes = [
       {
         path: "/documentation/file-structure",
         component: FileStructure,
-        name: "FileStructure"
+        name: "File Structure"
       }
     ]
   },
@@ -118,23 +118,26 @@ var componentsRoutes = [
     name: "Plugins",
     path: "/documentation/charts",
     routes: [
-      // { path: "/documentation/charts", component: Charts, name: "Charts" },
-      // {
-      //   path: "/documentation/google-maps",
-      //   component: GoogleMaps,
-      //   name: "GoogleMaps"
-      // },
-      // {
-      //   path: "/documentation/notifications",
-      //   component: Notifications,
-      //   name: "Notifications"
-      // },
-      // {
-      //   path: "/documentation/perfect-scrollbar",
-      //   component: PerfectScrollbar,
-      //   name: "PerfectScrollbar"
-      // },
-      // { path: "/documentation/switch", component: Switch, name: "Switch" }
+      {
+        path: "/documentation/nouislider",
+        component: Nouislider,
+        name: "Nouislider"
+      },
+      {
+        path: "/documentation/nucleo-icons",
+        component: NucleoIcons,
+        name: "Nucleo Icons"
+      },
+      {
+        path: "/documentation/react-bootstrap-switch",
+        component: ReactBootstrapSwitch,
+        name: "React Bootstrap Switch"
+      },
+      {
+        path: "/documentation/react-datetime",
+        component: ReactDatetime,
+        name: "React Datetime"
+      }
     ]
   },
   { redirect: true, path: "/documentation", pathTo: "/documentation/tutorial" }

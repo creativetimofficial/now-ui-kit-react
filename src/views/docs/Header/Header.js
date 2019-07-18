@@ -42,6 +42,14 @@ class Header extends React.Component {
         <div className="navbar-nav-scroll ml-md-auto">
           <Nav className="bd-navbar-nav flex-row" navbar>
             <NavItem>
+              <NavLink
+                href="https://github.com/creativetimofficial/now-ui-kit-react"
+                target="_blank"
+              >
+                <i className="now-ui-icons objects_diamond" /> Give us a star
+              </NavLink>
+            </NavItem>
+            <NavItem>
               <Link to="/" className="nav-link">
                 <i className="now-ui-icons design_bullet-list-67" /> Back to Kit
               </Link>
