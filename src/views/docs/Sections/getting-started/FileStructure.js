@@ -81,7 +81,8 @@ class FileStructure extends React.Component {
           File Structure
         </h1>
         <p className="bd-lead">
-          Now UI Kit React is a freeby Bootstrap 4, React and Reactstrap UI Kit.
+          Now UI Kit React is a freeby Bootstrap 4, React, React Hooks,
+          Creat-React-App and Reactstrap UI Kit.
         </p>
         <h2 id="now-ui-kit-react-structure">Now UI Kit React Structure</h2>
         <p>
@@ -124,7 +125,10 @@ class FileStructure extends React.Component {
           <li>Checkboxes</li>
           <li>Radio Buttons</li>
           <li>Sliders</li>
-          <li>Datetime</li>
+          <li>Toggle Buttons</li>
+          <li>Cards with Tabs</li>
+          <li>Datepicker</li>
+          <li>Nucleo Icons</li>
         </ul>
       </>
     );
