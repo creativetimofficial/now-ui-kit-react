@@ -21,7 +21,10 @@ import License from "views/docs/Sections/getting-started/License.js";
 import BuildTools from "views/docs/Sections/getting-started/BuildTools.js";
 import FileStructure from "views/docs/Sections/getting-started/FileStructure.js";
 // core components
-
+import Footers from "views/docs/Sections/core-components/Footers.js";
+import Headers from "views/docs/Sections/core-components/Headers.js";
+import Navbars from "views/docs/Sections/core-components/Navbars.js";
+import Parallax from "views/docs/Sections/core-components/Parallax.js";
 // restyled components
 // import Alerts from "views/docs/Sections/restyled-components/Alerts.js";
 // import Breadcrumb from "views/docs/Sections/restyled-components/Breadcrumb.js";
@@ -73,7 +76,12 @@ var componentsRoutes = [
   {
     name: "Core Components",
     path: "/documentation/footers",
-    routes: []
+    routes: [
+      { path: "/documentation/footers", component: Footers, name: "Footers" },
+      { path: "/documentation/headers", component: Headers, name: "Headers" },
+      { path: "/documentation/navbars", component: Navbars, name: "Navbars" },
+      { path: "/documentation/parallax", component: Parallax, name: "Parallax" }
+    ]
   },
   {
     name: "Restyled Components",
