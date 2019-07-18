@@ -149,10 +149,10 @@ function Carousels() {
   };
   return (
     <>
-      <h1 className=" bd-title" id="content">
+      <h1 className="bd-title" id="content">
         Carousel
       </h1>
-      <p className=" bd-lead">
+      <p className="bd-lead">
         A slideshow component for cycling through elements—images or slides of
         text—like a carousel.
       </p>
@@ -187,7 +187,7 @@ function Carousels() {
         You can also add the indicators to the carousel, alongside the controls,
         too.
       </p>
-      <div className=" bd-example" data-example-id="">
+      <div className="bd-example" data-example-id="">
         <Carousel activeIndex={activeIndex} next={next} previous={previous}>
           <CarouselIndicators
             items={items}

@@ -29,10 +29,10 @@ import {
 function Cards() {
   return (
     <>
-      <h1 className=" bd-title" id="content">
+      <h1 className="bd-title" id="content">
         Cards
       </h1>
-      <p className=" bd-lead">
+      <p className="bd-lead">
         Bootstrap's cards provide a flexible and extensible content container
         with multiple variants and options.
       </p>
@@ -58,7 +58,7 @@ function Cards() {
         width. Cards have no fixed width to start, so they’ll naturally fill the
         full width of its parent element.
       </p>
-      <div className=" bd-example" data-example-id="">
+      <div className="bd-example" data-example-id="">
         <Card style={{ width: "20rem" }}>
           <CardImg alt="..." data-src="holder.js/100px180/" top></CardImg>
           <CardBody>
@@ -85,10 +85,10 @@ function Cards() {
       <h3 id="body">Body</h3>
       <p>
         The building block of a card is the{" "}
-        <code className=" highlighter-rouge">.card-body</code>. Use it whenever
+        <code className="highlighter-rouge">.card-body</code>. Use it whenever
         you need a padded section within a card.
       </p>
-      <div className=" bd-example" data-example-id="">
+      <div className="bd-example" data-example-id="">
         <Card>
           <CardBody>This is some text within a card body.</CardBody>
         </Card>
@@ -96,28 +96,28 @@ function Cards() {
       <h3 id="titles-text-and-links">Titles, text, and links</h3>
       <p>
         Card titles are used by adding{" "}
-        <code className=" highlighter-rouge">.card-title</code>
-        to a <code className=" highlighter-rouge">{`<h*>`}</code>
+        <code className="highlighter-rouge">.card-title</code>
+        to a <code className="highlighter-rouge">{`<h*>`}</code>
         tag. In the same way, links are added and placed next to each other by
-        adding <code className=" highlighter-rouge">.card-link</code>
-        to an <code className=" highlighter-rouge">{`<a>`}</code>
+        adding <code className="highlighter-rouge">.card-link</code>
+        to an <code className="highlighter-rouge">{`<a>`}</code>
         tag.
       </p>
       <p>
         Subtitles are used by adding a{" "}
-        <code className=" highlighter-rouge">.card-subtitle</code>
-        to a <code className=" highlighter-rouge">{`<h*>`}</code>
-        tag. If the <code className=" highlighter-rouge">.card-title</code>
-        and the <code className=" highlighter-rouge">.card-subtitle</code>
+        <code className="highlighter-rouge">.card-subtitle</code>
+        to a <code className="highlighter-rouge">{`<h*>`}</code>
+        tag. If the <code className="highlighter-rouge">.card-title</code>
+        and the <code className="highlighter-rouge">.card-subtitle</code>
         items are placed in a{" "}
-        <code className=" highlighter-rouge">.card-body</code>
+        <code className="highlighter-rouge">.card-body</code>
         item, the card title and subtitle are aligned nicely.
       </p>
-      <div className=" bd-example" data-example-id="">
+      <div className="bd-example" data-example-id="">
         <Card style={{ width: "20rem" }}>
           <CardBody>
             <CardTitle tag="h4">Card title</CardTitle>
-            <CardSubtitle className=" mb-2 text-muted">
+            <CardSubtitle className="mb-2 text-muted">
               Card subtitle
             </CardSubtitle>
             <CardText>
@@ -135,14 +135,14 @@ function Cards() {
       </div>
       <h3 id="images">Images</h3>
       <p>
-        <code className=" highlighter-rouge">.card-img-top</code>
+        <code className="highlighter-rouge">.card-img-top</code>
         places an image to the top of the card. With{" "}
-        <code className=" highlighter-rouge">.card-text</code>, text can be
+        <code className="highlighter-rouge">.card-text</code>, text can be
         added to the card. Text within{" "}
-        <code className=" highlighter-rouge">.card-text</code>
+        <code className="highlighter-rouge">.card-text</code>
         can also be styled with the standard HTML tags.
       </p>
-      <div className=" bd-example" data-example-id="">
+      <div className="bd-example" data-example-id="">
         <Card style={{ width: "20rem" }}>
           <CardImg
             alt="..."
@@ -159,7 +159,7 @@ function Cards() {
       </div>
       <h3 id="list-groups">List groups</h3>
       <p>Create lists of content in a card with a flush list group.</p>
-      <div className=" bd-example" data-example-id="">
+      <div className="bd-example" data-example-id="">
         <Card style={{ width: "20rem" }}>
           <ListGroup flush>
             <ListGroupItem>Cras justo odio</ListGroupItem>
@@ -168,7 +168,7 @@ function Cards() {
           </ListGroup>
         </Card>
       </div>
-      <div className=" bd-example" data-example-id="">
+      <div className="bd-example" data-example-id="">
         <Card style={{ width: "20rem" }}>
           <CardBody>Featured</CardBody>
           <ListGroup flush>
@@ -178,24 +178,24 @@ function Cards() {
           </ListGroup>
         </Card>
       </div>
-      <div className=" bd-example" data-example-id="">
+      <div className="bd-example" data-example-id="">
         <Card>
           <CardBody>
-            <blockquote className=" blockquote blockquote-primary mb-0">
+            <blockquote className="blockquote blockquote-primary mb-0">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 posuere erat a ante.
               </p>
-              <footer className=" blockquote-footer">
+              <footer className="blockquote-footer">
                 Someone famous in <cite title="Source Title">Source Title</cite>
               </footer>
             </blockquote>
           </CardBody>
         </Card>
       </div>
-      <div className=" bd-example" data-example-id="">
-        <Card className=" text-center">
-          <CardHeader className=" mt-2">Featured</CardHeader>
+      <div className="bd-example" data-example-id="">
+        <Card className="text-center">
+          <CardHeader className="mt-2">Featured</CardHeader>
           <CardBody>
             <CardTitle tag="h4">Special title treatment</CardTitle>
             <CardText>
@@ -210,14 +210,14 @@ function Cards() {
               Go somewhere
             </Button>
           </CardBody>
-          <CardFooter className=" text-muted mb-2">2 days ago</CardFooter>
+          <CardFooter className="text-muted mb-2">2 days ago</CardFooter>
         </Card>
       </div>
       <h2 id="text-alignment">Text alignment</h2>
       <p>
         You can quickly change the text alignment of any card—in its entirety.
       </p>
-      <div className=" bd-example" data-example-id="">
+      <div className="bd-example" data-example-id="">
         <Card style={{ width: "20rem" }}>
           <CardBody>
             <CardTitle tag="h4">Special title treatment</CardTitle>
@@ -234,7 +234,7 @@ function Cards() {
             </Button>
           </CardBody>
         </Card>
-        <Card className=" text-center" style={{ width: "20rem" }}>
+        <Card className="text-center" style={{ width: "20rem" }}>
           <CardBody>
             <CardTitle tag="h4">Special title treatment</CardTitle>
             <CardText>
@@ -250,7 +250,7 @@ function Cards() {
             </Button>
           </CardBody>
         </Card>
-        <Card className=" text-right" style={{ width: "20rem" }}>
+        <Card className="text-right" style={{ width: "20rem" }}>
           <CardBody>
             <CardTitle tag="h4">Special title treatment</CardTitle>
             <CardText>
@@ -272,13 +272,13 @@ function Cards() {
         Add some navigation to a card’s header (or block) with Bootstrap’s{" "}
         <a href="/docs/1.0/components/navs/">nav components</a>.
       </p>
-      <div className=" bd-example" data-example-id="">
-        <Card className=" text-center">
+      <div className="bd-example" data-example-id="">
+        <Card className="text-center">
           <CardHeader>
-            <Nav className=" justify-content-center" tabs>
+            <Nav className="justify-content-center" tabs>
               <NavItem>
                 <NavLink
-                  className=" active"
+                  className="active"
                   href="#pablo"
                   onClick={e => e.preventDefault()}
                 >
@@ -292,7 +292,7 @@ function Cards() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  className=" disabled"
+                  className="disabled"
                   href="#pablo"
                   onClick={e => e.preventDefault()}
                 >
@@ -317,16 +317,16 @@ function Cards() {
           </CardBody>
         </Card>
       </div>
-      <div className=" bd-example" data-example-id="">
-        <Card className=" text-center">
+      <div className="bd-example" data-example-id="">
+        <Card className="text-center">
           <CardHeader>
             <Nav
-              className=" nav-pills-primary justify-content-center mt-4"
+              className="nav-pills-primary justify-content-center mt-4"
               pills
             >
               <NavItem>
                 <NavLink
-                  className=" active"
+                  className="active"
                   href="#pablo"
                   onClick={e => e.preventDefault()}
                 >
@@ -340,7 +340,7 @@ function Cards() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  className=" disabled"
+                  className="disabled"
                   href="#pablo"
                   onClick={e => e.preventDefault()}
                 >
@@ -376,8 +376,8 @@ function Cards() {
         Similar to headers and footers, cards can include top and bottom “image
         caps”—images at the top or bottom of a card.
       </p>
-      <div className=" bd-example" data-example-id="">
-        <Card className=" mb-3">
+      <div className="bd-example" data-example-id="">
+        <Card className="mb-3">
           <CardImg alt="..." data-src="holder.js/100px180/" top></CardImg>
           <CardBody>
             <CardTitle tag="h4">Card title</CardTitle>
@@ -387,7 +387,7 @@ function Cards() {
               longer.
             </CardText>
             <CardText>
-              <small className=" text-muted">Last updated 3 mins ago</small>
+              <small className="text-muted">Last updated 3 mins ago</small>
             </CardText>
           </CardBody>
         </Card>
@@ -400,7 +400,7 @@ function Cards() {
               longer.
             </CardText>
             <CardText>
-              <small className=" text-muted">Last updated 3 mins ago</small>
+              <small className="text-muted">Last updated 3 mins ago</small>
             </CardText>
           </CardBody>
           <CardImg alt="..." bottom data-src="holder.js/100px180/"></CardImg>
@@ -412,8 +412,8 @@ function Cards() {
         Depending on the image, you may or may not need additional styles or
         utilities.
       </p>
-      <div className=" bd-example" data-example-id="">
-        <Card className=" bg-dark text-white">
+      <div className="bd-example" data-example-id="">
+        <Card className="bg-dark text-white">
           <CardImg
             alt="..."
             data-src="holder.js/100px270/#55595c:#373a3c/text:Card image"

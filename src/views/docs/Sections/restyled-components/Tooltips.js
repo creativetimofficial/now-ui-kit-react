@@ -18,18 +18,18 @@ import {
 function Tooltips() {
   return (
     <>
-      <h1 className=" bd-title" id="content">
+      <h1 className="bd-title" id="content">
         Tooltips
       </h1>
-      <p className=" bd-lead">
+      <p className="bd-lead">
         Documentation and examples for adding custom Bootstrap tooltips with CSS
         and JavaScript using CSS3 for animations and data-attributes for local
         title storage.
       </p>
       <h2 id="examples">Examples</h2>
       <p>Hover over the links below to see tooltips:</p>
-      <div className=" bd-example tooltip-demo">
-        <p className=" muted">
+      <div className="bd-example tooltip-demo">
+        <p className="muted">
           Tight pants next level keffiyeh{" "}
           <a
             href="#pablo"
@@ -83,40 +83,40 @@ function Tooltips() {
       </div>
       <h3 id="static-demo">Static demo</h3>
       <p>Four options are available: top, right, bottom, and left aligned.</p>
-      <div className=" bd-example bd-example-tooltip-static">
+      <div className="bd-example bd-example-tooltip-static">
         <div
-          className=" tooltip bs-tooltip-top bs-tooltip-top-docs"
+          className="tooltip bs-tooltip-top bs-tooltip-top-docs"
           role="tooltip"
         >
-          <div className=" arrow"></div>
-          <div className=" tooltip-inner">Tooltip on the top</div>
+          <div className="arrow"></div>
+          <div className="tooltip-inner">Tooltip on the top</div>
         </div>
         <div
-          className=" tooltip bs-tooltip-right bs-tooltip-right-docs"
+          className="tooltip bs-tooltip-right bs-tooltip-right-docs"
           role="tooltip"
         >
-          <div className=" arrow"></div>
-          <div className=" tooltip-inner">Tooltip on the right</div>
+          <div className="arrow"></div>
+          <div className="tooltip-inner">Tooltip on the right</div>
         </div>
         <div
-          className=" tooltip bs-tooltip-bottom bs-tooltip-bottom-docs"
+          className="tooltip bs-tooltip-bottom bs-tooltip-bottom-docs"
           role="tooltip"
         >
-          <div className=" arrow"></div>
-          <div className=" tooltip-inner">Tooltip on the bottom</div>
+          <div className="arrow"></div>
+          <div className="tooltip-inner">Tooltip on the bottom</div>
         </div>
         <div
-          className=" tooltip bs-tooltip-left bs-tooltip-left-docs"
+          className="tooltip bs-tooltip-left bs-tooltip-left-docs"
           role="tooltip"
         >
-          <div className=" arrow"></div>
-          <div className=" tooltip-inner">Tooltip on the left</div>
+          <div className="arrow"></div>
+          <div className="tooltip-inner">Tooltip on the left</div>
         </div>
       </div>
       <h3 id="interactive-demo">Interactive demo</h3>
       <p>Hover over the buttons below to see their tooltips.</p>
-      <div className=" bd-example tooltip-demo">
-        <div className=" bd-example-tooltips">
+      <div className="bd-example tooltip-demo">
+        <div className="bd-example-tooltips">
           <Button
             color="secondary"
             data-placement="top"
@@ -200,14 +200,14 @@ function Tooltips() {
       <h3 id="markup">Markup</h3>
       <p>
         The required markup for a tooltip is only a{" "}
-        <code className=" highlighter-rouge">data</code>
-        attribute and <code className=" highlighter-rouge">title</code>
+        <code className="highlighter-rouge">data</code>
+        attribute and <code className="highlighter-rouge">title</code>
         on the HTML element you wish to have a tooltip. The generated markup of
         a tooltip is rather simple, though it does require a position (by
-        default, set to <code className=" highlighter-rouge">top</code>
+        default, set to <code className="highlighter-rouge">top</code>
         by the plugin).
       </p>
-      <div className=" bd-callout bd-callout-warning">
+      <div className="bd-callout bd-callout-warning">
         <h4 id="making-tooltips-work-for-keyboard-and-assistive-technology-users">
           Making tooltips work for keyboard and assistive technology users
         </h4>
@@ -215,16 +215,16 @@ function Tooltips() {
           You should only add tooltips to HTML elements that are traditionally
           keyboard-focusable and interactive (such as links or form controls).
           Although arbitrary HTML elements (such as{" "}
-          <code className=" highlighter-rouge">{`<span>`}</code>
+          <code className="highlighter-rouge">{`<span>`}</code>
           s) can be made focusable by adding the{" "}
-          <code className=" highlighter-rouge">tabindex="0"</code>
+          <code className="highlighter-rouge">tabindex="0"</code>
           attribute, this will add potentially annoying and confusing tab stops
           on non-interactive elements for keyboard users. In addition, most
           assistive technologies currently do not announce the tooltip in this
           situation.
         </p>
       </div>
-      <div className=" bd-callout bd-callout-info">
+      <div className="bd-callout bd-callout-info">
         <h4 id="data-attributes-for-individual-tooltips">
           Data attributes for individual tooltips
         </h4>
