@@ -13,17 +13,11 @@ import {
   CardTitle,
   CardSubtitle,
   CardText,
-  UncontrolledCollapse,
   ListGroupItem,
   ListGroup,
-  NavbarBrand,
-  Navbar,
   NavItem,
   NavLink,
   Nav,
-  Container,
-  Row,
-  Col
 } from "reactstrap";
 
 function Cards() {
@@ -96,22 +90,20 @@ function Cards() {
       <h3 id="titles-text-and-links">Titles, text, and links</h3>
       <p>
         Card titles are used by adding{" "}
-        <code className="highlighter-rouge">.card-title</code>
-        to a <code className="highlighter-rouge">{`<h*>`}</code>
-        tag. In the same way, links are added and placed next to each other by
-        adding <code className="highlighter-rouge">.card-link</code>
-        to an <code className="highlighter-rouge">{`<a>`}</code>
-        tag.
+        <code className="highlighter-rouge">.card-title</code> to a{" "}
+        <code className="highlighter-rouge">{`<h*>`}</code> tag. In the same
+        way, links are added and placed next to each other by adding{" "}
+        <code className="highlighter-rouge">.card-link</code> to an{" "}
+        <code className="highlighter-rouge">{`<a>`}</code> tag.
       </p>
       <p>
         Subtitles are used by adding a{" "}
-        <code className="highlighter-rouge">.card-subtitle</code>
-        to a <code className="highlighter-rouge">{`<h*>`}</code>
-        tag. If the <code className="highlighter-rouge">.card-title</code>
-        and the <code className="highlighter-rouge">.card-subtitle</code>
-        items are placed in a{" "}
-        <code className="highlighter-rouge">.card-body</code>
-        item, the card title and subtitle are aligned nicely.
+        <code className="highlighter-rouge">.card-subtitle</code> to a{" "}
+        <code className="highlighter-rouge">{`<h*>`}</code> tag. If the{" "}
+        <code className="highlighter-rouge">.card-title</code> and the{" "}
+        <code className="highlighter-rouge">.card-subtitle</code> items are
+        placed in a <code className="highlighter-rouge">.card-body</code> item,
+        the card title and subtitle are aligned nicely.
       </p>
       <div className="bd-example" data-example-id="">
         <Card style={{ width: "20rem" }}>
@@ -135,12 +127,12 @@ function Cards() {
       </div>
       <h3 id="images">Images</h3>
       <p>
-        <code className="highlighter-rouge">.card-img-top</code>
-        places an image to the top of the card. With{" "}
+        <code className="highlighter-rouge">.card-img-top</code> places an image
+        to the top of the card. With{" "}
         <code className="highlighter-rouge">.card-text</code>, text can be added
         to the card. Text within{" "}
-        <code className="highlighter-rouge">.card-text</code>
-        can also be styled with the standard HTML tags.
+        <code className="highlighter-rouge">.card-text</code> can also be styled
+        with the standard HTML tags.
       </p>
       <div className="bd-example" data-example-id="">
         <Card style={{ width: "20rem" }}>
@@ -269,8 +261,14 @@ function Cards() {
       </div>
       <h2 id="navigation">Navigation</h2>
       <p>
-        Add some navigation to a card’s header (or block) with Bootstrap’s{" "}
-        <a href="/docs/1.0/components/navs/">nav components</a>.
+        Add some navigation to a card’s header (or block) with Reactstrap's{" "}
+        <a
+          href="https://reactstrap.github.io/components/navs/?ref=creativetim"
+          target="_blank"
+        >
+          nav components
+        </a>
+        .
       </p>
       <div className="bd-example" data-example-id="">
         <Card className="text-center">
