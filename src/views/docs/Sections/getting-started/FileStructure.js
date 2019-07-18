@@ -5,45 +5,39 @@ import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // import {
 // } from "reactstrap";
 
-const files = `paper-kit-react-master
+const files = `now-ui-kit-react
 .
 ├── CHANGELOG.md
-├── ISSUE_TEMPLATE.md
 ├── LICENSE.md
 ├── README.md
 ├── jsconfig.json
 ├── package.json
 ├── public
-│   ├── favicon.ico
 │   ├── index.html
 │   └── manifest.json
 └── src
-    ├── index.js
-    ├── logo.svg
     ├── assets
     │   ├── css
-    │   │   ├── bootstrap.min.css
-    │   │   └── bootstrap.min.css.map
     │   ├── demo
-    │   │   └── demo.css
     │   ├── fonts
     │   ├── img
-    │   │   ├── examples
-    │   │   ├── faces
     │   │   ├── flags
+    │   │   └── nucleo-logo.svg
     │   └── scss
-    │       ├── paper-kit
+    │       ├── now-ui-kit
     │       │   ├── cards
     │       │   ├── mixins
     │       │   └── plugins
     │       ├── react
-    │       │   ├── paper-kit
+    │       │   ├── now-ui-kit
     │       │   ├── plugins
     │       │   └── react-differences.scss
-    │       └── paper-kit.scss
+    │       └── now-ui-kit.scss
     ├── components
     │   ├── Footers
-    │   │   └── DemoFooter.js
+    │   │   ├── DarkFooter.js
+    │   │   ├── DefaultFooter.js
+    │   │   └── TransparentFooter.js
     │   ├── Headers
     │   │   ├── IndexHeader.js
     │   │   ├── LandingPageHeader.js
@@ -51,27 +45,29 @@ const files = `paper-kit-react-master
     │   └── Navbars
     │       ├── ExamplesNavbar.js
     │       └── IndexNavbar.js
+    ├── index.js
     └── views
         ├── Index.js
         ├── NucleoIcons.js
         ├── examples
         │   ├── LandingPage.js
-        │   ├── ProfilePage.js
-        │   └── RegisterPage.js
+        │   ├── LoginPage.js
+        │   └── ProfilePage.js
         └── index-sections
-            ├── SectionButtons.js
-            ├── SectionCarousel.js
-            ├── SectionDark.js
-            ├── SectionDownload.js
-            ├── SectionExamples.js
-            ├── SectionJavaScript.js
-            ├── SectionLogin.js
-            ├── SectionNavbars.js
-            ├── SectionNavigation.js
-            ├── SectionNotifications.js
-            ├── SectionNucleoIcons.js
-            ├── SectionProgress.js
-            └── SectionTypography.js`;
+            ├── BasicElements.js
+            ├── Carousel.js
+            ├── CompleteExamples.js
+            ├── Download.js
+            ├── Examples.js
+            ├── Images.js
+            ├── Javascript.js
+            ├── Navbars.js
+            ├── Notifications.js
+            ├── NucleoIcons.js
+            ├── Pagination.js
+            ├── SignUp.js
+            ├── Tabs.js
+            └── Typography.js`;
 
 class FileStructure extends React.Component {
   render() {
