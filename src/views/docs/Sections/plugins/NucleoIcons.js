@@ -1,6 +1,7 @@
 /*eslint-disable*/
 import React from "react";
-
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
 // import {
 // } from "reactstrap";
@@ -29,8 +30,11 @@ class NucleoIcons extends React.Component {
           .
         </p>
         <div className="bd-example" data-example-id="">
-          <i className="nc-icon nc-watch-time" />
+          <i className="now-ui-icons users_single-02"></i>
         </div>
+        <SyntaxHighlighter language="jsx" style={prism}>
+          {`<i className="now-ui-icons users_single-02"></i>`}
+        </SyntaxHighlighter>
       </>
     );
   }
