@@ -113,10 +113,7 @@ function IndexNavbar() {
                     <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
                     All components
                   </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
-                    target="_blank"
-                  >
+                  <DropdownItem to="/documentation/introduction" tag={Link}>
                     <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
                     Documentation
                   </DropdownItem>

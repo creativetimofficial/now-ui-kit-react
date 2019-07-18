@@ -33,7 +33,10 @@ ReactDOM.render(
           render={props => <ProfilePage {...props} />}
         />
         <Route path="/login-page" render={props => <LoginPage {...props} />} />
-        <Route path="/documentation" render={props => <Documentation {...props} />} />
+        <Route
+          path="/documentation"
+          render={props => <Documentation {...props} />}
+        />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
       </Switch>
