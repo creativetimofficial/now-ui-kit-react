@@ -2,18 +2,10 @@ import React from "react";
 
 function NucleoIcons() {
   const [open, setOpen] = React.useState(false);
-
   React.useEffect(() => {
-    let head = document.head;
-    let link = document.createElement("link");
-    link.type = "text/css";
-    link.rel = "stylesheet";
-    link.id = "nucleo-icons-page-styles-id";
-    link.href = require("assets/demo/nucleo-icons-page-styles.css");
-    head.appendChild(link);
+    document.documentElement.classList.add("nucleo-icons-page-styles");
     return function cleanup() {
-      setOpen(!open);
-      document.getElementById("nucleo-icons-page-styles-id").remove();
+      document.documentElement.classList.remove("nucleo-icons-page-styles");
     };
   });
   return (
