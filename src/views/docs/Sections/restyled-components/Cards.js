@@ -174,14 +174,24 @@ export default Example`;
 const codeListGroups2 = `import React from "react";
 // reactstrap components
 import{
-
+  Card,
+  CardBody,
+  ListGroup,
+  ListGroupItem
 } from "reactstrap";
 // core components
 
 function Example(){
   return (
     <>
-
+      <Card style={{ width: "20rem" }}>
+        <CardBody>Featured</CardBody>
+        <ListGroup flush>
+          <ListGroupItem>Cras justo odio</ListGroupItem>
+          <ListGroupItem>Dapibus ac facilisis in</ListGroupItem>
+          <ListGroupItem>Vestibulum at eros</ListGroupItem>
+        </ListGroup>
+      </Card>
     </>
   );
 }
@@ -190,14 +200,27 @@ export default Example`;
 const codeListGroups3 = `import React from "react";
 // reactstrap components
 import{
-
+  Card,
+  CardBody
 } from "reactstrap";
 // core components
 
 function Example(){
   return (
     <>
-
+      <Card>
+        <CardBody>
+          <blockquote className="blockquote blockquote-primary mb-0">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              posuere erat a ante.
+            </p>
+            <footer className="blockquote-footer">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </footer>
+          </blockquote>
+        </CardBody>
+      </Card>
     </>
   );
 }
@@ -206,14 +229,36 @@ export default Example`;
 const codeListGroups4 = `import React from "react";
 // reactstrap components
 import{
-
+  Card,
+  CardHeader,
+  CardBody,
+  CardTitle,
+  CardText,
+  Button
 } from "reactstrap";
 // core components
 
 function Example(){
   return (
     <>
-
+      <Card className="text-center">
+        <CardHeader className="mt-2">Featured</CardHeader>
+        <CardBody>
+          <CardTitle tag="h4">Special title treatment</CardTitle>
+          <CardText>
+            With supporting text below as a natural lead-in to additional
+            content.
+          </CardText>
+          <Button
+            color="primary"
+            href="#pablo"
+            onClick={e => e.preventDefault()}
+          >
+            Go somewhere
+          </Button>
+        </CardBody>
+        <CardFooter className="text-muted mb-2">2 days ago</CardFooter>
+      </Card>
     </>
   );
 }
@@ -222,14 +267,65 @@ export default Example`;
 const codeTextAlignment = `import React from "react";
 // reactstrap components
 import{
-
+  Card,
+  CardBody,
+  CardTitle,
+  CardText,
+  Button
 } from "reactstrap";
 // core components
 
 function Example(){
   return (
     <>
-
+      <Card style={{ width: "20rem" }}>
+        <CardBody>
+          <CardTitle tag="h4">Special title treatment</CardTitle>
+          <CardText>
+            With supporting text below as a natural lead-in to additional
+            content.
+          </CardText>
+          <Button
+            color="primary"
+            href="#pablo"
+            onClick={e => e.preventDefault()}
+          >
+            Go somewhere
+          </Button>
+        </CardBody>
+      </Card>
+      <Card className="text-center" style={{ width: "20rem" }}>
+        <CardBody>
+          <CardTitle tag="h4">Special title treatment</CardTitle>
+          <CardText>
+            With supporting text below as a natural lead-in to additional
+            content.
+          </CardText>
+          <Button
+            color="primary"
+            href="#pablo"
+            onClick={e => e.preventDefault()}
+          >
+            Go somewhere
+          </Button>
+        </CardBody>
+      </Card>
+      <Card className="text-right" style={{ width: "20rem" }}>
+        <CardBody>
+          <CardTitle tag="h4">Special title treatment</CardTitle>
+          <CardText>
+            With supporting text below as a natural lead-in to additional
+            content.
+          </CardText>
+          <Button
+            color="primary"
+            href="#pablo"
+            onClick={e => e.preventDefault()}
+          >
+            Go somewhere
+          </Button>
+        </CardBody>
+      </Card>
     </>
   );
 }
@@ -238,14 +334,64 @@ export default Example`;
 const codeNavigation1 = `import React from "react";
 // reactstrap components
 import{
-
+  Card,
+  CardHeader,
+  CardBody,
+  CardText,
+  CardTitle,
+  Button,
+  Nav,
+  NavItem,
+  NavLink
 } from "reactstrap";
 // core components
 
 function Example(){
   return (
     <>
-
+      <Card className="text-center">
+        <CardHeader>
+          <Nav className="justify-content-center" tabs>
+            <NavItem>
+              <NavLink
+                className="active"
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+              >
+                Active
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                Link
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className="disabled"
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+              >
+                Disabled
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </CardHeader>
+        <CardBody>
+          <CardTitle tag="h4">Special title treatment</CardTitle>
+          <CardText>
+            With supporting text below as a natural lead-in to additional
+            content.
+          </CardText>
+          <Button
+            color="primary"
+            href="#pablo"
+            onClick={e => e.preventDefault()}
+          >
+            Go somewhere
+          </Button>
+        </CardBody>
+      </Card>
     </>
   );
 }
@@ -254,14 +400,115 @@ export default Example`;
 const codeNavigation2 = `import React from "react";
 // reactstrap components
 import{
-
+  Card,
+  CardHeader,
+  CardBody,
+  CardText,
+  CardTitle,
+  Button,
+  Nav,
+  NavItem,
+  NavLink
 } from "reactstrap";
 // core components
 
 function Example(){
   return (
     <>
-
+      <Card className="text-center">
+        <CardHeader>
+          <Nav className="justify-content-center" tabs>
+            <NavItem>
+              <NavLink
+                className="active"
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+              >
+                Active
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                Link
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className="disabled"
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+              >
+                Disabled
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </CardHeader>
+        <CardBody>
+          <CardTitle tag="h4">Special title treatment</CardTitle>
+          <CardText>
+            With supporting text below as a natural lead-in to additional
+            content.
+          </CardText>
+          <Button
+            color="primary"
+            href="#pablo"
+            onClick={e => e.preventDefault()}
+          >
+            Go somewhere
+          </Button>
+        </CardBody>
+      </Card>
+      </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+      {codeNavigation1}
+      </SyntaxHighlighter>
+      <div className="bd-example" data-example-id="">
+      <Card className="text-center">
+        <CardHeader>
+          <Nav
+            className="nav-pills-primary justify-content-center mt-4"
+            pills
+          >
+            <NavItem>
+              <NavLink
+                className="active"
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+              >
+                Active
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                Link
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                className="disabled"
+                href="#pablo"
+                onClick={e => e.preventDefault()}
+              >
+                Disabled
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </CardHeader>
+        <CardBody>
+          <CardTitle tag="h4">Special title treatment</CardTitle>
+          <CardText>
+            With supporting text below as a natural lead-in to additional
+            content.
+          </CardText>
+          <Button
+            color="primary"
+            href="#pablo"
+            onClick={e => e.preventDefault()}
+          >
+            Go somewhere
+          </Button>
+        </CardBody>
+      </Card>
     </>
   );
 }
@@ -270,14 +517,45 @@ export default Example`;
 const codeImageCaps = `import React from "react";
 // reactstrap components
 import{
-
+  Card,
+  CardImg,
+  CardBody,
+  CardTitle,
+  CardText
 } from "reactstrap";
 // core components
 
 function Example(){
   return (
     <>
-
+      <Card className="mb-3">
+        <CardImg alt="..." data-src="holder.js/100px180/" top></CardImg>
+        <CardBody>
+          <CardTitle tag="h4">Card title</CardTitle>
+          <CardText>
+            This is a wider card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit
+            longer.
+          </CardText>
+          <CardText>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </CardText>
+        </CardBody>
+      </Card>
+      <Card>
+        <CardBody>
+          <CardTitle tag="h4">Card title</CardTitle>
+          <CardText>
+            This is a wider card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit
+            longer.
+          </CardText>
+          <CardText>
+            <small className="text-muted">Last updated 3 mins ago</small>
+          </CardText>
+        </CardBody>
+        <CardImg alt="..." bottom data-src="holder.js/100px180/"></CardImg>
+      </Card>
     </>
   );
 }
@@ -286,14 +564,32 @@ export default Example`;
 const codeImageOverlays = `import React from "react";
 // reactstrap components
 import{
-
+  Card,
+  CardImg,
+  CardImgOverlay,
+  CardTitle,
+  CardText
 } from "reactstrap";
 // core components
 
 function Example(){
   return (
     <>
-
+      <Card className="bg-dark">
+        <CardImg
+          alt="..."
+          data-src="holder.js/100px270/#55595c:#373a3c/text:Card image"
+        ></CardImg>
+        <CardImgOverlay>
+          <CardTitle tag="h4">Card title</CardTitle>
+          <CardText>
+            This is a wider card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit
+            longer.
+          </CardText>
+          <CardText>Last updated 3 mins ago</CardText>
+        </CardImgOverlay>
+      </Card>
     </>
   );
 }
