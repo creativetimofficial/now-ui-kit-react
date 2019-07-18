@@ -165,7 +165,12 @@ function Carousels() {
       </p>
       <p>
         In browsers where the{" "}
-        <a href="https://www.w3.org/TR/page-visibility/">Page Visibility API</a>
+        <a
+          href="https://www.w3.org/TR/page-visibility/?ref=creativetim"
+          target="_blank"
+        >
+          Page Visibility API
+        </a>{" "}
         is supported, the carousel will avoid sliding when the webpage is not
         visible to the user (such as when the browser tab is inactive, the
         browser window is minimized, etc.).
