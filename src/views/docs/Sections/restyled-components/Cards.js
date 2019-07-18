@@ -137,8 +137,8 @@ function Cards() {
       <p>
         <code className="highlighter-rouge">.card-img-top</code>
         places an image to the top of the card. With{" "}
-        <code className="highlighter-rouge">.card-text</code>, text can be
-        added to the card. Text within{" "}
+        <code className="highlighter-rouge">.card-text</code>, text can be added
+        to the card. Text within{" "}
         <code className="highlighter-rouge">.card-text</code>
         can also be styled with the standard HTML tags.
       </p>

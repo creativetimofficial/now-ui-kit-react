@@ -103,8 +103,8 @@ function Navbars() {
       <p>
         Active states—with <code className="highlighter-rouge">.active</code>
         —to indicate the current page can be applied directly to{" "}
-        <code className="highlighter-rouge">.nav-link</code>s or their
-        immediate parent <code className="highlighter-rouge">.nav-item</code>
+        <code className="highlighter-rouge">.nav-link</code>s or their immediate
+        parent <code className="highlighter-rouge">.nav-item</code>
         s.
       </p>
       <div className="bd-example" data-example-id="">
@@ -666,8 +666,8 @@ function Navbars() {
         <code className="highlighter-rouge">position: fixed</code>, meaning
         they’re pulled from the normal flow of the DOM and may require custom
         CSS (e.g., <code className="highlighter-rouge">padding-top</code>
-        on the <code className="highlighter-rouge">{`<body>`}</code>) to
-        prevent overlap with other elements.
+        on the <code className="highlighter-rouge">{`<body>`}</code>) to prevent
+        overlap with other elements.
       </p>
       <p>
         Also note that{" "}

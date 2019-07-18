@@ -85,9 +85,8 @@ function Navs() {
       </div>
       <p>
         Classes are used throughout, so your markup can be super flexible. Use{" "}
-        <code className="highlighter-rouge">{`<ul>`}</code>s like above, or
-        roll your own with say a{" "}
-        <code className="highlighter-rouge">{`<nav>`}</code>
+        <code className="highlighter-rouge">{`<ul>`}</code>s like above, or roll
+        your own with say a <code className="highlighter-rouge">{`<nav>`}</code>
         element. Because the <code className="highlighter-rouge">.nav</code>
         uses <code className="highlighter-rouge">display: flex</code>, the nav
         links behave the same as nav items would, but without the extra markup.
