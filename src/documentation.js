@@ -27,17 +27,20 @@ import Navbars from "views/docs/Sections/core-components/Navbars.js";
 import Parallax from "views/docs/Sections/core-components/Parallax.js";
 // restyled components
 // import Alerts from "views/docs/Sections/restyled-components/Alerts.js";
+// import Badge from "views/docs/Sections/restyled-components/Badge.js";
 // import Breadcrumb from "views/docs/Sections/restyled-components/Breadcrumb.js";
 // import Buttons from "views/docs/Sections/restyled-components/Buttons.js";
 // import Cards from "views/docs/Sections/restyled-components/Cards.js";
-// import Dropdown from "views/docs/Sections/restyled-components/Dropdown.js";
-// import Footers from "views/docs/Sections/restyled-components/Footers.js";
-// import Icons from "views/docs/Sections/restyled-components/Icons.js";
-// import Navigation from "views/docs/Sections/restyled-components/Navigation.js";
+// import Carousel from "views/docs/Sections/restyled-components/Carousel.js";
+// import Collapse from "views/docs/Sections/restyled-components/Collapse.js";
+// import Dropdowns from "views/docs/Sections/restyled-components/Dropdowns.js";
+// import Forms from "views/docs/Sections/restyled-components/Forms.js";
+// import Modal from "views/docs/Sections/restyled-components/Modal.js";
+// import Navbar from "views/docs/Sections/restyled-components/Navbar.js";
 // import Navs from "views/docs/Sections/restyled-components/Navs.js";
-// import Notifications from "views/docs/Sections/restyled-components/Notifications.js";
-// import Sidebar from "views/docs/Sections/restyled-components/Sidebar.js";
-// import Tables from "views/docs/Sections/restyled-components/Tables.js";
+// import Pagination from "views/docs/Sections/restyled-components/Pagination.js";
+// import Popovers from "views/docs/Sections/restyled-components/Popovers.js";
+// import Progress from "views/docs/Sections/restyled-components/Progress.js";
 // import Tooltips from "views/docs/Sections/restyled-components/Tooltips.js";
 // import Typography from "views/docs/Sections/restyled-components/Typography.js";
 // plugins
@@ -88,6 +91,7 @@ var componentsRoutes = [
     path: "/documentation/accordion",
     routes: [
       // { path: "/documentation/alerts", component: Alerts, name: "Alerts" },
+      // { path: "/documentation/badges", component: Badge, name: "Badge" },
       // {
       //   path: "/documentation/breadcrumb",
       //   component: Breadcrumb,
@@ -95,21 +99,24 @@ var componentsRoutes = [
       // },
       // { path: "/documentation/buttons", component: Buttons, name: "Buttons" },
       // { path: "/documentation/cards", component: Cards, name: "Cards" },
+      // { path: "/documentation/carousel", component: Carousel, name: "Carousel" },
+      // { path: "/documentation/collapse", component: Collapse, name: "Collapse" },
       // {
-      //   path: "/documentation/dropdown",
-      //   component: Dropdown,
-      //   name: "Dropdown"
+      //   path: "/documentation/dropdowns",
+      //   component: Dropdowns,
+      //   name: "Dropdowns"
       // },
-      // { path: "/documentation/footers", component: Footers, name: "Footers" },
+      // { path: "/documentation/forms", component: Forms, name: "Forms" },
+      // { path: "/documentation/modal", component: Modal, name: "Modal" },
       // {
-      //   path: "/documentation/navbars",
-      //   component: Navigation,
-      //   name: "Navbars"
+      //   path: "/documentation/navbar",
+      //   component: Navbar,
+      //   name: "Navbar"
       // },
       // { path: "/documentation/navs", component: Navs, name: "Navs" },
-      // { path: "/documentation/icons", component: Icons, name: "Nucleo Icons" },
-      // { path: "/documentation/sidebar", component: Sidebar, name: "Sidebar" },
-      // { path: "/documentation/tables", component: Tables, name: "Tables" },
+      // { path: "/documentation/pagination", component: Pagination, name: "Pagination" },
+      // { path: "/documentation/popovers", component: Popovers, name: "Popovers" },
+      // { path: "/documentation/progress", component: Progress, name: "Progress" },
       // {
       //   path: "/documentation/tooltips",
       //   component: Tooltips,
