@@ -39,73 +39,42 @@ function Navbars() {
       <ul>
         <li>
           Navbars require a wrapping{" "}
-          <code className="highlighter-rouge">.navbar</code>
-          with{" "}
+          <code className="highlighter-rouge">Navbar</code> component with{" "}
           <code className="highlighter-rouge">
-            {".navbar-expand{-sm|-md|-lg|-xl}"}
-          </code>
-          for responsive collapsing and{" "}
-          <a href="#pablo" onClick={e => e.preventDefault()}>
-            color scheme
-          </a>
-          classes.
+            {`expand={"sm" | "md" | "lg" | "xl"}`}
+          </code>{" "}
+          prop for responsive collapsing and <a href="#color-schemes">color</a>{" "}
+          prop for color scheme classes.
         </li>
         <li>
           Navbars and their contents are fluid by default. Use{" "}
-          <a href="#pablo" onClick={e => e.preventDefault()}>
-            optional containers
-          </a>
-          to limit their horizontal width.
-        </li>
-        <li>
-          Use our <a href="/docs/1.0/utilities/spacing/">spacing</a>
-          and <a href="/docs/1.0/utilities/flex/">flex</a>
-          utility classes for controlling spacing and alignment within navbars.
+          <a href="#containers">optional containers</a> to limit their
+          horizontal width.
         </li>
         <li>
           Navbars are responsive by default, but you can easily modify them to
-          change that. Responsive behavior depends on our Collapse JavaScript
-          plugin.
+          change that.
         </li>
         <li>
           Navbars are hidden by default when printing. Force them to be printed
-          by adding <code className="highlighter-rouge">.d-print</code>
-          to the <code className="highlighter-rouge">.navbar</code>. See the{" "}
-          <a href="/docs/1.0/utilities/display/">display</a>
-          utility class.
-        </li>
-        <li>
-          Ensure accessibility by using a{" "}
-          <code className="highlighter-rouge">{`<nav>`}</code>
-          element or, if using a more generic element such as a{" "}
-          <code className="highlighter-rouge">{`<div>`}</code>, add a{" "}
-          <code className="highlighter-rouge">role="navigation"</code>
-          to every navbar to explicitly identify it as a landmark region for
-          users of assistive technologies.
+          by adding <code className="highlighter-rouge">.d-print</code> to the{" "}
+          <code className="highlighter-rouge">Navbar</code>.
         </li>
       </ul>
       <p>Read on for an example and list of supported sub-components.</p>
       <h3 id="nav">Nav</h3>
       <p>
-        Navbar navigation links build on our{" "}
-        <code className="highlighter-rouge">.nav</code>
-        options with their own modifier class and require the use of{" "}
-        <a href="#pablo" onClick={e => e.preventDefault()}>
-          toggler classes
-        </a>
-        for proper responsive styling.{" "}
-        <strong>
+        <b>
           Navigation in navbars will also grow to occupy as much horizontal
           space as possible
-        </strong>
+        </b>{" "}
         to keep your navbar contents securely aligned.
       </p>
       <p>
-        Active states—with <code className="highlighter-rouge">.active</code>
-        —to indicate the current page can be applied directly to{" "}
-        <code className="highlighter-rouge">.nav-link</code>s or their immediate
-        parent <code className="highlighter-rouge">.nav-item</code>
-        s.
+        Active states—with <code className="highlighter-rouge">active</code> prop to
+        indicate the current page can be applied directly to{" "}
+        <code className="highlighter-rouge">NavLink</code>s or their immediate
+        parent <code className="highlighter-rouge">NavItem</code>s.
       </p>
       <div className="bd-example" data-example-id="">
         <Navbar className="bg-primary" expand="lg">
@@ -113,19 +82,10 @@ function Navbars() {
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
               Navbar
             </NavbarBrand>
-            <button
-              aria-controls="navbarNav"
-              aria-expanded={false}
-              aria-label="Toggle navigation"
-              className="navbar-toggler"
-              data-target="#navbarNav"
-              data-toggle="collapse"
-              id="navbarNav"
-              type="button"
-            >
+            <button id="navbarNav" type="button">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <UncontrolledCollapse id="navbarNav" navbar toggler="#navbarNav">
+            <UncontrolledCollapse navbar toggler="#navbarNav">
               <Nav navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -160,9 +120,8 @@ function Navbars() {
         You may also utilize dropdowns in your navbar nav. Dropdown menus
         require a wrapping element for positioning, so be sure to use separate
         and nested elements for{" "}
-        <code className="highlighter-rouge">.nav-item</code>
-        and <code className="highlighter-rouge">.nav-link</code>
-        as shown below.
+        <code className="highlighter-rouge">.nav-item</code> and{" "}
+        <code className="highlighter-rouge">.nav-link</code> as shown below.
       </p>
       <div className="bd-example" data-example-id="">
         <Navbar className="bg-primary" expand="lg">
@@ -170,23 +129,10 @@ function Navbars() {
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
               Navbar
             </NavbarBrand>
-            <button
-              aria-controls="navbarNavDropdown"
-              aria-expanded={false}
-              aria-label="Toggle navigation"
-              className="navbar-toggler"
-              data-target="#navbarNavDropdown"
-              data-toggle="collapse"
-              id="navbarNavDropdown"
-              type="button"
-            >
+            <button id="navbarNavDropdown" type="button">
               <span className="navbar-toggler-icon"></span>
             </button>
-            <UncontrolledCollapse
-              id="navbarNavDropdown"
-              navbar
-              toggler="#navbarNavDropdown"
-            >
+            <UncontrolledCollapse navbar toggler="#navbarNavDropdown">
               <Nav navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -205,7 +151,6 @@ function Navbars() {
                 </NavItem>
                 <UncontrolledDropdown nav>
                   <DropdownToggle
-                    aria-expanded={false}
                     aria-haspopup={true}
                     caret
                     color="default"
@@ -253,19 +198,13 @@ function Navbars() {
           <Container>
             <div className="navbar-translate">
               <NavbarBrand href="/presentation.html">Brand</NavbarBrand>
-              <button
-                aria-expanded={false}
-                aria-label="Toggle navigation"
-                className="navbar-toggler"
-                data-toggle="collapse"
-                type="button"
-              >
+              <button type="button" id="navbar-primary">
                 <span className="navbar-toggler-icon"></span>
                 <span className="navbar-toggler-icon"></span>
                 <span className="navbar-toggler-icon"></span>
               </button>
             </div>
-            <UncontrolledCollapse navbar toggler="#">
+            <UncontrolledCollapse navbar toggler="#navbar-primary">
               <Nav navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -312,29 +251,24 @@ function Navbars() {
       <h3 id="how-to-enable-burger-menu">How to enable Burger Menu</h3>
       <p>
         We created for you a class named{" "}
-        <code className="highlighter-rouge">.burger-menu</code>
-        and once it is applied to the tag{" "}
-        <code className="highlighter-rouge">body</code>
-        it will transform the navbar like it appears on the responsive mode and
+        <code className="highlighter-rouge">.burger-menu</code> and once it is
+        applied to the tag <code className="highlighter-rouge">body</code> it
+        will transform the navbar like it appears on the responsive mode and
         when you will open it will come from the right side or left side. To
         make open from left side please add the class{" "}
-        <code className="highlighter-rouge">.menu-on-left</code>
-        also on the <code className="highlighter-rouge">body</code>
-        tag.
+        <code className="highlighter-rouge">.menu-on-left</code> also on the{" "}
+        <code className="highlighter-rouge">body</code> tag.
       </p>
       <div className="language-html highlighter-rouge"></div>
       <h2 id="color-schemes">Color schemes</h2>
       <p>
         Theming the navbar has never been easier thanks to the combination of
         theming classes and{" "}
-        <code className="highlighter-rouge">background-color</code>
-        utilities. Choose from{" "}
-        <code className="highlighter-rouge">.navbar-light</code>
-        for use with light background colors, or{" "}
-        <code className="highlighter-rouge">.navbar-dark</code>
+        <code className="highlighter-rouge">background-color</code> utilities.
+        Choose from <code className="highlighter-rouge">light</code> for use with
+        light background colors, or <code className="highlighter-rouge">dark</code>{" "}
         for dark background colors. Then, customize with{" "}
-        <code className="highlighter-rouge">.bg-*</code>
-        utilities.
+        <code className="highlighter-rouge">{`color={*}`}</code> prop.
       </p>
       <div
         className="bd-example"
@@ -349,26 +283,13 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Primary color
               </NavbarBrand>
-              <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
-                className="navbar-toggler"
-                data-target="#example-navbar-primary"
-                data-toggle="collapse"
-                id="example-navbar-primary"
-                type="button"
-              >
+              <button id="example-navbar-primary" type="button">
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <UncontrolledCollapse
-              id="example-navbar-primary"
-              navbar
-              toggler="#example-navbar-primary"
-            >
+            <UncontrolledCollapse navbar toggler="#example-navbar-primary">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -398,26 +319,13 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Info color
               </NavbarBrand>
-              <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
-                className="navbar-toggler"
-                data-target="#example-navbar-primary"
-                data-toggle="collapse"
-                id="example-navbar-primary"
-                type="button"
-              >
+              <button id="example-navbar-info" type="button">
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <UncontrolledCollapse
-              id="example-navbar-primary"
-              navbar
-              toggler="#example-navbar-primary"
-            >
+            <UncontrolledCollapse navbar toggler="#example-navbar-info">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -447,26 +355,13 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Success color
               </NavbarBrand>
-              <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
-                className="navbar-toggler"
-                data-target="#example-navbar-primary"
-                data-toggle="collapse"
-                id="example-navbar-primary"
-                type="button"
-              >
+              <button id="example-navbar-success" type="button">
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <UncontrolledCollapse
-              id="example-navbar-primary"
-              navbar
-              toggler="#example-navbar-primary"
-            >
+            <UncontrolledCollapse navbar toggler="#example-navbar-success">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -496,26 +391,13 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Warning color
               </NavbarBrand>
-              <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
-                className="navbar-toggler"
-                data-target="#example-navbar-primary"
-                data-toggle="collapse"
-                id="example-navbar-primary"
-                type="button"
-              >
+              <button id="example-navbar-warning" type="button">
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <UncontrolledCollapse
-              id="example-navbar-primary"
-              navbar
-              toggler="#example-navbar-primary"
-            >
+            <UncontrolledCollapse navbar toggler="#example-navbar-warning">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -545,26 +427,13 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Danger color
               </NavbarBrand>
-              <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
-                className="navbar-toggler"
-                data-target="#example-navbar-primary"
-                data-toggle="collapse"
-                id="example-navbar-primary"
-                type="button"
-              >
+              <button id="example-navbar-danger" type="button">
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <UncontrolledCollapse
-              id="example-navbar-primary"
-              navbar
-              toggler="#example-navbar-primary"
-            >
+            <UncontrolledCollapse navbar toggler="#example-navbar-danger">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -594,26 +463,13 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Transparent
               </NavbarBrand>
-              <button
-                aria-controls="navbarSupportedContent"
-                aria-expanded={false}
-                aria-label="Toggle navigation"
-                className="navbar-toggler"
-                data-target="#example-navbar-primary"
-                data-toggle="collapse"
-                id="example-navbar-primary"
-                type="button"
-              >
+              <button id="example-navbar-transparent" type="button">
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <UncontrolledCollapse
-              id="example-navbar-primary"
-              navbar
-              toggler="#example-navbar-primary"
-            >
+            <UncontrolledCollapse navbar toggler="#example-navbar-transparent">
               <Nav className="ml-auto" navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -643,8 +499,8 @@ function Navbars() {
         When the container is within your navbar, its horizontal padding is
         removed at breakpoints lower than your specified{" "}
         <code className="highlighter-rouge">
-          {".navbar-expand{-sm|-md|-lg|-xl}"}
-        </code>
+          {`expand={"sm" | "md" | "lg" | "xl"}`}
+        </code>{" "}
         class. This ensures we’re not doubling up on padding unnecessarily on
         lower viewports when your navbar is collapsed.
       </p>
@@ -659,22 +515,21 @@ function Navbars() {
       </div>
       <h2 id="placement">Placement</h2>
       <p>
-        Use our <a href="/docs/1.0/utilities/position/">position utilities</a>
+        Use our <a href="/docs/1.0/utilities/position/">position utilities</a>{" "}
         to place navbars in non-static positions. Choose from fixed to the top,
         fixed to the bottom, or stickied to the top (scrolls with the page until
         it reaches the top, then stays there). Fixed navbars use{" "}
         <code className="highlighter-rouge">position: fixed</code>, meaning
         they’re pulled from the normal flow of the DOM and may require custom
-        CSS (e.g., <code className="highlighter-rouge">padding-top</code>
-        on the <code className="highlighter-rouge">{`<body>`}</code>) to prevent
+        CSS (e.g., <code className="highlighter-rouge">padding-top</code> on the{" "}
+        <code className="highlighter-rouge">{`<body>`}</code>) to prevent
         overlap with other elements.
       </p>
       <p>
         Also note that{" "}
         <strong>
-          <code className="highlighter-rouge">.sticky-top</code>
-          uses <code className="highlighter-rouge">position: sticky</code>,
-          which{" "}
+          <code className="highlighter-rouge">.sticky-top</code> uses{" "}
+          <code className="highlighter-rouge">position: sticky</code>, which{" "}
           <a href="#pablo" onClick={e => e.preventDefault()}>
             isn’t fully supported in every browser
           </a>
@@ -723,18 +578,17 @@ function Navbars() {
         <code className="highlighter-rouge">.navbar-toggler</code>,{" "}
         <code className="highlighter-rouge">.navbar-collapse</code>, and{" "}
         <code className="highlighter-rouge">
-          {".navbar-expand{-sm|-md|-lg|-xl}"}
-        </code>
+          {`expand={"sm" | "md" | "lg" | "xl"}`}
+        </code>{" "}
         classes to change when their content collapses behind a button. In
         combination with other utilities, you can easily choose when to show or
         hide particular elements.
       </p>
       <p>
         For navbars that never collapse, add the{" "}
-        <code className="highlighter-rouge">.navbar-expand</code>
-        class on the navbar. For navbars that always collapse, don’t add any{" "}
-        <code className="highlighter-rouge">.navbar-expand</code>
-        class.
+        <code className="highlighter-rouge">.navbar-expand</code> class on the
+        navbar. For navbars that always collapse, don’t add any{" "}
+        <code className="highlighter-rouge">.navbar-expand</code> class.
       </p>
       <h3 id="toggler">Toggler</h3>
       <p>
@@ -746,31 +600,18 @@ function Navbars() {
         toggle styles.
       </p>
       <p>
-        With no <code className="highlighter-rouge">.navbar-brand</code>
-        shown in lowest breakpoint:
+        With no <code className="highlighter-rouge">.navbar-brand</code> shown
+        in lowest breakpoint:
       </p>
       <div className="bd-example" data-example-id="">
         <Navbar className="bg-primary" expand="lg">
           <Container>
-            <button
-              aria-controls="navbarSupportedContent"
-              aria-expanded={false}
-              aria-label="Toggle navigation"
-              className="navbar-toggler"
-              data-target="#example-navbar"
-              data-toggle="collapse"
-              id="example-navbar"
-              type="button"
-            >
+            <button id="navbarTogglerDemo01" type="button">
               <span className="navbar-toggler-bar bar1"></span>
               <span className="navbar-toggler-bar bar2"></span>
               <span className="navbar-toggler-bar bar3"></span>
             </button>
-            <UncontrolledCollapse
-              id="navbarTogglerDemo01"
-              navbar
-              toggler="#navbarTogglerDemo01"
-            >
+            <UncontrolledCollapse navbar toggler="#navbarTogglerDemo01">
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Hidden brand
               </NavbarBrand>
@@ -811,25 +652,12 @@ function Navbars() {
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
               Navbar
             </NavbarBrand>
-            <button
-              aria-controls="navbarSupportedContent"
-              aria-expanded={false}
-              aria-label="Toggle navigation"
-              className="navbar-toggler"
-              data-target="#example-navbar"
-              data-toggle="collapse"
-              id="example-navbar"
-              type="button"
-            >
+            <button id="navbarTogglerDemo02" type="button">
               <span className="navbar-toggler-bar bar1"></span>
               <span className="navbar-toggler-bar bar2"></span>
               <span className="navbar-toggler-bar bar3"></span>
             </button>
-            <UncontrolledCollapse
-              id="navbarTogglerDemo02"
-              navbar
-              toggler="#navbarTogglerDemo02"
-            >
+            <UncontrolledCollapse navbar toggler="#navbarTogglerDemo02">
               <Nav className="mr-auto mt-2 mt-lg-0" navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
@@ -864,16 +692,7 @@ function Navbars() {
       <div className="bd-example" data-example-id="">
         <Navbar className="bg-primary" expand="lg">
           <Container>
-            <button
-              aria-controls="navbarSupportedContent"
-              aria-expanded={false}
-              aria-label="Toggle navigation"
-              className="navbar-toggler"
-              data-target="#example-navbar"
-              data-toggle="collapse"
-              id="example-navbar"
-              type="button"
-            >
+            <button id="navbarTogglerDemo03" type="button">
               <span className="navbar-toggler-bar bar1"></span>
               <span className="navbar-toggler-bar bar2"></span>
               <span className="navbar-toggler-bar bar3"></span>
@@ -881,11 +700,7 @@ function Navbars() {
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
               Navbar
             </NavbarBrand>
-            <UncontrolledCollapse
-              id="navbarTogglerDemo03"
-              navbar
-              toggler="#navbarTogglerDemo03"
-            >
+            <UncontrolledCollapse navbar toggler="#navbarTogglerDemo03">
               <Nav className="mr-auto mt-2 mt-lg-0" navbar>
                 <NavItem className="active">
                   <NavLink href="#pablo" onClick={e => e.preventDefault()}>
