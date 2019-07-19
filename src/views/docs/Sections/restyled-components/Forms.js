@@ -1,5 +1,7 @@
+/*eslint-disable*/
 import React from "react";
-
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
 import {
   Button,
@@ -14,6 +16,759 @@ import {
   Row,
   Col
 } from "reactstrap";
+
+const codeOverview = `import React from "react";
+// reactstrap components
+import {
+  Form,
+  FormGroup,
+  Input,
+  FormText,
+  Button
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Form>
+        <FormGroup>
+          <label htmlFor="exampleInputEmail1">Email address</label>
+          <Input
+            aria-describedby="emailHelp"
+            id="exampleInputEmail1"
+            placeholder="Enter email"
+            type="email"
+          ></Input>
+          <FormText className="text-muted" color="default" id="emailHelp">
+            We'll never share your email with anyone else.
+          </FormText>
+        </FormGroup>
+        <FormGroup>
+          <label htmlFor="exampleInputPassword1">Password</label>
+          <Input
+            id="exampleInputPassword1"
+            placeholder="Password"
+            type="password"
+          ></Input>
+        </FormGroup>
+        <FormGroup check>
+          <Label check>
+            <Input type="checkbox"></Input>
+            <span className="form-check-sign"></span>
+            Check me out
+          </Label>
+        </FormGroup>
+        <Button color="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
+    </>
+  );
+}
+
+export default Example;`;
+const codeFormControls = `import React from "react";
+// reactstrap components
+import {
+  Form,
+  FormGroup,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Form>
+        <FormGroup>
+          <label htmlFor="exampleFormControlInput1">Email address</label>
+          <Input
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+            type="email"
+          ></Input>
+        </FormGroup>
+        <FormGroup>
+          <label htmlFor="exampleFormControlSelect1">Example select</label>
+          <Input id="exampleFormControlSelect1" type="select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </Input>
+        </FormGroup>
+        <FormGroup>
+          <label htmlFor="exampleFormControlSelect2">
+            Example multiple select
+          </label>
+          <Input id="exampleFormControlSelect2" multiple="" type="select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </Input>
+        </FormGroup>
+        <FormGroup>
+          <label htmlFor="exampleFormControlTextarea1">
+            Example textarea
+          </label>
+          <Input
+            id="exampleFormControlTextarea1"
+            rows="3"
+            type="textarea"
+          ></Input>
+        </FormGroup>
+      </Form>
+    </>
+  );
+}
+
+export default Example;`;
+const codeSizing1 = `import React from "react";
+// reactstrap components
+import {
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Input
+        className="form-control-lg"
+        placeholder=".form-control-lg"
+        type="text"
+      ></Input>
+      <Input placeholder="Default input" type="text"></Input>
+      <Input
+        className="form-control-sm"
+        placeholder=".form-control-sm"
+        type="text"
+      ></Input>
+    </>
+  );
+}
+
+export default Example;`;
+
+const codeSizing2 = `import React from "react";
+// reactstrap components
+import {
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Input className="form-control-lg" type="select">
+        <option>Large select</option>
+      </Input>
+      <Input type="select">
+        <option>Default select</option>
+      </Input>
+      <Input className="form-control-sm" type="select">
+        <option>Small select</option>
+      </Input>
+    </>
+  );
+}
+
+export default Example;`;
+const codeReadonly = `import React from "react";
+// reactstrap components
+import {
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Input
+        placeholder="Readonly input here…"
+        readonly=""
+        type="text"
+      ></Input>
+    </>
+  );
+}
+
+export default Example;`;
+const codeReadonlyPlainText1 = `import React from "react";
+// reactstrap components
+import {
+  Form,
+  FormGroup,
+  Label,
+  Col,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Form>
+        <FormGroup className="row">
+          <Label htmlFor="staticEmail" sm="2">
+            Email
+          </Label>
+          <Col sm="10">
+            <input
+              className="form-control-plaintext"
+              defaultValue="email@example.com"
+              id="staticEmail"
+              readonly=""
+              type="text"
+            ></input>
+          </Col>
+        </FormGroup>
+        <FormGroup className="row">
+          <Label htmlFor="inputPassword" sm="2">
+            Password
+          </Label>
+          <Col sm="10">
+            <Input
+              id="inputPassword"
+              placeholder="Password"
+              type="password"
+            ></Input>
+          </Col>
+        </FormGroup>
+      </Form>
+    </>
+  );
+}
+
+export default Example;`;
+const codeReadonlyPlainText2 = `import React from "react";
+// reactstrap components
+import {
+  Form,
+  FormGroup,
+  Label,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Form className="form-inline">
+        <FormGroup>
+          <label className="sr-only" htmlFor="staticEmail2">
+            Email
+          </label>
+          <input
+            className="form-control-plaintext"
+            defaultValue="email@example.com"
+            id="staticEmail2"
+            readonly=""
+            type="text"
+          ></input>
+        </FormGroup>
+        <FormGroup className="mx-sm-3">
+          <label className="sr-only" htmlFor="inputPassword2">
+            Password
+          </label>
+          <Input
+            id="inputPassword2"
+            placeholder="Password"
+            type="password"
+          ></Input>
+        </FormGroup>
+        <Button color="primary" type="submit">
+          Confirm identity
+        </Button>
+      </Form>
+    </>
+  );
+}
+
+export default Example;`;
+const codeExamples1 = `import React from "react";
+// reactstrap components
+import {
+  FormGroup,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <FormGroup className="has-success">
+        <Input
+          className="form-control-success"
+          defaultValue="Success"
+          type="text"
+        ></Input>
+      </FormGroup>
+    </>
+  );
+}
+
+export default Example;`;
+const codeExamples2 = `import React from "react";
+// reactstrap components
+import {
+  FormGroup,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <FormGroup className="has-danger">
+        <Input
+          className="form-control-danger"
+          defaultValue="Error Input"
+          type="email"
+        ></Input>
+      </FormGroup>
+    </>
+  );
+}
+
+export default Example;`;
+const codeExamples3 = `import React from "react";
+// reactstrap components
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupText,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <InputGroup>
+        <InputGroupAddon addonType="prepend">
+          <InputGroupText>
+            <i className="fa fa-user-circle"></i>
+          </InputGroupText>
+        </InputGroupAddon>
+        <Input placeholder="Left Font Awesome Icon" type="text"></Input>
+      </InputGroup>
+    </>
+  );
+}
+
+export default Example;`;
+const codeExamples4 = `import React from "react";
+// reactstrap components
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupText,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <InputGroup>
+        <Input placeholder="Right Nucleo Icon" type="text"></Input>
+        <InputGroupAddon addonType="append">
+          <InputGroupText>
+            <i className="now-ui-icons users_single-02"></i>
+          </InputGroupText>
+        </InputGroupAddon>
+      </InputGroup>
+    </>
+  );
+}
+
+export default Example;`;
+const codeDefault1 = `import React from "react";
+// reactstrap components
+import {
+  FormGroup,
+  Label,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <FormGroup check>
+        <Label check>
+          <Input defaultValue="" type="checkbox"></Input>
+          Option one is this and that—be sure to include why it's great{" "}
+          <span className="form-check-sign">
+            <span className="check"></span>
+          </span>
+        </Label>
+      </FormGroup>
+      <FormGroup check disabled>
+        <Label check>
+          <Input defaultValue="" disabled type="checkbox"></Input>
+          Option two is disabled{" "}
+          <span className="form-check-sign">
+            <span className="check"></span>
+          </span>
+        </Label>
+      </FormGroup>
+    </>
+  );
+}
+
+export default Example;`;
+const codeDefault2 = `import React from "react";
+// reactstrap components
+import {
+  FormGroup,
+  Label,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <FormGroup check className="form-check-radio">
+        <Label check>
+          <Input
+            defaultValue="option1"
+            id="exampleRadios1"
+            name="exampleRadios"
+            type="radio"
+          ></Input>
+          <span className="form-check-sign"></span>
+          Radio is off
+        </Label>
+      </FormGroup>
+      <FormGroup check className="form-check-radio">
+        <Label check>
+          <Input
+            defaultChecked
+            defaultValue="option2"
+            id="exampleRadios2"
+            name="exampleRadios"
+            type="radio"
+          ></Input>
+          <span className="form-check-sign"></span>
+          Radio is on
+        </Label>
+      </FormGroup>
+      <FormGroup check className="form-check-radio" disabled>
+        <Label check>
+          <Input
+            defaultValue="option1"
+            disabled
+            id="exampleRadios1"
+            name="exampleRadios1"
+            type="radio"
+          ></Input>
+          <span className="form-check-sign"></span>
+          Disabled radio is off
+        </Label>
+      </FormGroup>
+    </>
+  );
+}
+
+export default Example;`;
+const codeInline1 = `import React from "react";
+// reactstrap components
+import {
+  FormGroup,
+  Label,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <FormGroup check inline>
+        <Label check>
+          <Input
+            defaultValue="option1"
+            id="inlineCheckbox1"
+            type="checkbox"
+          ></Input>
+          1{" "}
+          <span className="form-check-sign">
+            <span className="check"></span>
+          </span>
+        </Label>
+      </FormGroup>
+      <FormGroup check inline>
+        <Label check>
+          <Input
+            defaultValue="option2"
+            id="inlineCheckbox2"
+            type="checkbox"
+          ></Input>
+          2{" "}
+          <span className="form-check-sign">
+            <span className="check"></span>
+          </span>
+        </Label>
+      </FormGroup>
+      <FormGroup check disabled inline>
+        <Label check>
+          <Input
+            defaultValue="option3"
+            disabled
+            id="inlineCheckbox3"
+            type="checkbox"
+          ></Input>
+          3{" "}
+          <span className="form-check-sign">
+            <span className="check"></span>
+          </span>
+        </Label>
+      </FormGroup>
+    </>
+  );
+}
+
+export default Example;`;
+const codeInline2 = `import React from "react";
+// reactstrap components
+import {
+  FormGroup,
+  Label,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <FormGroup check className="form-check-radio" inline>
+        <Label check>
+          <Input
+            defaultValue="option1"
+            id="inlineRadio1"
+            name="inlineRadioOptions"
+            type="radio"
+          ></Input>
+          1 <span className="form-check-sign"></span>
+        </Label>
+      </FormGroup>
+      <FormGroup check className="form-check-radio" inline>
+        <Label check>
+          <Input
+            defaultValue="option2"
+            id="inlineRadio2"
+            name="inlineRadioOptions"
+            type="radio"
+          ></Input>
+          2 <span className="form-check-sign"></span>
+        </Label>
+      </FormGroup>
+      <FormGroup check className="form-check-radio" disabled inline>
+        <Label check>
+          <Input
+            defaultValue="option3"
+            disabled
+            id="inlineRadio3"
+            name="inlineRadioOptions"
+            type="radio"
+          ></Input>
+          3 <span className="form-check-sign"></span>
+        </Label>
+      </FormGroup>
+    </>
+  );
+}
+
+export default Example;`;
+const codeFormGrid = `import React from "react";
+// reactstrap components
+import {
+  Form,
+  Row,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Form>
+        <Row>
+          <div className="col">
+            <Input placeholder="First name" type="text"></Input>
+          </div>
+          <div className="col">
+            <Input placeholder="Last name" type="text"></Input>
+          </div>
+        </Row>
+      </Form>
+    </>
+  );
+}
+
+export default Example;`;
+const codeFormRow1 = `import React from "react";
+// reactstrap components
+import {
+  Form,
+  Input
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Form>
+        <div className="form-row">
+          <div className="col">
+            <Input placeholder="First name" type="text"></Input>
+          </div>
+          <div className="col">
+            <Input placeholder="Last name" type="text"></Input>
+          </div>
+        </div>
+      </Form>
+    </>
+  );
+}
+
+export default Example;`;
+const codeFormRow2 = `import React from "react";
+// reactstrap components
+import {
+  Form,
+  FormGroup,
+  Input,
+  Button
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Form>
+        <div className="form-row">
+          <FormGroup className="col-md-6">
+            <label htmlFor="inputEmail4">Email</label>
+            <Input id="inputEmail4" placeholder="Email" type="email"></Input>
+          </FormGroup>
+          <FormGroup className="col-md-6">
+            <label htmlFor="inputPassword4">Password</label>
+            <Input
+              id="inputPassword4"
+              placeholder="Password"
+              type="password"
+            ></Input>
+          </FormGroup>
+        </div>
+        <FormGroup>
+          <label htmlFor="inputAddress">Address</label>
+          <Input
+            id="inputAddress"
+            placeholder="1234 Main St"
+            type="text"
+          ></Input>
+        </FormGroup>
+        <FormGroup>
+          <label htmlFor="inputAddress2">Address 2</label>
+          <Input
+            id="inputAddress2"
+            placeholder="Apartment, studio, or floor"
+            type="text"
+          ></Input>
+        </FormGroup>
+        <div className="form-row">
+          <FormGroup className="col-md-6">
+            <label htmlFor="inputCity">City</label>
+            <Input id="inputCity" type="text"></Input>
+          </FormGroup>
+          <FormGroup className="col-md-4">
+            <label htmlFor="inputState">State</label>
+            <Input id="inputState" type="select">
+              <option selected="">Choose...</option>
+              <option>...</option>
+            </Input>
+          </FormGroup>
+          <FormGroup className="col-md-2">
+            <label htmlFor="inputZip">Zip</label>
+            <Input id="inputZip" type="text"></Input>
+          </FormGroup>
+        </div>
+        <FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="checkbox"></Input>
+              Check me out{" "}
+              <span className="form-check-sign">
+                <span className="check"></span>
+              </span>
+            </Label>
+          </FormGroup>
+        </FormGroup>
+        <Button color="primary" type="submit">
+          Sign in
+        </Button>
+      </Form>
+    </>
+  );
+}
+
+export default Example;`;
+const codeDisabledForms = `import React from "react";
+// reactstrap components
+import {
+  Form,
+  FormGroup,
+  Input,
+  Label,
+  Button
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Form>
+        <fieldset disabled>
+          <FormGroup>
+            <label htmlFor="disabledTextInput">Disabled input</label>
+            <Input
+              id="disabledTextInput"
+              placeholder="Disabled input"
+              type="text"
+            ></Input>
+          </FormGroup>
+          <FormGroup>
+            <label htmlFor="disabledSelect">Disabled select menu</label>
+            <Input id="disabledSelect" type="select">
+              <option>Disabled select</option>
+            </Input>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="checkbox"></Input>
+              Can't check this{" "}
+              <span className="form-check-sign">
+                <span className="check"></span>
+              </span>
+            </Label>
+          </FormGroup>
+          <Button color="primary" type="submit">
+            Submit
+          </Button>
+        </fieldset>
+      </Form>
+    </>
+  );
+}
+
+export default Example;`;
 
 function Forms() {
   return (
@@ -80,23 +835,26 @@ function Forms() {
           </Button>
         </Form>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeOverview}
+      </SyntaxHighlighter>
       <h2 id="form-controls">Form controls</h2>
       <p>
         Textual form controls—like{" "}
         <code className="highlighter-rouge">{`<input>`}</code>s,{" "}
         <code className="highlighter-rouge">{`<select>`}</code>s, and{" "}
         <code className="highlighter-rouge">{`<textarea>`}</code>s—are styled
-        with the <code className="highlighter-rouge">.form-control</code>{" "}
-        class. Included are styles for general appearance, focus state, sizing,
-        and more.
+        with the <code className="highlighter-rouge">.form-control</code> class.
+        Included are styles for general appearance, focus state, sizing, and
+        more.
       </p>
       <p>
         Be sure to explore our{" "}
         <a href="#pablo" onClick={e => e.preventDefault()}>
           custom forms
         </a>{" "}
-        to further style{" "}
-        <code className="highlighter-rouge">{`<select>`}</code>s.
+        to further style <code className="highlighter-rouge">{`<select>`}</code>
+        s.
       </p>
       <div className="bd-example" data-example-id="">
         <Form>
@@ -142,6 +900,9 @@ function Forms() {
           </FormGroup>
         </Form>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeFormControls}
+      </SyntaxHighlighter>
       <h3 id="sizing">Sizing</h3>
       <p>
         Set heights using classes like{" "}
@@ -161,6 +922,9 @@ function Forms() {
           type="text"
         ></Input>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeSizing1}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <Input className="form-control-lg" type="select">
           <option>Large select</option>
@@ -172,6 +936,9 @@ function Forms() {
           <option>Small select</option>
         </Input>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeSizing2}
+      </SyntaxHighlighter>
       <h3 id="readonly">Readonly</h3>
       <p>
         Add the <code className="highlighter-rouge">readonly</code> boolean
@@ -186,14 +953,17 @@ function Forms() {
           type="text"
         ></Input>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeReadonly}
+      </SyntaxHighlighter>
       <h3 id="readonly-plain-text">Readonly plain text</h3>
       <p>
         If you want to have{" "}
-        <code className="highlighter-rouge">{`<input readonly>`}</code>{" "}
-        elements in your form styled as plain text, use the{" "}
-        <code className="highlighter-rouge">.form-control-plaintext</code>{" "}
-        class to remove the default form field styling and preserve the correct
-        margin and padding.
+        <code className="highlighter-rouge">{`<input readonly>`}</code> elements
+        in your form styled as plain text, use the{" "}
+        <code className="highlighter-rouge">.form-control-plaintext</code> class
+        to remove the default form field styling and preserve the correct margin
+        and padding.
       </p>
       <div className="bd-example" data-example-id="">
         <Form>
@@ -225,6 +995,9 @@ function Forms() {
           </FormGroup>
         </Form>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeReadonlyPlainText1}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <Form className="form-inline">
           <FormGroup>
@@ -254,6 +1027,9 @@ function Forms() {
           </Button>
         </Form>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeReadonlyPlainText2}
+      </SyntaxHighlighter>
       <h2 id="examples">Examples</h2>
       <div className="bd-example" data-example-id="">
         <FormGroup className="has-success">
@@ -264,6 +1040,9 @@ function Forms() {
           ></Input>
         </FormGroup>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeExamples1}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <FormGroup className="has-danger">
           <Input
@@ -273,6 +1052,9 @@ function Forms() {
           ></Input>
         </FormGroup>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeExamples2}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <InputGroup>
           <InputGroupAddon addonType="prepend">
@@ -283,6 +1065,9 @@ function Forms() {
           <Input placeholder="Left Font Awesome Icon" type="text"></Input>
         </InputGroup>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeExamples3}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <InputGroup>
           <Input placeholder="Right Nucleo Icon" type="text"></Input>
@@ -293,6 +1078,9 @@ function Forms() {
           </InputGroupAddon>
         </InputGroup>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeExamples4}
+      </SyntaxHighlighter>
       <h2 id="checkboxes-and-radios">Checkboxes and radios</h2>
       <p>
         Default checkboxes and radios are improved upon with the help of{" "}
@@ -309,10 +1097,10 @@ function Forms() {
         <code className="highlighter-rouge">not-allowed</code> cursor on hover
         of the parent <code className="highlighter-rouge">{`<label>`}</code>,
         you’ll need to add the{" "}
-        <code className="highlighter-rouge">.disabled</code> class to the
-        parent <code className="highlighter-rouge">.form-check</code>. The
-        disabled class will also lighten the text color to help indicate the
-        input’s state.
+        <code className="highlighter-rouge">.disabled</code> class to the parent{" "}
+        <code className="highlighter-rouge">.form-check</code>. The disabled
+        class will also lighten the text color to help indicate the input’s
+        state.
       </p>
       <h3 id="default-stacked">Default (stacked)</h3>
       <p>
@@ -340,6 +1128,9 @@ function Forms() {
           </Label>
         </FormGroup>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeDefault1}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <FormGroup check className="form-check-radio">
           <Label check>
@@ -380,6 +1171,9 @@ function Forms() {
           </Label>
         </FormGroup>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeDefault2}
+      </SyntaxHighlighter>
       <h3 id="inline">Inline</h3>
       <p>
         Group checkboxes or radios on the same horizontal row by adding{" "}
@@ -428,6 +1222,9 @@ function Forms() {
           </Label>
         </FormGroup>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeInline1}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <FormGroup check className="form-check-radio" inline>
           <Label check>
@@ -464,12 +1261,15 @@ function Forms() {
           </Label>
         </FormGroup>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeInline2}
+      </SyntaxHighlighter>
       <h2 id="layout">Layout</h2>
       <p>
         Since Bootstrap applies{" "}
         <code className="highlighter-rouge">display: block</code> and{" "}
-        <code className="highlighter-rouge">width: 100%</code> to almost all
-        our form controls, forms will by default stack vertically. Additional
+        <code className="highlighter-rouge">width: 100%</code> to almost all our
+        form controls, forms will by default stack vertically. Additional
         classes can be used to vary this layout on a per-form basis.
       </p>
       <h3 id="form-grid">Form grid</h3>
@@ -490,12 +1290,15 @@ function Forms() {
           </Row>
         </Form>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeFormGrid}
+      </SyntaxHighlighter>
       <h4 id="form-row">Form row</h4>
       <p>
         You may also swap <code className="highlighter-rouge">.row</code> for{" "}
-        <code className="highlighter-rouge">.form-row</code>, a variation of
-        our standard grid row that overrides the default column gutters for
-        tighter and more compact layouts.
+        <code className="highlighter-rouge">.form-row</code>, a variation of our
+        standard grid row that overrides the default column gutters for tighter
+        and more compact layouts.
       </p>
       <div className="bd-example" data-example-id="">
         <Form>
@@ -509,6 +1312,9 @@ function Forms() {
           </div>
         </Form>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeFormRow1}
+      </SyntaxHighlighter>
       <p>More complex layouts can also be created with the grid system.</p>
       <div className="bd-example" data-example-id="">
         <Form>
@@ -575,6 +1381,9 @@ function Forms() {
           </Button>
         </Form>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeFormRow2}
+      </SyntaxHighlighter>
       <h2 id="disabled-forms">Disabled forms</h2>
       <p>
         Add the <code className="highlighter-rouge">disabled</code> boolean
@@ -582,9 +1391,9 @@ function Forms() {
         lighter.
       </p>
       <p>
-        Add the <code className="highlighter-rouge">disabled</code> attribute
-        to a <code className="highlighter-rouge">{`<fieldset>`}</code> to
-        disable all the controls within.
+        Add the <code className="highlighter-rouge">disabled</code> attribute to
+        a <code className="highlighter-rouge">{`<fieldset>`}</code> to disable
+        all the controls within.
       </p>
       <div className="bd-example" data-example-id="">
         <Form>
@@ -618,6 +1427,9 @@ function Forms() {
           </fieldset>
         </Form>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeDisabledForms}
+      </SyntaxHighlighter>
       <div className="bd-callout bd-callout-warning">
         <h4 id="caveat-with-anchors">Caveat with anchors</h4>
         <p>
@@ -655,6 +1467,17 @@ function Forms() {
           JavaScript to disable the fieldset in these browsers.
         </p>
       </div>
+      <h2>Props</h2>
+      <p>
+        Please refer to{" "}
+        <a
+          href="https://reactstrap.github.io/components/form/?ref=creativetim"
+          target="_blank"
+        >
+          reactstrap dropdowns documentation
+        </a>
+        .
+      </p>
     </>
   );
 }
