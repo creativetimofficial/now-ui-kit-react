@@ -22,7 +22,7 @@ class Header extends React.Component {
           </NavItem>
           <NavItem>
             <NavLink
-              href="https://github.com/creativetimofficial/now-ui-kit-react"
+              href="https://github.com/creativetimofficial/now-ui-kit-react?ref=creativetim"
               className="p-2"
               target="_blank"
             >
@@ -32,7 +32,7 @@ class Header extends React.Component {
           <NavItem>
             <NavLink
               target="_blank"
-              href="https://twitter.com/CreativeTim"
+              href="https://twitter.com/CreativeTim?ref=creativetim"
               className="p-2"
             >
               <i className="fab fa-twitter" />
@@ -43,7 +43,7 @@ class Header extends React.Component {
           <Nav className="bd-navbar-nav flex-row" navbar>
             <NavItem>
               <NavLink
-                href="https://github.com/creativetimofficial/now-ui-kit-react"
+                href="https://github.com/creativetimofficial/now-ui-kit-react?ref=creativetim"
                 target="_blank"
               >
                 <i className="now-ui-icons objects_diamond" /> Give us a star
@@ -56,7 +56,7 @@ class Header extends React.Component {
             </NavItem>
             <NavItem>
               <NavLink
-                href="https://github.com/creativetimofficial/now-ui-kit-react/issues"
+                href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim"
                 target="_blank"
               >
                 <i className="now-ui-icons health_ambulance" /> Report a bug

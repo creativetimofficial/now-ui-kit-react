@@ -1061,7 +1061,6 @@ function Cards() {
         <a
           href="https://reactstrap.github.io/components/card/?ref=creativetim"
           target="_blank"
-          rel="noopener noreferrer"
         >
           official reactstrap documentation
         </a>

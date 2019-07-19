@@ -486,7 +486,10 @@ function Modals() {
       <p>
         Embedding YouTube videos in modals requires additional JavaScript not in
         Bootstrap to automatically stop playback and more.{" "}
-        <a href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal">
+        <a
+          href="https://stackoverflow.com/questions/18622508/bootstrap-3-and-youtube-in-modal?ref=creativetim"
+          target="_blank"
+        >
           See this helpful Stack Overflow post
         </a>
         for more information.

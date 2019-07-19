@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
@@ -251,7 +252,10 @@ function Typography() {
       <p>
         If you want to see more examples and properties please check the
         official{" "}
-        <a href="https://getbootstrap.com/docs/4.0/content/typography/">
+        <a
+          href="https://getbootstrap.com/docs/4.0/content/typography/?ref=creativetim"
+          target="_blank"
+        >
           Bootstrap Documentation
         </a>
       </p>

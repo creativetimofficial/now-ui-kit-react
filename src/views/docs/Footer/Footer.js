@@ -45,9 +45,8 @@ class Footer extends React.Component {
           <div className="copyright">
             &copy; {new Date().getFullYear()}, Designed by{" "}
             <a
-              href="https://www.invisionapp.com"
+              href="https://www.invisionapp.com?ref=creativetim"
               target="_blank"
-              rel="noopener noreferrer"
             >
               Invision
             </a>
@@ -55,7 +54,6 @@ class Footer extends React.Component {
             <a
               href="https://www.creative-tim.com?ref=nukr-docs-footer"
               target="_blank"
-              rel="noopener noreferrer"
             >
               Creative Tim
             </a>
