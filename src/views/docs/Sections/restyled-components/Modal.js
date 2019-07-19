@@ -1,11 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Button,
-  Modal,
-  Table
-} from "reactstrap";
+import { Button, Modal, Table } from "reactstrap";
 
 function Modals() {
   return (

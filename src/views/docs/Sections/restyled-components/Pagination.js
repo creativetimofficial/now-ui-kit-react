@@ -1,11 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-} from "reactstrap";
+import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 
 function Paginations() {
   return (

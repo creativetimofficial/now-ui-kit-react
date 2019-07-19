@@ -1,9 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Progress
-} from "reactstrap";
+import { Progress } from "reactstrap";
 
 function Progresses() {
   return (

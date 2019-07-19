@@ -207,7 +207,7 @@ function Example(){
           toggler="#exampleAccordion1"
           defaultOpen
         >
-          <p className=" mb-3">
+          <p className="mb-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             pretium lorem non vestibulum scelerisque. Proin a vestibulum sem,
             eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
@@ -223,7 +223,7 @@ function Example(){
           Toggle item 2
         </a>
         <UncontrolledCollapse role="tabpanel" toggler="#exampleAccordion2">
-          <p className=" mb-3">
+          <p className="mb-3">
             Donec at ipsum dignissim, rutrum turpis scelerisque, tristique
             lectus. Pellentesque habitant morbi tristique senectus et netus et
             malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci
@@ -412,7 +412,7 @@ function Collapses() {
             toggler="#exampleAccordion1"
             defaultOpen
           >
-            <p className=" mb-3">
+            <p className="mb-3">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               pretium lorem non vestibulum scelerisque. Proin a vestibulum sem,
               eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.
@@ -428,7 +428,7 @@ function Collapses() {
             Toggle item 2
           </a>
           <UncontrolledCollapse role="tabpanel" toggler="#exampleAccordion2">
-            <p className=" mb-3">
+            <p className="mb-3">
               Donec at ipsum dignissim, rutrum turpis scelerisque, tristique
               lectus. Pellentesque habitant morbi tristique senectus et netus et
               malesuada fames ac turpis egestas. Vivamus nec dui turpis. Orci

@@ -27,9 +27,7 @@ function Typography() {
           <tr>
             <td>
               <p>
-                <code className="highlighter-rouge">
-                  {`<h1></h1>`}
-                </code>
+                <code className="highlighter-rouge">{`<h1></h1>`}</code>
               </p>
             </td>
             <td>
@@ -39,9 +37,7 @@ function Typography() {
           <tr>
             <td>
               <p>
-                <code className="highlighter-rouge">
-                  {`<h2></h2>`}
-                </code>
+                <code className="highlighter-rouge">{`<h2></h2>`}</code>
               </p>
             </td>
             <td>
@@ -51,9 +47,7 @@ function Typography() {
           <tr>
             <td>
               <p>
-                <code className="highlighter-rouge">
-                  {`<h3></h3>`}
-                </code>
+                <code className="highlighter-rouge">{`<h3></h3>`}</code>
               </p>
             </td>
             <td>
@@ -63,9 +57,7 @@ function Typography() {
           <tr>
             <td>
               <p>
-                <code className="highlighter-rouge">
-                  {`<h4></h4>`}
-                </code>
+                <code className="highlighter-rouge">{`<h4></h4>`}</code>
               </p>
             </td>
             <td>
@@ -75,9 +67,7 @@ function Typography() {
           <tr>
             <td>
               <p>
-                <code className="highlighter-rouge">
-                  {`<h5></h5>`}
-                </code>
+                <code className="highlighter-rouge">{`<h5></h5>`}</code>
               </p>
             </td>
             <td>
@@ -87,9 +77,7 @@ function Typography() {
           <tr>
             <td>
               <p>
-                <code className="highlighter-rouge">
-                  {`<h6></h6>`}
-                </code>
+                <code className="highlighter-rouge">{`<h6></h6>`}</code>
               </p>
             </td>
             <td>

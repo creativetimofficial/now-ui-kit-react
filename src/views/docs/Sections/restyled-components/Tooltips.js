@@ -1,10 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import {
-  Button,
-  UncontrolledTooltip
-} from "reactstrap";
+import { Button, UncontrolledTooltip } from "reactstrap";
 
 function Tooltips() {
   return (
