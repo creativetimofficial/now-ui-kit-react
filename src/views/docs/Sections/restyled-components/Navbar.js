@@ -21,6 +21,317 @@ import {
   Container
 } from "reactstrap";
 
+const codeNav1 = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+    </>
+  );
+}
+
+export default Example;`;
+const codeNav2 = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+    </>
+  );
+}
+
+export default Example;`;
+const codeForms1 = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+    </>
+  );
+}
+
+export default Example;`;
+const codeForms2 = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+    </>
+  );
+}
+
+export default Example;`;
+const codeColorSchemes = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+    </>
+  );
+}
+
+export default Example;`;
+const codeContainers = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+    </>
+  );
+}
+
+export default Example;`;
+const codePlacement1 = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+    </>
+  );
+}
+
+export default Example;`;
+const codePlacement2 = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+    </>
+  );
+}
+
+export default Example;`;
+const codePlacement3 = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+    </>
+  );
+}
+
+export default Example;`;
+const codePlacement4 = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+    </>
+  );
+}
+
+export default Example;`;
+
 function Navbars() {
   return (
     <>
@@ -71,8 +382,8 @@ function Navbars() {
         to keep your navbar contents securely aligned.
       </p>
       <p>
-        Active states—with <code className="highlighter-rouge">active</code> prop to
-        indicate the current page can be applied directly to{" "}
+        Active states—with <code className="highlighter-rouge">active</code>{" "}
+        prop to indicate the current page can be applied directly to{" "}
         <code className="highlighter-rouge">NavLink</code>s or their immediate
         parent <code className="highlighter-rouge">NavItem</code>s.
       </p>
@@ -82,7 +393,7 @@ function Navbars() {
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
               Navbar
             </NavbarBrand>
-            <button id="navbarNav" type="button">
+            <button className="navbar-toggler" id="navbarNav" type="button">
               <span className="navbar-toggler-icon"></span>
             </button>
             <UncontrolledCollapse navbar toggler="#navbarNav">
@@ -129,7 +440,11 @@ function Navbars() {
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
               Navbar
             </NavbarBrand>
-            <button id="navbarNavDropdown" type="button">
+            <button
+              className="navbar-toggler"
+              id="navbarNavDropdown"
+              type="button"
+            >
               <span className="navbar-toggler-icon"></span>
             </button>
             <UncontrolledCollapse navbar toggler="#navbarNavDropdown">
@@ -198,7 +513,11 @@ function Navbars() {
           <Container>
             <div className="navbar-translate">
               <NavbarBrand href="/presentation.html">Brand</NavbarBrand>
-              <button type="button" id="navbar-primary">
+              <button
+                className="navbar-toggler"
+                type="button"
+                id="navbar-primary"
+              >
                 <span className="navbar-toggler-icon"></span>
                 <span className="navbar-toggler-icon"></span>
                 <span className="navbar-toggler-icon"></span>
@@ -265,9 +584,10 @@ function Navbars() {
         Theming the navbar has never been easier thanks to the combination of
         theming classes and{" "}
         <code className="highlighter-rouge">background-color</code> utilities.
-        Choose from <code className="highlighter-rouge">light</code> for use with
-        light background colors, or <code className="highlighter-rouge">dark</code>{" "}
-        for dark background colors. Then, customize with{" "}
+        Choose from <code className="highlighter-rouge">light</code> for use
+        with light background colors, or{" "}
+        <code className="highlighter-rouge">dark</code> for dark background
+        colors. Then, customize with{" "}
         <code className="highlighter-rouge">{`color={*}`}</code> prop.
       </p>
       <div
@@ -283,7 +603,11 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Primary color
               </NavbarBrand>
-              <button id="example-navbar-primary" type="button">
+              <button
+                className="navbar-toggler"
+                id="example-navbar-primary"
+                type="button"
+              >
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
@@ -319,7 +643,11 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Info color
               </NavbarBrand>
-              <button id="example-navbar-info" type="button">
+              <button
+                className="navbar-toggler"
+                id="example-navbar-info"
+                type="button"
+              >
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
@@ -355,7 +683,11 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Success color
               </NavbarBrand>
-              <button id="example-navbar-success" type="button">
+              <button
+                className="navbar-toggler"
+                id="example-navbar-success"
+                type="button"
+              >
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
@@ -391,7 +723,11 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Warning color
               </NavbarBrand>
-              <button id="example-navbar-warning" type="button">
+              <button
+                className="navbar-toggler"
+                id="example-navbar-warning"
+                type="button"
+              >
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
@@ -427,7 +763,11 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Danger color
               </NavbarBrand>
-              <button id="example-navbar-danger" type="button">
+              <button
+                className="navbar-toggler"
+                id="example-navbar-danger"
+                type="button"
+              >
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
@@ -463,7 +803,11 @@ function Navbars() {
               <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
                 Transparent
               </NavbarBrand>
-              <button id="example-navbar-transparent" type="button">
+              <button
+                className="navbar-toggler"
+                id="example-navbar-transparent"
+                type="button"
+              >
                 <span className="navbar-toggler-bar bar1"></span>
                 <span className="navbar-toggler-bar bar2"></span>
                 <span className="navbar-toggler-bar bar3"></span>
@@ -606,7 +950,11 @@ function Navbars() {
       <div className="bd-example" data-example-id="">
         <Navbar className="bg-primary" expand="lg">
           <Container>
-            <button id="navbarTogglerDemo01" type="button">
+            <button
+              className="navbar-toggler"
+              id="navbarTogglerDemo01"
+              type="button"
+            >
               <span className="navbar-toggler-bar bar1"></span>
               <span className="navbar-toggler-bar bar2"></span>
               <span className="navbar-toggler-bar bar3"></span>
@@ -652,7 +1000,11 @@ function Navbars() {
             <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
               Navbar
             </NavbarBrand>
-            <button id="navbarTogglerDemo02" type="button">
+            <button
+              className="navbar-toggler"
+              id="navbarTogglerDemo02"
+              type="button"
+            >
               <span className="navbar-toggler-bar bar1"></span>
               <span className="navbar-toggler-bar bar2"></span>
               <span className="navbar-toggler-bar bar3"></span>
@@ -692,7 +1044,11 @@ function Navbars() {
       <div className="bd-example" data-example-id="">
         <Navbar className="bg-primary" expand="lg">
           <Container>
-            <button id="navbarTogglerDemo03" type="button">
+            <button
+              className="navbar-toggler"
+              id="navbarTogglerDemo03"
+              type="button"
+            >
               <span className="navbar-toggler-bar bar1"></span>
               <span className="navbar-toggler-bar bar2"></span>
               <span className="navbar-toggler-bar bar3"></span>
