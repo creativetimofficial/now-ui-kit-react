@@ -1,5 +1,7 @@
+/*eslint-disable*/
 import React from "react";
-
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
 import {
   UncontrolledCollapse,
@@ -47,6 +49,44 @@ import {
 function Example(){
   return (
     <>
+      <Navbar className="bg-primary" expand="lg">
+        <Container>
+          <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            Navbar
+          </NavbarBrand>
+          <button className="navbar-toggler" id="navbarNav" type="button">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <UncontrolledCollapse navbar toggler="#navbarNav">
+            <Nav navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Home <span className="sr-only">(current)</span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Features
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Pricing
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  className="disabled"
+                  href="#pablo"
+                  onClick={e => e.preventDefault()}
+                >
+                  Disabled
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
     </>
   );
 }
@@ -78,6 +118,73 @@ import {
 function Example(){
   return (
     <>
+      <Navbar className="bg-primary" expand="lg">
+        <Container>
+          <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            Navbar
+          </NavbarBrand>
+          <button
+            className="navbar-toggler"
+            id="navbarNavDropdown"
+            type="button"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <UncontrolledCollapse navbar toggler="#navbarNavDropdown">
+            <Nav navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Home <span className="sr-only">(current)</span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Features
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Pricing
+                </NavLink>
+              </NavItem>
+              <UncontrolledDropdown nav>
+                <DropdownToggle
+                  aria-haspopup={true}
+                  caret
+                  color="default"
+                  data-toggle="dropdown"
+                  href="#pablo"
+                  id="navbarDropdownMenuLink"
+                  nav
+                  onClick={e => e.preventDefault()}
+                >
+                  Dropdown link
+                </DropdownToggle>
+                <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
+                  <DropdownItem
+                    href="#pablo"
+                    onClick={e => e.preventDefault()}
+                  >
+                    Action
+                  </DropdownItem>
+                  <DropdownItem
+                    href="#pablo"
+                    onClick={e => e.preventDefault()}
+                  >
+                    Another action
+                  </DropdownItem>
+                  <DropdownItem
+                    href="#pablo"
+                    onClick={e => e.preventDefault()}
+                  >
+                    Something else here
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            </Nav>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
     </>
   );
 }
@@ -109,6 +216,46 @@ import {
 function Example(){
   return (
     <>
+      <Navbar className="bg-primary" expand="lg">
+        <Container>
+          <div className="navbar-translate">
+            <NavbarBrand href="/presentation.html">Brand</NavbarBrand>
+            <button
+              className="navbar-toggler"
+              type="button"
+              id="navbar-primary"
+            >
+              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <UncontrolledCollapse navbar toggler="#navbar-primary">
+            <Nav navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  link
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  link
+                </NavLink>
+              </NavItem>
+            </Nav>
+            <Form className="form-inline ml-auto" data-background-color="">
+              <InputGroup>
+                <InputGroupAddon addonType="prepend">
+                  <InputGroupText>
+                    <i className="now-ui-icons ui-1_email-85"></i>
+                  </InputGroupText>
+                </InputGroupAddon>
+                <Input placeholder="Your Email..." type="text"></Input>
+              </InputGroup>
+            </Form>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
     </>
   );
 }
@@ -140,6 +287,20 @@ import {
 function Example(){
   return (
     <>
+      <Navbar className="navbar-light bg-primary">
+        <Container>
+          <Form className="form-inline mr-auto" data-background-color="">
+            <InputGroup>
+              <InputGroupAddon addonType="prepend">
+                <InputGroupText>
+                  <i className="now-ui-icons ui-1_email-85"></i>
+                </InputGroupText>
+              </InputGroupAddon>
+              <Input placeholder="Your Email..." type="text"></Input>
+            </InputGroup>
+          </Form>
+        </Container>
+      </Navbar>
     </>
   );
 }
@@ -171,6 +332,246 @@ import {
 function Example(){
   return (
     <>
+      <Navbar className="bg-primary" expand="lg">
+        <Container>
+          <div className="navbar-translate">
+            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              Primary color
+            </NavbarBrand>
+            <button
+              className="navbar-toggler"
+              id="example-navbar-primary"
+              type="button"
+            >
+              <span className="navbar-toggler-bar bar1"></span>
+              <span className="navbar-toggler-bar bar2"></span>
+              <span className="navbar-toggler-bar bar3"></span>
+            </button>
+          </div>
+          <UncontrolledCollapse navbar toggler="#example-navbar-primary">
+            <Nav className="ml-auto" navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons objects_globe"></i>
+                  <p>Discover</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons users_circle-08"></i>
+                  <p>Profile</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons ui-1_settings-gear-63"></i>
+                  <p>Settings</p>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
+      <Navbar className="bg-info" expand="lg">
+        <Container>
+          <div className="navbar-translate">
+            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              Info color
+            </NavbarBrand>
+            <button
+              className="navbar-toggler"
+              id="example-navbar-info"
+              type="button"
+            >
+              <span className="navbar-toggler-bar bar1"></span>
+              <span className="navbar-toggler-bar bar2"></span>
+              <span className="navbar-toggler-bar bar3"></span>
+            </button>
+          </div>
+          <UncontrolledCollapse navbar toggler="#example-navbar-info">
+            <Nav className="ml-auto" navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons objects_globe"></i>
+                  <p>Discover</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons users_circle-08"></i>
+                  <p>Profile</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons ui-1_settings-gear-63"></i>
+                  <p>Settings</p>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
+      <Navbar className="bg-success" expand="lg">
+        <Container>
+          <div className="navbar-translate">
+            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              Success color
+            </NavbarBrand>
+            <button
+              className="navbar-toggler"
+              id="example-navbar-success"
+              type="button"
+            >
+              <span className="navbar-toggler-bar bar1"></span>
+              <span className="navbar-toggler-bar bar2"></span>
+              <span className="navbar-toggler-bar bar3"></span>
+            </button>
+          </div>
+          <UncontrolledCollapse navbar toggler="#example-navbar-success">
+            <Nav className="ml-auto" navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons objects_globe"></i>
+                  <p>Discover</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons users_circle-08"></i>
+                  <p>Profile</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons ui-1_settings-gear-63"></i>
+                  <p>Settings</p>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
+      <Navbar className="bg-warning" expand="lg">
+        <Container>
+          <div className="navbar-translate">
+            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              Warning color
+            </NavbarBrand>
+            <button
+              className="navbar-toggler"
+              id="example-navbar-warning"
+              type="button"
+            >
+              <span className="navbar-toggler-bar bar1"></span>
+              <span className="navbar-toggler-bar bar2"></span>
+              <span className="navbar-toggler-bar bar3"></span>
+            </button>
+          </div>
+          <UncontrolledCollapse navbar toggler="#example-navbar-warning">
+            <Nav className="ml-auto" navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons objects_globe"></i>
+                  <p>Discover</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons users_circle-08"></i>
+                  <p>Profile</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons ui-1_settings-gear-63"></i>
+                  <p>Settings</p>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
+      <Navbar className="bg-danger" expand="lg">
+        <Container>
+          <div className="navbar-translate">
+            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              Danger color
+            </NavbarBrand>
+            <button
+              className="navbar-toggler"
+              id="example-navbar-danger"
+              type="button"
+            >
+              <span className="navbar-toggler-bar bar1"></span>
+              <span className="navbar-toggler-bar bar2"></span>
+              <span className="navbar-toggler-bar bar3"></span>
+            </button>
+          </div>
+          <UncontrolledCollapse navbar toggler="#example-navbar-danger">
+            <Nav className="ml-auto" navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons objects_globe"></i>
+                  <p>Discover</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons users_circle-08"></i>
+                  <p>Profile</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons ui-1_settings-gear-63"></i>
+                  <p>Settings</p>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
+      <Navbar className="navbar-transparent" expand="lg">
+        <Container>
+          <div className="navbar-translate">
+            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              Transparent
+            </NavbarBrand>
+            <button
+              className="navbar-toggler"
+              id="example-navbar-transparent"
+              type="button"
+            >
+              <span className="navbar-toggler-bar bar1"></span>
+              <span className="navbar-toggler-bar bar2"></span>
+              <span className="navbar-toggler-bar bar3"></span>
+            </button>
+          </div>
+          <UncontrolledCollapse navbar toggler="#example-navbar-transparent">
+            <Nav className="ml-auto" navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons objects_globe"></i>
+                  <p>Discover</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons users_circle-08"></i>
+                  <p>Profile</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  <i className="now-ui-icons ui-1_settings-gear-63"></i>
+                  <p>Settings</p>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
     </>
   );
 }
@@ -202,6 +603,13 @@ import {
 function Example(){
   return (
     <>
+      <Navbar className="navbar-light bg-primary" expand="lg">
+        <Container>
+          <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            Navbar
+          </NavbarBrand>
+        </Container>
+      </Navbar>
     </>
   );
 }
@@ -233,6 +641,13 @@ import {
 function Example(){
   return (
     <>
+      <Navbar className="navbar-light bg-primary">
+        <Container>
+          <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            Default
+          </NavbarBrand>
+        </Container>
+      </Navbar>
     </>
   );
 }
@@ -264,6 +679,13 @@ import {
 function Example(){
   return (
     <>
+      <Navbar className="fixed-top navbar-light bg-primary">
+        <Container>
+          <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            Fixed top
+          </NavbarBrand>
+        </Container>
+      </Navbar>
     </>
   );
 }
@@ -295,6 +717,13 @@ import {
 function Example(){
   return (
     <>
+      <Navbar className="fixed-bottom navbar-light bg-primary">
+        <Container>
+          <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            Fixed bottom
+          </NavbarBrand>
+        </Container>
+      </Navbar>
     </>
   );
 }
@@ -326,6 +755,238 @@ import {
 function Example(){
   return (
     <>
+      <Navbar className="sticky-top navbar-light bg-primary">
+        <Container>
+          <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            Sticky top
+          </NavbarBrand>
+        </Container>
+      </Navbar>
+    </>
+  );
+}
+
+export default Example;`;
+const codeToggler1 = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Navbar className="bg-primary" expand="lg">
+        <Container>
+          <button
+            className="navbar-toggler"
+            id="navbarTogglerDemo01"
+            type="button"
+          >
+            <span className="navbar-toggler-bar bar1"></span>
+            <span className="navbar-toggler-bar bar2"></span>
+            <span className="navbar-toggler-bar bar3"></span>
+          </button>
+          <UncontrolledCollapse navbar toggler="#navbarTogglerDemo01">
+            <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+              Hidden brand
+            </NavbarBrand>
+            <Nav className="mr-auto mt-2 mt-lg-0" navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Home <span className="sr-only">(current)</span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Link
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  className="disabled"
+                  href="#pablo"
+                  onClick={e => e.preventDefault()}
+                >
+                  Disabled
+                </NavLink>
+              </NavItem>
+            </Nav>
+            <Form className="form-inline ml-auto" data-background-color="">
+              <FormGroup className="has-white">
+                <Input placeholder="Search" type="text"></Input>
+              </FormGroup>
+            </Form>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
+    </>
+  );
+}
+
+export default Example;`;
+const codeToggler2 = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Navbar className="bg-primary" expand="lg">
+        <Container>
+          <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            Navbar
+          </NavbarBrand>
+          <button
+            className="navbar-toggler"
+            id="navbarTogglerDemo02"
+            type="button"
+          >
+            <span className="navbar-toggler-bar bar1"></span>
+            <span className="navbar-toggler-bar bar2"></span>
+            <span className="navbar-toggler-bar bar3"></span>
+          </button>
+          <UncontrolledCollapse navbar toggler="#navbarTogglerDemo02">
+            <Nav className="mr-auto mt-2 mt-lg-0" navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Home <span className="sr-only">(current)</span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Link
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  className="disabled"
+                  href="#pablo"
+                  onClick={e => e.preventDefault()}
+                >
+                  Disabled
+                </NavLink>
+              </NavItem>
+            </Nav>
+            <Form className="form-inline ml-auto" data-background-color="">
+              <FormGroup className="has-white">
+                <Input placeholder="Search" type="text"></Input>
+              </FormGroup>
+            </Form>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
+    </>
+  );
+}
+
+export default Example;`;
+const codeToggler3 = `import React from "react";
+// reactstrap components
+import {
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
+  InputGroupAddon,
+  InputGroupText,
+  InputGroup,
+  NavbarBrand,
+  Navbar,
+  NavItem,
+  NavLink,
+  Nav,
+  Container
+} from "reactstrap";
+// core components
+
+function Example(){
+  return (
+    <>
+      <Navbar className="bg-primary" expand="lg">
+        <Container>
+          <button
+            className="navbar-toggler"
+            id="navbarTogglerDemo03"
+            type="button"
+          >
+            <span className="navbar-toggler-bar bar1"></span>
+            <span className="navbar-toggler-bar bar2"></span>
+            <span className="navbar-toggler-bar bar3"></span>
+          </button>
+          <NavbarBrand href="#pablo" onClick={e => e.preventDefault()}>
+            Navbar
+          </NavbarBrand>
+          <UncontrolledCollapse navbar toggler="#navbarTogglerDemo03">
+            <Nav className="mr-auto mt-2 mt-lg-0" navbar>
+              <NavItem className="active">
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Home <span className="sr-only">(current)</span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                  Link
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  className="disabled"
+                  href="#pablo"
+                  onClick={e => e.preventDefault()}
+                >
+                  Disabled
+                </NavLink>
+              </NavItem>
+            </Nav>
+            <Form className="form-inline ml-auto" data-background-color="">
+              <FormGroup className="has-white">
+                <Input placeholder="Search" type="text"></Input>
+              </FormGroup>
+            </Form>
+          </UncontrolledCollapse>
+        </Container>
+      </Navbar>
     </>
   );
 }
@@ -427,6 +1088,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeNav1}
+      </SyntaxHighlighter>
       <p>
         You may also utilize dropdowns in your navbar nav. Dropdown menus
         require a wrapping element for positioning, so be sure to use separate
@@ -503,6 +1167,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeNav2}
+      </SyntaxHighlighter>
       <h3 id="forms">Forms</h3>
       <p>
         Place various form controls and components within a navbar with{" "}
@@ -550,6 +1217,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeForms1}
+      </SyntaxHighlighter>
       <p>Input groups work, too:</p>
       <div className="bd-example" data-example-id="">
         <Navbar className="navbar-light bg-primary">
@@ -567,6 +1237,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeForms2}
+      </SyntaxHighlighter>
       <h3 id="how-to-enable-burger-menu">How to enable Burger Menu</h3>
       <p>
         We created for you a class named{" "}
@@ -838,6 +1511,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeColorSchemes}
+      </SyntaxHighlighter>
       <h2 id="containers">Containers</h2>
       <p>
         When the container is within your navbar, its horizontal padding is
@@ -857,6 +1533,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeContainers}
+      </SyntaxHighlighter>
       <h2 id="placement">Placement</h2>
       <p>
         Use our <a href="/docs/1.0/utilities/position/">position utilities</a>{" "}
@@ -889,6 +1568,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codePlacement1}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <Navbar className="fixed-top navbar-light bg-primary">
           <Container>
@@ -898,6 +1580,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codePlacement2}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <Navbar className="fixed-bottom navbar-light bg-primary">
           <Container>
@@ -907,6 +1592,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codePlacement3}
+      </SyntaxHighlighter>
       <div className="bd-example" data-example-id="">
         <Navbar className="sticky-top navbar-light bg-primary">
           <Container>
@@ -916,6 +1604,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codePlacement4}
+      </SyntaxHighlighter>
       <h2 id="responsive-behaviors">Responsive behaviors</h2>
       <p>
         Navbars can utilize{" "}
@@ -993,6 +1684,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeToggler1}
+      </SyntaxHighlighter>
       <p>With a brand name shown on the left and toggler on the right:</p>
       <div className="bd-example" data-example-id="">
         <Navbar className="bg-primary" expand="lg">
@@ -1040,6 +1734,9 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeToggler2}
+      </SyntaxHighlighter>
       <p>With a toggler on the left and brand name on the right:</p>
       <div className="bd-example" data-example-id="">
         <Navbar className="bg-primary" expand="lg">
@@ -1087,6 +1784,20 @@ function Navbars() {
           </Container>
         </Navbar>
       </div>
+      <SyntaxHighlighter language="jsx" style={prism}>
+        {codeToggler3}
+      </SyntaxHighlighter>
+      <h2>Props</h2>
+      <p>
+        Please refer to{" "}
+        <a
+          href="https://reactstrap.github.io/components/navbar/?ref=creativetim"
+          target="_blank"
+        >
+          reactstrap navbar documentation
+        </a>
+        .
+      </p>
     </>
   );
 }
