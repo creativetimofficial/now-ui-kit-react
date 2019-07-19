@@ -3,17 +3,8 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  UncontrolledCollapse,
   Modal,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
-  Table,
-  Container,
-  Row,
-  Col
+  Table
 } from "reactstrap";
 
 function Modals() {

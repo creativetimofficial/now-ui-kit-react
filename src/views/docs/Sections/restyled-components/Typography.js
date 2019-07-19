@@ -1,18 +1,5 @@
 import React from "react";
 
-// reactstrap components
-import {
-  UncontrolledCollapse,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
-  Row,
-  Col
-} from "reactstrap";
-
 function Typography() {
   return (
     <>
@@ -41,7 +28,7 @@ function Typography() {
             <td>
               <p>
                 <code className="highlighter-rouge">
-                  <h1></h1>
+                  {`<h1></h1>`}
                 </code>
               </p>
             </td>
@@ -53,7 +40,7 @@ function Typography() {
             <td>
               <p>
                 <code className="highlighter-rouge">
-                  <h2></h2>
+                  {`<h2></h2>`}
                 </code>
               </p>
             </td>
@@ -65,7 +52,7 @@ function Typography() {
             <td>
               <p>
                 <code className="highlighter-rouge">
-                  <h3></h3>
+                  {`<h3></h3>`}
                 </code>
               </p>
             </td>
@@ -77,7 +64,7 @@ function Typography() {
             <td>
               <p>
                 <code className="highlighter-rouge">
-                  <h4></h4>
+                  {`<h4></h4>`}
                 </code>
               </p>
             </td>
@@ -89,7 +76,7 @@ function Typography() {
             <td>
               <p>
                 <code className="highlighter-rouge">
-                  <h5></h5>
+                  {`<h5></h5>`}
                 </code>
               </p>
             </td>
@@ -101,7 +88,7 @@ function Typography() {
             <td>
               <p>
                 <code className="highlighter-rouge">
-                  <h6></h6>
+                  {`<h6></h6>`}
                 </code>
               </p>
             </td>

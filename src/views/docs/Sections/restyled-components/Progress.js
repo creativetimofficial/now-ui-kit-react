@@ -2,16 +2,7 @@ import React from "react";
 
 // reactstrap components
 import {
-  UncontrolledCollapse,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
-  Progress,
-  Container,
-  Row,
-  Col
+  Progress
 } from "reactstrap";
 
 function Progresses() {

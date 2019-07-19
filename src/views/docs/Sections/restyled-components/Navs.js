@@ -5,17 +5,11 @@ import {
   Card,
   CardHeader,
   CardBody,
-  UncontrolledCollapse,
-  NavbarBrand,
-  Navbar,
   NavItem,
   NavLink,
   Nav,
   TabContent,
-  TabPane,
-  Container,
-  Row,
-  Col
+  TabPane
 } from "reactstrap";
 
 function Navs() {

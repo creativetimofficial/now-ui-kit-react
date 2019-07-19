@@ -2,18 +2,9 @@ import React from "react";
 
 // reactstrap components
 import {
-  UncontrolledCollapse,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
   Pagination,
   PaginationItem,
   PaginationLink,
-  Container,
-  Row,
-  Col
 } from "reactstrap";
 
 function Paginations() {

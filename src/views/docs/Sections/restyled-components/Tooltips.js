@@ -3,15 +3,6 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  UncontrolledCollapse,
-  NavbarBrand,
-  Navbar,
-  NavItem,
-  NavLink,
-  Nav,
-  Container,
-  Row,
-  Col,
   UncontrolledTooltip
 } from "reactstrap";
 
