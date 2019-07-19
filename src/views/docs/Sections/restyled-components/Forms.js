@@ -1474,7 +1474,7 @@ function Forms() {
           href="https://reactstrap.github.io/components/form/?ref=creativetim"
           target="_blank"
         >
-          reactstrap dropdowns documentation
+          reactstrap forms documentation
         </a>
         .
       </p>

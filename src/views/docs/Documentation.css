@@ -398,3 +398,10 @@
   display: inline-block;
   margin-top: 12px;
 }
+
+.bd-docs.modal-open div[tabindex="-1"] {
+  z-index: 1072 !important;
+}
+.bd-docs .tooltip, .bd-docs .popover{
+  z-index: 1073 !important;
+}
