@@ -3,6 +3,9 @@
     background: $info-color;
     background: linear-gradient($info-color,$black-color 80%);
   }
+  .navbar-nav .dropdown-menu {
+    position: static !important;
+  }
 }
 
 @media screen and (max-width: 768px){
