@@ -113,7 +113,7 @@ function Javascript() {
                 On left
               </Button>
               <UncontrolledPopover
-                placement="left"
+                placement={window.innerWidth < 768 ? "top" : "left"}
                 target="tooltip175489643"
                 className="popover-primary"
               >
@@ -144,7 +144,10 @@ function Javascript() {
               >
                 On right
               </Button>
-              <UncontrolledPopover placement="right" target="tooltip966745638">
+              <UncontrolledPopover
+                placement={window.innerWidth < 768 ? "bottom" : "right"}
+                target="tooltip966745638"
+              >
                 <PopoverHeader>Popover on Right</PopoverHeader>
                 <PopoverBody>
                   Here will be some very useful information about his popover.
