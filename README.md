@@ -17,7 +17,9 @@ Now UI Kit React is built on top of Bootstrap 4 using React and Reactstrap, so i
 
 ### Bootstrap 4 support
 
-Now UI Kit React is built on top of Bootstrap 4 using React, React Hooks, create-react-app and Reactstrap, so it fully supports them. Most of the elements from the framework are re-designed to resemble sheets of paper and color pastels. If the are elements that we have not touched, they will gracefully fall back to the Bootstrap 4 default.
+, so it fully supports them. Most of the elements from the framework are re-designed to resemble sheets of paper and color pastels. If the are elements that we have not touched, they will gracefully fall back to the Bootstrap 4 default.
+
+Now UI Kit React is built on top of Bootstrap 4 using React, React Hooks, create-react-app and Reactstrap. This makes starting a new project very simple. It also provides benefits if you are already working on a Bootstrap 4, React or Reactstrap project; you can just import the Now UI Kit React style over it. Most of the elements have been redesigned; but if you are using an element we have not touched, it will fall back to the Bootstrap default.
 
 
 ### Examples
@@ -57,7 +59,7 @@ Once you download the archive, you will be able find a tutorial page inside it e
 | --- | --- | ---  |
 | [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-kit-react/login.png)](https://demos.creative-tim.com/now-ui-kit-react/#/login-page?ref=nukr-github-readme)  | [![Landing Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-kit-react/landing.png)](https://demos.creative-tim.com/now-ui-kit-react/#/landing-page?ref=nukr-github-readme)  | [![Profile Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-kit-react/profile.png)](https://demos.creative-tim.com/now-ui-kit-react/#/profile-page?ref=nukr-github-readme)  
 
-[View More](https://demos.creative-tim.com/paper-kit-react/#/index?ref=nukr-github-readme)
+[View More](https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-github-readme)
 
 ## Quick start
 
