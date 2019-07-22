@@ -53,9 +53,9 @@ Once you download the archive, you will be able find a tutorial page inside it e
 | --- | --- | --- | --- |
 | [![Now UI Kit HTML](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-kit/opt_nuk_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-kit?ref=nukr-github-readme)  | [![Now UI Kit Angular](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-kit-angular/opt_nuk_angular_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-kit-angular?ref=nukr-github-readme)  | [![Now UI Kit React](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-kit-react/opt_nuk_react_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-kit-react?ref=nukr-github-readme)  | [![Vue Now UI Kit](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-now-ui-kit/vue-now-ui-kit.jpg)](https://www.creative-tim.com/product/now-ui-kit-react?ref=nukr-github-readme)  
 
-| Register Page | Landing Page | Profile Page  |
+| Login Page | Landing Page | Profile Page  |
 | --- | --- | ---  |
-| [![Register Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/paper-kit-react/register.png)](https://demos.creative-tim.com/paper-kit-react/#/register-page?ref=nukr-github-readme)  | [![Landing Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/paper-kit-react/landing.png)](https://demos.creative-tim.com/paper-kit-react/#/landing-page?ref=nukr-github-readme)  | [![Profile Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/paper-kit-react/profile.png)](https://demos.creative-tim.com/paper-kit-react/#/profile-page?ref=nukr-github-readme)  
+| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-kit-react/login.png)](https://demos.creative-tim.com/now-ui-kit-react/#/login-page?ref=nukr-github-readme)  | [![Landing Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-kit-react/landing.png)](https://demos.creative-tim.com/now-ui-kit-react/#/landing-page?ref=nukr-github-readme)  | [![Profile Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-kit-react/profile.png)](https://demos.creative-tim.com/now-ui-kit-react/#/profile-page?ref=nukr-github-readme)  
 
 [View More](https://demos.creative-tim.com/paper-kit-react/#/index?ref=nukr-github-readme)
 
@@ -64,11 +64,11 @@ Once you download the archive, you will be able find a tutorial page inside it e
 1.  Download the project's zip
 2.  Make sure you have node.js (<https://nodejs.org/en/>) installed
 3.  Type `npm install` in terminal/console in the source folder where `package.json` is located
-4.  You will find all the branding colors inside `src/assets/scss/paper-kit/_variables.scss`. You can change them with a `HEX` value or with other predefined variables.
+4.  You will find all the branding colors inside `src/assets/scss/now-ui-kit/_variables.scss`. You can change them with a `HEX` value or with other predefined variables.
 5.  Run in terminal `npm start`.
 
 ## Documentation
-The documentation for the Now UI Kit React is hosted at our [website](https://demos.creative-tim.com/paper-kit-react/#/documentation/introduction?ref=nukr-github-readme).
+The documentation for the Now UI Kit React is hosted at our [website](https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-github-readme).
 
 
 ## File Structure
@@ -148,19 +148,19 @@ At present, we officially aim to support the last two versions of the following 
 
 
 ## Resources
-- Demo: <http://demos.creative-tim.com/paper-kit-react/#/index?ref=nukr-github-readme>
-- Download Page: <https://www.creative-tim.com/product/paper-kit-react?ref=nukr-github-readme>
-- Documentation: <https://demos.creative-tim.com/paper-kit-react/#/documentation/introduction?ref=nukr-github-readme>
+- Demo: <http://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-github-readme>
+- Download Page: <https://www.creative-tim.com/product/now-ui-kit-react?ref=nukr-github-readme>
+- Documentation: <https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-github-readme>
 - License Agreement: <https://www.creative-tim.com/license?ref=nukr-github-readme>
 - Support: <https://www.creative-tim.com/contact-us?ref=nukr-github-readme>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/paper-kit-react/issues)
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/now-ui-kit-react/issues)
 
 
 **Dashboards:**
 
-| HTML | React | Vue  | Angular |
-| --- | --- | ---  | ---  |
-| [![Paper Dashboard  HTML](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/paper-dashboard-2-html/opt_pd2_thumbnail.jpg)](https://www.creative-tim.com/product/paper-dashboard-2?ref=nukr-github-readme) | [![Paper Dashboard  React](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/paper-dashboard-react/opt_pd_react_thumbnail.jpg)](https://www.creative-tim.com/product/paper-dashboard-pro-react?ref=nukr-github-readme) | [![Vue Paper Dashboard](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/vue-paper-dashboard/opt_pd_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-paper-dashboard?ref=nukr-github-readme)  | [![ Paper Dashboard Angular](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/paper-kit-2-angular/opt_pk2_angular_thumbnail.jpg)](https://www.creative-tim.com/product/paper-dashboard-angular?ref=nukr-github-readme)
+| HTML | React | Angular |
+| --- | --- | ---  |
+| [![Now UI Dashboard  HTML](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-dashboard/opt_nud_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard?ref=nukr-github-readme) | [![Now UI Dashboard  React](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-dashboard-react/opt_nud_react_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard-pro-react?ref=nukr-github-readme) | [![ Now UI Dashboard Angular](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/now-ui-dashboard-angular/opt_nud_angular_thumbnail.jpg)](https://www.creative-tim.com/product/now-ui-dashboard-angular?ref=nukr-github-readme)
 
 ## Reporting Issues
 
