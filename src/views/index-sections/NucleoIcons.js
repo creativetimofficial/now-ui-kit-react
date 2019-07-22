@@ -22,7 +22,7 @@ function NucleoIcons() {
               <Button
                 className="btn-round mr-1"
                 color="info"
-                href="/nucleo-icons"
+                href="https://demos.creative-tim.com/now-ui-kit-react/#/nucleo-icons"
                 size="lg"
                 target="_blank"
               >
