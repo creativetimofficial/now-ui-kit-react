@@ -52,7 +52,10 @@ function IndexHeader() {
               ></img>
             </a>
             . Coded by{" "}
-            <a href="https://www.creative-tim.com?ref=nukr-index-header" target="_blank">
+            <a
+              href="https://www.creative-tim.com?ref=nukr-index-header"
+              target="_blank"
+            >
               <img
                 alt="..."
                 className="creative-tim-logo"
