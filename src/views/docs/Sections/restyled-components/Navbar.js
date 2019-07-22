@@ -1266,7 +1266,7 @@ function Navbars() {
       <div
         className="bd-example"
         style={{
-          background: "url('/assets/img/project14.jpg')",
+          background: "url(" + require("assets/img/bg7.jpg") + ")",
           backgroundSize: "cover"
         }}
       >

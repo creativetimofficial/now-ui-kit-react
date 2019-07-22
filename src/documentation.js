@@ -88,7 +88,7 @@ var componentsRoutes = [
   },
   {
     name: "Restyled Components",
-    path: "/documentation/accordion",
+    path: "/documentation/alerts",
     routes: [
       { path: "/documentation/alerts", component: Alerts, name: "Alerts" },
       { path: "/documentation/badges", component: Badge, name: "Badge" },
@@ -151,7 +151,7 @@ var componentsRoutes = [
   },
   {
     name: "Plugins",
-    path: "/documentation/charts",
+    path: "/documentation/nouislider",
     routes: [
       {
         path: "/documentation/nouislider",
