@@ -15,7 +15,6 @@ import {
 
 const codeExample = `<FormGroup>
   <Datetime
-    timeFormat={false}
     inputProps={{ placeholder: "Datetime Picker Here" }}
   />
 </FormGroup>`;
@@ -41,7 +40,6 @@ class DateTimePicker extends React.Component {
         <div className="bd-example">
           <FormGroup>
             <Datetime
-              timeFormat={false}
               inputProps={{ placeholder: "Datetime Picker Here" }}
             />
           </FormGroup>

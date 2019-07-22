@@ -84,8 +84,24 @@ const codeDismissing1Constructor = `constructor(props) {
 onDismiss(){
     this.setState({visible: !this.state.visible});
 }`;
-const codeDismissing1 = `<Alert color="info" isOpen={this.state.visible} toggle={this.onDismiss}>
-    <b>Holy guacamole!</b> You should check in on some of those fields below.
+const codeDismissing1 = `<Alert color="info" isOpen={this.state.visible}>
+  <div className="container">
+    <div className="alert-icon">
+      <i className="now-ui-icons ui-2_like"></i>
+    </div>
+    <strong>Well done!</strong> You successfully read this
+    important alert message.
+    <button
+      type="button"
+      className="close"
+      aria-label="Close"
+      onClick={this.onDismiss}
+    >
+      <span aria-hidden="true">
+        <i className="now-ui-icons ui-1_simple-remove"></i>
+      </span>
+    </button>
+  </div>
 </Alert>`;
 
 const codeDismissing2Import = `import { UncontrolledAlert } from 'reactstrap';`;
@@ -208,13 +224,24 @@ class Alerts extends React.Component {
             First one is to add to the <code>Alert</code> tag a{" "}
             <code>toggle</code> function like so:
             <div className="bd-example">
-              <Alert
-                color="info"
-                isOpen={this.state.visible}
-                toggle={this.onDismiss}
-              >
-                <b>Holy guacamole!</b> You should check in on some of those
-                fields below.
+              <Alert color="info" isOpen={this.state.visible}>
+                <div className="container">
+                  <div className="alert-icon">
+                    <i className="now-ui-icons ui-2_like"></i>
+                  </div>
+                  <strong>Well done!</strong> You successfully read this
+                  important alert message.
+                  <button
+                    type="button"
+                    className="close"
+                    aria-label="Close"
+                    onClick={this.onDismiss}
+                  >
+                    <span aria-hidden="true">
+                      <i className="now-ui-icons ui-1_simple-remove"></i>
+                    </span>
+                  </button>
+                </div>
               </Alert>
             </div>
             <SyntaxHighlighter language="jsx" style={prism}>
