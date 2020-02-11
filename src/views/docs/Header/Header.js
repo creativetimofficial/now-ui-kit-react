@@ -43,6 +43,14 @@ class Header extends React.Component {
           <Nav className="bd-navbar-nav flex-row" navbar>
             <NavItem>
               <NavLink
+                href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nukr-docs-navbar-upgrade-pro"
+                target="_blank"
+              >
+                <i className="now-ui-icons objects_spaceship" /> Upgrade to PRO
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
                 href="https://github.com/creativetimofficial/now-ui-kit-react?ref=creativetim"
                 target="_blank"
               >
