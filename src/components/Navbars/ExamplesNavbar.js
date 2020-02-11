@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // reactstrap components
 import {
+  Button,
   Collapse,
   DropdownToggle,
   DropdownMenu,
@@ -118,6 +119,17 @@ function ExamplesNavbar() {
             navbar
           >
             <Nav navbar>
+              <NavItem>
+                <Button
+                  className="nav-link btn-neutral"
+                  color="info"
+                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nukr-examples-navbar-upgrade-pro"
+                  target="_blank"
+                >
+                  <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
+                  <p>Upgrade to PRO</p>
+                </Button>
+              </NavItem>
               <NavItem>
                 <NavLink to="/index" tag={Link}>
                   Back to Kit
