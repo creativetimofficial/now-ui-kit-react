@@ -123,16 +123,12 @@ function IndexNavbar() {
                 <Button
                   className="nav-link btn-neutral"
                   color="info"
-                  href="#pablo"
-                  id="upgrade-to-pro"
-                  onClick={e => e.preventDefault()}
+                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nukr-index-navbar-upgrade-pro"
+                  target="_blank"
                 >
                   <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
                   <p>Upgrade to PRO</p>
                 </Button>
-                <UncontrolledTooltip target="#upgrade-to-pro">
-                  Cooming soon!
-                </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
