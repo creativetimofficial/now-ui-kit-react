@@ -12,7 +12,7 @@ import {
   TabPane,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -34,7 +34,7 @@ function Tabs() {
                       <NavLink
                         className={iconPills === "1" ? "active" : ""}
                         href="#pablo"
-                        onClick={e => {
+                        onClick={(e) => {
                           e.preventDefault();
                           setIconPills("1");
                         }}
@@ -47,7 +47,7 @@ function Tabs() {
                       <NavLink
                         className={iconPills === "2" ? "active" : ""}
                         href="#pablo"
-                        onClick={e => {
+                        onClick={(e) => {
                           e.preventDefault();
                           setIconPills("2");
                         }}
@@ -60,7 +60,7 @@ function Tabs() {
                       <NavLink
                         className={iconPills === "3" ? "active" : ""}
                         href="#pablo"
-                        onClick={e => {
+                        onClick={(e) => {
                           e.preventDefault();
                           setIconPills("3");
                         }}
@@ -73,7 +73,7 @@ function Tabs() {
                       <NavLink
                         className={iconPills === "4" ? "active" : ""}
                         href="#pablo"
-                        onClick={e => {
+                        onClick={(e) => {
                           e.preventDefault();
                           setIconPills("4");
                         }}
@@ -152,7 +152,7 @@ function Tabs() {
                       <NavLink
                         className={pills === "1" ? "active" : ""}
                         href="#pablo"
-                        onClick={e => {
+                        onClick={(e) => {
                           e.preventDefault();
                           setPills("1");
                         }}
@@ -164,7 +164,7 @@ function Tabs() {
                       <NavLink
                         className={pills === "2" ? "active" : ""}
                         href="#pablo"
-                        onClick={e => {
+                        onClick={(e) => {
                           e.preventDefault();
                           setPills("2");
                         }}
@@ -176,7 +176,7 @@ function Tabs() {
                       <NavLink
                         className={pills === "3" ? "active" : ""}
                         href="#pablo"
-                        onClick={e => {
+                        onClick={(e) => {
                           e.preventDefault();
                           setPills("3");
                         }}
@@ -188,7 +188,7 @@ function Tabs() {
                       <NavLink
                         className={pills === "4" ? "active" : ""}
                         href="#pablo"
-                        onClick={e => {
+                        onClick={(e) => {
                           e.preventDefault();
                           setPills("4");
                         }}

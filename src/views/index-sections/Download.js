@@ -57,7 +57,7 @@ function Download() {
                 We're going to launch{" "}
                 <a
                   href="http://demos.creative-tim.com/now-ui-kit-pro-react/#/presentation?ref=nukr-index-page"
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   Now UI Kit PRO React
                 </a>

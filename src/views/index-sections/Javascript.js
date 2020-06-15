@@ -13,7 +13,7 @@ import {
   UncontrolledTooltip,
   PopoverBody,
   PopoverHeader,
-  UncontrolledPopover
+  UncontrolledPopover,
 } from "reactstrap";
 
 // core components
