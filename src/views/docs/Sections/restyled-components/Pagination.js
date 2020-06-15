@@ -310,8 +310,8 @@ class PaginationDocs extends React.Component {
         <h2 id="disabled-and-active-states">Disabled and active states</h2>
         <p>
           Pagination links are customizable for different circumstances. Use{" "}
-          <code class="highlighter-rouge">disabled</code> for links that appear
-          un-clickable and <code class="highlighter-rouge">active</code> to
+          <code className="highlighter-rouge">disabled</code> for links that appear
+          un-clickable and <code className="highlighter-rouge">active</code> to
           indicate the current page.
         </p>
         <div className="bd-example" data-example-id="">
@@ -366,7 +366,7 @@ class PaginationDocs extends React.Component {
         </SyntaxHighlighter>
         <p>
           You can optionally swap out active or disabled anchors for{" "}
-          <code class="highlighter-rouge">&lt;span&gt;</code>, or omit the
+          <code className="highlighter-rouge">&lt;span&gt;</code>, or omit the
           anchor in the case of the prev/next arrows, to remove click
           functionality and prevent keyboard focus while retaining intended
           styles.

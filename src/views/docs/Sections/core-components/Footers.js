@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Footers() {
   return (
     <>
-      <h1 class="bd-title" id="content">
+      <h1 className="bd-title" id="content">
         Footers
       </h1>
       <p>We have the following footers:</p>

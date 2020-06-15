@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Navbars() {
   return (
     <>
-      <h1 class="bd-title" id="content">
+      <h1 className="bd-title" id="content">
         Navbars
       </h1>
       <p>
