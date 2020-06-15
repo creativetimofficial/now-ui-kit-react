@@ -3,6 +3,8 @@
 ## [1.4.0] date
 ### Bug fixing
 ### Major style changes
+- `src/assets/scss/now-ui-kit/_nucleo-outline.scss` (changed the fonts import to `~assets/fonts` and also added assets path inside `jsconfig.json` file)
+- `src/assets/scss/now-ui-kit/_variables.scss` (changed the fonts import to `~assets/fonts` and also added assets path inside `jsconfig.json` file)
 ### Deleted components
 ### Added components
 ### Deleted dependencies
