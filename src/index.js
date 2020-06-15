@@ -18,8 +18,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
-import { createBrowserHistory } from "history";
-import ReactPixel from "react-facebook-pixel";
 
 // styles for this kit
 import "assets/css/bootstrap.min.css";
@@ -35,17 +33,6 @@ import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 // others
 import Documentation from "views/docs/Documentation.js";
-
-const hist = createBrowserHistory();
-
-ReactPixel.init("111649226022273");
-ReactPixel.pageView();
-ReactPixel.fbq("track", "PageView");
-
-hist.listen(location => {
-  ReactPixel.pageView();
-  ReactPixel.fbq("track", "PageView");
-});
 
 ReactDOM.render(
   <HashRouter>
