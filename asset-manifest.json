@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/now-ui-kit-react/static/css/main.b05566c4.chunk.css",
-    "main.js": "/now-ui-kit-react/static/js/main.e6fff09d.chunk.js",
-    "main.js.map": "/now-ui-kit-react/static/js/main.e6fff09d.chunk.js.map",
-    "runtime~main.js": "/now-ui-kit-react/static/js/runtime~main.dcd83035.js",
-    "runtime~main.js.map": "/now-ui-kit-react/static/js/runtime~main.dcd83035.js.map",
-    "static/js/2.0f114afb.chunk.js": "/now-ui-kit-react/static/js/2.0f114afb.chunk.js",
-    "static/js/2.0f114afb.chunk.js.map": "/now-ui-kit-react/static/js/2.0f114afb.chunk.js.map",
+    "main.css": "/now-ui-kit-react/static/css/main.098c11eb.chunk.css",
+    "main.js": "/now-ui-kit-react/static/js/main.6fbe068c.chunk.js",
+    "main.js.map": "/now-ui-kit-react/static/js/main.6fbe068c.chunk.js.map",
+    "runtime-main.js": "/now-ui-kit-react/static/js/runtime-main.59e0bfe4.js",
+    "runtime-main.js.map": "/now-ui-kit-react/static/js/runtime-main.59e0bfe4.js.map",
+    "static/js/2.e762bd63.chunk.js": "/now-ui-kit-react/static/js/2.e762bd63.chunk.js",
+    "static/js/2.e762bd63.chunk.js.map": "/now-ui-kit-react/static/js/2.e762bd63.chunk.js.map",
     "index.html": "/now-ui-kit-react/index.html",
-    "precache-manifest.f52a0e550e74d9c8cc7abea5a66c9bbf.js": "/now-ui-kit-react/precache-manifest.f52a0e550e74d9c8cc7abea5a66c9bbf.js",
+    "precache-manifest.ccffb792a199f5ffd7f7fa16712aca62.js": "/now-ui-kit-react/precache-manifest.ccffb792a199f5ffd7f7fa16712aca62.js",
     "service-worker.js": "/now-ui-kit-react/service-worker.js",
-    "static/css/main.b05566c4.chunk.css.map": "/now-ui-kit-react/static/css/main.b05566c4.chunk.css.map",
+    "static/css/main.098c11eb.chunk.css.map": "/now-ui-kit-react/static/css/main.098c11eb.chunk.css.map",
+    "static/js/2.e762bd63.chunk.js.LICENSE.txt": "/now-ui-kit-react/static/js/2.e762bd63.chunk.js.LICENSE.txt",
     "static/media/avatar.jpg": "/now-ui-kit-react/static/media/avatar.7257a1a9.jpg",
     "static/media/bg1.jpg": "/now-ui-kit-react/static/media/bg1.6b1983a2.jpg",
     "static/media/bg11.jpg": "/now-ui-kit-react/static/media/bg11.e643a6cf.jpg",
@@ -30,8 +31,14 @@
     "static/media/julie.jpg": "/now-ui-kit-react/static/media/julie.138381e5.jpg",
     "static/media/landing.jpg": "/now-ui-kit-react/static/media/landing.f8fba454.jpg",
     "static/media/login.jpg": "/now-ui-kit-react/static/media/login.b2101951.jpg",
-    "static/media/now-ui-kit.scss": "/now-ui-kit-react/static/media/nucleo-outline.8ebec31f.woff2",
+    "static/media/now-ui-kit.scss?v=1.4.0": "/now-ui-kit-react/static/media/nucleo-outline.8ebec31f.woff2",
     "static/media/profile.jpg": "/now-ui-kit-react/static/media/profile.225653f9.jpg",
     "static/media/ryan.jpg": "/now-ui-kit-react/static/media/ryan.f217f346.jpg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.59e0bfe4.js",
+    "static/js/2.e762bd63.chunk.js",
+    "static/css/main.098c11eb.chunk.css",
+    "static/js/main.6fbe068c.chunk.js"
+  ]
 }
