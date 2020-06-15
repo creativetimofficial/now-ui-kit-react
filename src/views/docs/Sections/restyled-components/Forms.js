@@ -14,7 +14,7 @@ import {
   InputGroupText,
   InputGroup,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const codeOverview = `import React from "react";
@@ -783,7 +783,7 @@ function Forms() {
       <h2 id="overview">Overview</h2>
       <p>
         Bootstrap’s form controls expand on{" "}
-        <a href="#pablo" onClick={e => e.preventDefault()}>
+        <a href="#pablo" onClick={(e) => e.preventDefault()}>
           our Rebooted form styles
         </a>
         with classes. Use these classes to opt into their customized displays
@@ -850,7 +850,7 @@ function Forms() {
       </p>
       <p>
         Be sure to explore our{" "}
-        <a href="#pablo" onClick={e => e.preventDefault()}>
+        <a href="#pablo" onClick={(e) => e.preventDefault()}>
           custom forms
         </a>{" "}
         to further style <code className="highlighter-rouge">{`<select>`}</code>
@@ -1447,7 +1447,7 @@ function Forms() {
           elements, these will only be given a style of{" "}
           <code className="highlighter-rouge">pointer-events: none</code>. As
           noted in the section about{" "}
-          <a href="#pablo" onClick={e => e.preventDefault()}>
+          <a href="#pablo" onClick={(e) => e.preventDefault()}>
             disabled state for buttons
           </a>
           (and specifically in the sub-section for anchor elements), this CSS

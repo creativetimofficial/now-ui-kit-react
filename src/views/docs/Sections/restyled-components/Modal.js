@@ -9,7 +9,7 @@ import {
   UncontrolledTooltip,
   UncontrolledPopover,
   PopoverHeader,
-  PopoverBody
+  PopoverBody,
 } from "reactstrap";
 
 const codeModalComponents = `import React from "react";
@@ -420,7 +420,7 @@ function Modals() {
                 className="popover-test"
                 color="secondary"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
                 role="button"
                 id="popover-test"
               >
@@ -438,7 +438,7 @@ function Modals() {
               <a
                 className="tooltip-test"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
                 id="tooltip-test1"
               >
                 This link
@@ -450,7 +450,7 @@ function Modals() {
               <a
                 className="tooltip-test"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
                 id="tooltip-test2"
               >
                 that link

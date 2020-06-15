@@ -106,25 +106,45 @@ function Badges() {
         prop) will default the badge to a link.
       </p>
       <div className="bd-example" data-example-id="">
-        <Badge color="primary" href="#pablo" onClick={e => e.preventDefault()}>
+        <Badge
+          color="primary"
+          href="#pablo"
+          onClick={(e) => e.preventDefault()}
+        >
           Primary
         </Badge>
-        <Badge color="info" href="#pablo" onClick={e => e.preventDefault()}>
+        <Badge color="info" href="#pablo" onClick={(e) => e.preventDefault()}>
           Info
         </Badge>
-        <Badge color="success" href="#pablo" onClick={e => e.preventDefault()}>
+        <Badge
+          color="success"
+          href="#pablo"
+          onClick={(e) => e.preventDefault()}
+        >
           Success
         </Badge>
-        <Badge color="danger" href="#pablo" onClick={e => e.preventDefault()}>
+        <Badge color="danger" href="#pablo" onClick={(e) => e.preventDefault()}>
           Danger
         </Badge>
-        <Badge color="warning" href="#pablo" onClick={e => e.preventDefault()}>
+        <Badge
+          color="warning"
+          href="#pablo"
+          onClick={(e) => e.preventDefault()}
+        >
           Warning
         </Badge>
-        <Badge color="default" href="#pablo" onClick={e => e.preventDefault()}>
+        <Badge
+          color="default"
+          href="#pablo"
+          onClick={(e) => e.preventDefault()}
+        >
           Default
         </Badge>
-        <Badge color="neutral" href="#pablo" onClick={e => e.preventDefault()}>
+        <Badge
+          color="neutral"
+          href="#pablo"
+          onClick={(e) => e.preventDefault()}
+        >
           Neutral
         </Badge>
       </div>

@@ -13,7 +13,7 @@ import {
   InputGroupText,
   InputGroup,
   Container,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -33,7 +33,7 @@ function LoginPage() {
       document.body.classList.remove("login-page");
       document.body.classList.remove("sidebar-collapse");
     };
-  },[]);
+  }, []);
   return (
     <>
       <ExamplesNavbar />
@@ -41,7 +41,7 @@ function LoginPage() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/login.jpg") + ")",
           }}
         ></div>
         <div className="content">
@@ -101,7 +101,7 @@ function LoginPage() {
                       className="btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                       size="lg"
                     >
                       Get Started
@@ -111,7 +111,7 @@ function LoginPage() {
                         <a
                           className="link"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           Create Account
                         </a>
@@ -122,7 +122,7 @@ function LoginPage() {
                         <a
                           className="link"
                           href="#pablo"
-                          onClick={e => e.preventDefault()}
+                          onClick={(e) => e.preventDefault()}
                         >
                           Need Help?
                         </a>

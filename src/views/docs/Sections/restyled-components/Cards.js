@@ -19,7 +19,7 @@ import {
   ListGroup,
   NavItem,
   NavLink,
-  Nav
+  Nav,
 } from "reactstrap";
 
 const codeExample = `import React from "react";
@@ -653,7 +653,7 @@ function Cards() {
             <Button
               color="primary"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Go somewhere
             </Button>
@@ -711,10 +711,10 @@ function Cards() {
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </CardText>
-            <CardLink href="#pablo" onClick={e => e.preventDefault()}>
+            <CardLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Card link
             </CardLink>
-            <CardLink href="#pablo" onClick={e => e.preventDefault()}>
+            <CardLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Another link
             </CardLink>
           </CardBody>
@@ -807,7 +807,7 @@ function Cards() {
             <Button
               color="primary"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Go somewhere
             </Button>
@@ -833,7 +833,7 @@ function Cards() {
             <Button
               color="primary"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Go somewhere
             </Button>
@@ -849,7 +849,7 @@ function Cards() {
             <Button
               color="primary"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Go somewhere
             </Button>
@@ -865,7 +865,7 @@ function Cards() {
             <Button
               color="primary"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Go somewhere
             </Button>
@@ -894,13 +894,13 @@ function Cards() {
                 <NavLink
                   className="active"
                   href="#pablo"
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   Active
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                   Link
                 </NavLink>
               </NavItem>
@@ -908,7 +908,7 @@ function Cards() {
                 <NavLink
                   className="disabled"
                   href="#pablo"
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   Disabled
                 </NavLink>
@@ -924,7 +924,7 @@ function Cards() {
             <Button
               color="primary"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Go somewhere
             </Button>
@@ -945,13 +945,13 @@ function Cards() {
                 <NavLink
                   className="active"
                   href="#pablo"
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   Active
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+                <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
                   Link
                 </NavLink>
               </NavItem>
@@ -959,7 +959,7 @@ function Cards() {
                 <NavLink
                   className="disabled"
                   href="#pablo"
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   Disabled
                 </NavLink>
@@ -975,7 +975,7 @@ function Cards() {
             <Button
               color="primary"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Go somewhere
             </Button>

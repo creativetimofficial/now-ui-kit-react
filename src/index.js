@@ -38,23 +38,26 @@ ReactDOM.render(
   <HashRouter>
     <Switch>
       <Switch>
-        <Route path="/index" render={props => <Index {...props} />} />
+        <Route path="/index" render={(props) => <Index {...props} />} />
         <Route
           path="/nucleo-icons"
-          render={props => <NucleoIcons {...props} />}
+          render={(props) => <NucleoIcons {...props} />}
         />
         <Route
           path="/landing-page"
-          render={props => <LandingPage {...props} />}
+          render={(props) => <LandingPage {...props} />}
         />
         <Route
           path="/profile-page"
-          render={props => <ProfilePage {...props} />}
+          render={(props) => <ProfilePage {...props} />}
         />
-        <Route path="/login-page" render={props => <LoginPage {...props} />} />
+        <Route
+          path="/login-page"
+          render={(props) => <LoginPage {...props} />}
+        />
         <Route
           path="/documentation"
-          render={props => <Documentation {...props} />}
+          render={(props) => <Documentation {...props} />}
         />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />

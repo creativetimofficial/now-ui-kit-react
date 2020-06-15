@@ -11,7 +11,7 @@ import {
   CardHeader,
   CardBody,
   TabContent,
-  TabPane
+  TabPane,
 } from "reactstrap";
 
 const codeBaseNav1 = `import React from "react";
@@ -538,18 +538,18 @@ function Navs() {
             <NavLink
               className="active"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Active
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
           </NavItem>
@@ -557,7 +557,7 @@ function Navs() {
             <NavLink
               className="disabled"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Disabled
             </NavLink>
@@ -580,20 +580,20 @@ function Navs() {
           <NavLink
             className="active"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             Active
           </NavLink>
-          <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+          <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
             Link
           </NavLink>
-          <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+          <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
             Link
           </NavLink>
           <NavLink
             className="disabled"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             Disabled
           </NavLink>
@@ -611,7 +611,7 @@ function Navs() {
       <h3 id="horizontal-alignment">Horizontal alignment</h3>
       <p>
         Change the horizontal alignment of your nav with{" "}
-        <a href="#pablo" onClick={e => e.preventDefault()}>
+        <a href="#pablo" onClick={(e) => e.preventDefault()}>
           flexbox utilities
         </a>
         . By default, navs are left-aligned, but you can easily change them to
@@ -627,18 +627,18 @@ function Navs() {
             <NavLink
               className="active"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Active
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
           </NavItem>
@@ -646,7 +646,7 @@ function Navs() {
             <NavLink
               className="disabled"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Disabled
             </NavLink>
@@ -666,18 +666,18 @@ function Navs() {
             <NavLink
               className="active"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Active
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
           </NavItem>
@@ -685,7 +685,7 @@ function Navs() {
             <NavLink
               className="disabled"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Disabled
             </NavLink>
@@ -709,18 +709,18 @@ function Navs() {
             <NavLink
               className="active"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Active
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+            <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
               Link
             </NavLink>
           </NavItem>
@@ -728,7 +728,7 @@ function Navs() {
             <NavLink
               className="disabled"
               href="#pablo"
-              onClick={e => e.preventDefault()}
+              onClick={(e) => e.preventDefault()}
             >
               Disabled
             </NavLink>
@@ -748,20 +748,20 @@ function Navs() {
           <NavLink
             className="active"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             Active
           </NavLink>
-          <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+          <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
             Link
           </NavLink>
-          <NavLink href="#pablo" onClick={e => e.preventDefault()}>
+          <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
             Link
           </NavLink>
           <NavLink
             className="disabled"
             href="#pablo"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             Disabled
           </NavLink>
@@ -775,7 +775,7 @@ function Navs() {
         Takes the basic nav from above and adds the{" "}
         <code className="highlighter-rouge">.nav-tabs</code> class to generate a
         tabbed interface. Use them to create tabbable regions with our{" "}
-        <a href="#pablo" onClick={e => e.preventDefault()}>
+        <a href="#pablo" onClick={(e) => e.preventDefault()}>
           tab JavaScript plugin
         </a>
         .
@@ -791,7 +791,7 @@ function Navs() {
                     <NavLink
                       className={plainTabs === "1" ? "active" : ""}
                       href="#pablo"
-                      onClick={e => {
+                      onClick={(e) => {
                         e.preventDefault();
                         setPlainTabs("1");
                       }}
@@ -803,7 +803,7 @@ function Navs() {
                     <NavLink
                       className={plainTabs === "2" ? "active" : ""}
                       href="#pablo"
-                      onClick={e => {
+                      onClick={(e) => {
                         e.preventDefault();
                         setPlainTabs("2");
                       }}
@@ -815,7 +815,7 @@ function Navs() {
                     <NavLink
                       className={plainTabs === "3" ? "active" : ""}
                       href="#pablo"
-                      onClick={e => {
+                      onClick={(e) => {
                         e.preventDefault();
                         setPlainTabs("3");
                       }}
@@ -881,7 +881,7 @@ function Navs() {
                 <NavLink
                   className={iconTabs === "1" ? "active" : ""}
                   href="#pablo"
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault();
                     setIconTabs("1");
                   }}
@@ -894,7 +894,7 @@ function Navs() {
                 <NavLink
                   className={iconTabs === "2" ? "active" : ""}
                   href="#pablo"
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault();
                     setIconTabs("2");
                   }}
@@ -907,7 +907,7 @@ function Navs() {
                 <NavLink
                   className={iconTabs === "3" ? "active" : ""}
                   href="#pablo"
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault();
                     setIconTabs("3");
                   }}
@@ -920,7 +920,7 @@ function Navs() {
                 <NavLink
                   className={iconTabs === "4" ? "active" : ""}
                   href="#pablo"
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault();
                     setIconTabs("4");
                   }}

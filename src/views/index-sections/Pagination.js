@@ -12,7 +12,7 @@ import {
   Progress,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -49,7 +49,7 @@ function PaginationSection() {
                   <NavLink
                     className={pills === "1" ? "active" : ""}
                     href="#pablo"
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault();
                       setPills("1");
                     }}
@@ -61,7 +61,7 @@ function PaginationSection() {
                   <NavLink
                     className={pills === "2" ? "active" : ""}
                     href="#pablo"
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault();
                       setPills("2");
                     }}
@@ -73,7 +73,7 @@ function PaginationSection() {
                   <NavLink
                     className={pills === "3" ? "active" : ""}
                     href="#pablo"
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault();
                       setPills("3");
                     }}
@@ -97,7 +97,7 @@ function PaginationSection() {
                 <PaginationItem className="active">
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     1
                   </PaginationLink>
@@ -105,7 +105,7 @@ function PaginationSection() {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     2
                   </PaginationLink>
@@ -113,7 +113,7 @@ function PaginationSection() {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     3
                   </PaginationLink>
@@ -121,7 +121,7 @@ function PaginationSection() {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     4
                   </PaginationLink>
@@ -129,7 +129,7 @@ function PaginationSection() {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     5
                   </PaginationLink>
@@ -140,7 +140,7 @@ function PaginationSection() {
                   <PaginationLink
                     aria-label="Previous"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     <span aria-hidden={true}>
                       <i
@@ -153,7 +153,7 @@ function PaginationSection() {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     1
                   </PaginationLink>
@@ -161,7 +161,7 @@ function PaginationSection() {
                 <PaginationItem className="active">
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     2
                   </PaginationLink>
@@ -169,7 +169,7 @@ function PaginationSection() {
                 <PaginationItem>
                   <PaginationLink
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     3
                   </PaginationLink>
@@ -178,7 +178,7 @@ function PaginationSection() {
                   <PaginationLink
                     aria-label="Next"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                   >
                     <span aria-hidden={true}>
                       <i

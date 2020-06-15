@@ -27,7 +27,7 @@ function LandingPageHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg6.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/bg6.jpg") + ")",
           }}
           ref={pageHeader}
         ></div>
@@ -39,7 +39,7 @@ function LandingPageHeader() {
                 className="btn-icon btn-round"
                 color="info"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <i className="fab fa-facebook-square"></i>
               </Button>
@@ -47,7 +47,7 @@ function LandingPageHeader() {
                 className="btn-icon btn-round"
                 color="info"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <i className="fab fa-twitter"></i>
               </Button>
@@ -55,7 +55,7 @@ function LandingPageHeader() {
                 className="btn-icon btn-round"
                 color="info"
                 href="#pablo"
-                onClick={e => e.preventDefault()}
+                onClick={(e) => e.preventDefault()}
               >
                 <i className="fab fa-google-plus"></i>
               </Button>

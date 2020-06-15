@@ -10,7 +10,7 @@ import {
   CardBody,
   Card,
   CardHeader,
-  Collapse
+  Collapse,
 } from "reactstrap";
 
 const codeExample = `import React from "react";
@@ -241,9 +241,9 @@ export default Example;`;
 function Collapses() {
   // collapse states and functions
   const [collapses, setCollapses] = React.useState([]);
-  const changeCollapse = collapse => {
+  const changeCollapse = (collapse) => {
     if (collapses.includes(collapse)) {
-      setCollapses(collapses.filter(prop => prop !== collapse));
+      setCollapses(collapses.filter((prop) => prop !== collapse));
     } else {
       setCollapses([...collapses, collapse]);
     }
@@ -292,7 +292,7 @@ function Collapses() {
                     data-parent="#accordion"
                     href="#pablo"
                     id="collapseOne"
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault();
                       changeCollapse(1);
                     }}
@@ -326,7 +326,7 @@ function Collapses() {
                     data-parent="#accordion"
                     href="#pablo"
                     id="collapseTwo"
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault();
                       changeCollapse(2);
                     }}
@@ -364,7 +364,7 @@ function Collapses() {
                     data-parent="#accordion"
                     href="#pablo"
                     id="collapseThree"
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault();
                       changeCollapse(3);
                     }}
@@ -403,7 +403,7 @@ function Collapses() {
           <a
             href="#pablo"
             id="exampleAccordion1"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             Toggle item
           </a>
@@ -423,7 +423,7 @@ function Collapses() {
           <a
             href="#pablo"
             id="exampleAccordion2"
-            onClick={e => e.preventDefault()}
+            onClick={(e) => e.preventDefault()}
           >
             Toggle item 2
           </a>

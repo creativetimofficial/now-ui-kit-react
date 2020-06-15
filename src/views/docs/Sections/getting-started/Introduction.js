@@ -3,9 +3,7 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
-import {
-  Alert
-} from "reactstrap";
+import { Alert } from "reactstrap";
 
 class Introduction extends React.Component {
   render() {
@@ -213,19 +211,19 @@ class Introduction extends React.Component {
           </li>
         </ul>
         <h2 className="bd-title" id="content">
-  Live Production
-</h2>
-<Alert color="warning">
-  Creative Tim cannot help with deploying application to any server. We
-  only have experience on deploying <code>create-react-app</code>{" "}
-  applications to <code>Github Pages</code>.
-</Alert>
-<Alert color="warning">
-  Note that we have set inside the <code>package.json</code> file a
-  homepage prop that when building this product, it will append that
-  link to all links from the build folder so you might need to delete
-  it.
-</Alert>
+          Live Production
+        </h2>
+        <Alert color="warning">
+          Creative Tim cannot help with deploying application to any server. We
+          only have experience on deploying <code>create-react-app</code>{" "}
+          applications to <code>Github Pages</code>.
+        </Alert>
+        <Alert color="warning">
+          Note that we have set inside the <code>package.json</code> file a
+          homepage prop that when building this product, it will append that
+          link to all links from the build folder so you might need to delete
+          it.
+        </Alert>
       </>
     );
   }

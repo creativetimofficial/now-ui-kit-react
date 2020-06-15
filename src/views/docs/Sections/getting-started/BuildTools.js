@@ -85,7 +85,9 @@ function BuildTools() {
                 This will create a build directory with a production build of
                 your app.
                 <Alert color="warning">
-                  The build may not work at first, and you may need to delete the <code>homepage prop</code> from inside the <code>package.json</code> file.
+                  The build may not work at first, and you may need to delete
+                  the <code>homepage prop</code> from inside the{" "}
+                  <code>package.json</code> file.
                 </Alert>
               </td>
               <td className="text-right">

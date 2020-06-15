@@ -57,24 +57,24 @@ var componentsRoutes = [
       {
         path: "/documentation/introduction",
         component: Introduction,
-        name: "Introduction"
+        name: "Introduction",
       },
       {
         path: "/documentation/license",
         component: License,
-        name: "License"
+        name: "License",
       },
       {
         path: "/documentation/build-tools",
         component: BuildTools,
-        name: "Build Tools"
+        name: "Build Tools",
       },
       {
         path: "/documentation/file-structure",
         component: FileStructure,
-        name: "File Structure"
-      }
-    ]
+        name: "File Structure",
+      },
+    ],
   },
   {
     name: "Core Components",
@@ -83,8 +83,12 @@ var componentsRoutes = [
       { path: "/documentation/footers", component: Footers, name: "Footers" },
       { path: "/documentation/headers", component: Headers, name: "Headers" },
       { path: "/documentation/navbars", component: Navbars, name: "Navbars" },
-      { path: "/documentation/parallax", component: Parallax, name: "Parallax" }
-    ]
+      {
+        path: "/documentation/parallax",
+        component: Parallax,
+        name: "Parallax",
+      },
+    ],
   },
   {
     name: "Restyled Components",
@@ -95,59 +99,59 @@ var componentsRoutes = [
       {
         path: "/documentation/breadcrumb",
         component: Breadcrumb,
-        name: "Breadcrumb"
+        name: "Breadcrumb",
       },
       { path: "/documentation/buttons", component: Buttons, name: "Buttons" },
       { path: "/documentation/cards", component: Cards, name: "Cards" },
       {
         path: "/documentation/carousel",
         component: Carousel,
-        name: "Carousel"
+        name: "Carousel",
       },
       {
         path: "/documentation/collapse",
         component: Collapse,
-        name: "Collapse"
+        name: "Collapse",
       },
       {
         path: "/documentation/dropdowns",
         component: Dropdowns,
-        name: "Dropdowns"
+        name: "Dropdowns",
       },
       { path: "/documentation/forms", component: Forms, name: "Forms" },
       { path: "/documentation/modal", component: Modal, name: "Modal" },
       {
         path: "/documentation/navbar",
         component: Navbar,
-        name: "Navbar"
+        name: "Navbar",
       },
       { path: "/documentation/navs", component: Navs, name: "Navs" },
       {
         path: "/documentation/pagination",
         component: Pagination,
-        name: "Pagination"
+        name: "Pagination",
       },
       {
         path: "/documentation/popovers",
         component: Popovers,
-        name: "Popovers"
+        name: "Popovers",
       },
       {
         path: "/documentation/progress",
         component: Progress,
-        name: "Progress"
+        name: "Progress",
       },
       {
         path: "/documentation/tooltips",
         component: Tooltips,
-        name: "Tooltips"
+        name: "Tooltips",
       },
       {
         path: "/documentation/typography",
         component: Typography,
-        name: "Typography"
-      }
-    ]
+        name: "Typography",
+      },
+    ],
   },
   {
     name: "Plugins",
@@ -156,26 +160,26 @@ var componentsRoutes = [
       {
         path: "/documentation/nouislider",
         component: Nouislider,
-        name: "Nouislider"
+        name: "Nouislider",
       },
       {
         path: "/documentation/nucleo-icons",
         component: NucleoIcons,
-        name: "Nucleo Icons"
+        name: "Nucleo Icons",
       },
       {
         path: "/documentation/react-bootstrap-switch",
         component: ReactBootstrapSwitch,
-        name: "React Bootstrap Switch"
+        name: "React Bootstrap Switch",
       },
       {
         path: "/documentation/react-datetime",
         component: ReactDatetime,
-        name: "React Datetime"
-      }
-    ]
+        name: "React Datetime",
+      },
+    ],
   },
-  { redirect: true, path: "/documentation", pathTo: "/documentation/tutorial" }
+  { redirect: true, path: "/documentation", pathTo: "/documentation/tutorial" },
 ];
 
 export default componentsRoutes;

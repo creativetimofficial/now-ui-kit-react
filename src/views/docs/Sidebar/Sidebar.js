@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import docRoutes from "documentation.js";
 
 class Sidebar extends React.Component {
-  activeRoute = path => {
+  activeRoute = (path) => {
     return window.location.href.indexOf(path) > -1
       ? "active bd-sidenav-active"
       : "";

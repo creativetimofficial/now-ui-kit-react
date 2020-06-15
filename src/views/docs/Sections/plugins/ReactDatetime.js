@@ -10,7 +10,7 @@ import {
   CardHeader,
   FormGroup,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 const codeExample = `<FormGroup>
@@ -39,9 +39,7 @@ class DateTimePicker extends React.Component {
         <h2>Example</h2>
         <div className="bd-example">
           <FormGroup>
-            <Datetime
-              inputProps={{ placeholder: "Datetime Picker Here" }}
-            />
+            <Datetime inputProps={{ placeholder: "Datetime Picker Here" }} />
           </FormGroup>
         </div>
         <SyntaxHighlighter
