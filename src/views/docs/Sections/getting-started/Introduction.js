@@ -3,8 +3,9 @@ import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { prism } from "react-syntax-highlighter/dist/styles/prism";
 // reactstrap components
-// import {
-// } from "reactstrap";
+import {
+  Alert
+} from "reactstrap";
 
 class Introduction extends React.Component {
   render() {
@@ -211,39 +212,20 @@ class Introduction extends React.Component {
             </a>
           </li>
         </ul>
-        <h2 id="live-production">Live Production</h2>
-        <p>
-          These are some free open source tutorial on how to deploy a React app
-          on some servers. Please note that your project might need some
-          additional configs to deploy it on these servers (Our demo product
-          needs no adition configs):
-        </p>
-        <ul>
-          <li>
-            <a
-              href="https://blog.heroku.com/deploying-react-with-zero-configuration?ref=creativetim"
-              target="_blank"
-            >
-              tutorial for deploying on heroku
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://medium.freecodecamp.org/surge-vs-github-pages-deploying-a-create-react-app-project-c0ecbf317089?ref=creativetim"
-              target="_blank"
-            >
-              tutorial for deploying on github pages and surge
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af?ref=creativetim"
-              target="_blank"
-            >
-              tutorial for deploying on S3 and CloudFront
-            </a>
-          </li>
-        </ul>
+        <h2 className="bd-title" id="content">
+  Live Production
+</h2>
+<Alert color="warning">
+  Creative Tim cannot help with deploying application to any server. We
+  only have experience on deploying <code>create-react-app</code>{" "}
+  applications to <code>Github Pages</code>.
+</Alert>
+<Alert color="warning">
+  Note that we have set inside the <code>package.json</code> file a
+  homepage prop that when building this product, it will append that
+  link to all links from the build folder so you might need to delete
+  it.
+</Alert>
       </>
     );
   }
