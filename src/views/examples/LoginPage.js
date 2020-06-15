@@ -33,7 +33,7 @@ function LoginPage() {
       document.body.classList.remove("login-page");
       document.body.classList.remove("sidebar-collapse");
     };
-  });
+  },[]);
   return (
     <>
       <ExamplesNavbar />
