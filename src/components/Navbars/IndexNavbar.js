@@ -14,7 +14,7 @@ import {
   NavLink,
   Nav,
   Container,
-  UncontrolledTooltip
+  UncontrolledTooltip,
 } from "reactstrap";
 
 function IndexNavbar() {
@@ -86,7 +86,7 @@ function IndexNavbar() {
               <NavItem>
                 <NavLink
                   href="#pablo"
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault();
                     document
                       .getElementById("download-section")
@@ -103,7 +103,7 @@ function IndexNavbar() {
                   color="default"
                   href="#pablo"
                   nav
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app mr-1"></i>
                   <p>Components</p>
@@ -128,7 +128,7 @@ function IndexNavbar() {
                   color="info"
                   href="#pablo"
                   id="upgrade-to-pro"
-                  onClick={e => e.preventDefault()}
+                  onClick={(e) => e.preventDefault()}
                 >
                   <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
                   <p>Upgrade to PRO</p>

@@ -15,7 +15,7 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -33,7 +33,7 @@ function BasicElements() {
         start: [50],
         connect: [true, false],
         step: 0.5,
-        range: { min: 0, max: 100 }
+        range: { min: 0, max: 100 },
       });
     }
     if (
@@ -43,7 +43,7 @@ function BasicElements() {
         start: [20, 80],
         connect: [false, true, false],
         step: 1,
-        range: { min: 0, max: 100 }
+        range: { min: 0, max: 100 },
       });
     }
   });

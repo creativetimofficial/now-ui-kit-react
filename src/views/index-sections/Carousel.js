@@ -7,7 +7,7 @@ import {
   Col,
   Carousel,
   CarouselItem,
-  CarouselIndicators
+  CarouselIndicators,
 } from "reactstrap";
 
 // core components
@@ -16,18 +16,18 @@ const items = [
   {
     src: require("assets/img/bg1.jpg"),
     altText: "Nature, United States",
-    caption: "Nature, United States"
+    caption: "Nature, United States",
   },
   {
     src: require("assets/img/bg3.jpg"),
     altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States"
+    caption: "Somewhere Beyond, United States",
   },
   {
     src: require("assets/img/bg4.jpg"),
     altText: "Yellowstone National Park, United States",
-    caption: "Yellowstone National Park, United States"
-  }
+    caption: "Yellowstone National Park, United States",
+  },
 ];
 
 function CarouselSection() {
@@ -49,7 +49,7 @@ function CarouselSection() {
     const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   };
-  const goToIndex = newIndex => {
+  const goToIndex = (newIndex) => {
     if (animating) return;
     setActiveIndex(newIndex);
   };
@@ -72,7 +72,7 @@ function CarouselSection() {
                   activeIndex={activeIndex}
                   onClickHandler={goToIndex}
                 />
-                {items.map(item => {
+                {items.map((item) => {
                   return (
                     <CarouselItem
                       onExiting={onExiting}
@@ -90,7 +90,7 @@ function CarouselSection() {
                   className="carousel-control-prev"
                   data-slide="prev"
                   href="#pablo"
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault();
                     previous();
                   }}
@@ -102,7 +102,7 @@ function CarouselSection() {
                   className="carousel-control-next"
                   data-slide="next"
                   href="#pablo"
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault();
                     next();
                   }}
