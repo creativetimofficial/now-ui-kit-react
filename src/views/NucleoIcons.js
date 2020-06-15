@@ -4,10 +4,12 @@ function NucleoIcons() {
   const [open, setOpen] = React.useState(false);
   React.useEffect(() => {
     document.documentElement.classList.add("nucleo-icons-page-styles");
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
     return function cleanup() {
       document.documentElement.classList.remove("nucleo-icons-page-styles");
     };
-  });
+  },[]);
   return (
     <>
       <header>
