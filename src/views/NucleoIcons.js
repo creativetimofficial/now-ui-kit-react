@@ -9,7 +9,7 @@ function NucleoIcons() {
     return function cleanup() {
       document.documentElement.classList.remove("nucleo-icons-page-styles");
     };
-  },[]);
+  }, []);
   return (
     <>
       <header>
@@ -23,7 +23,7 @@ function NucleoIcons() {
           className={"cd-nav-trigger" + (open ? " menu-is-open" : "")}
           href="#pablo"
           id="cd-nav-trigger"
-          onClick={e => {
+          onClick={(e) => {
             e.preventDefault();
             setOpen(!open);
           }}
@@ -35,7 +35,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("arrows").scrollIntoView();
@@ -47,7 +47,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("business").scrollIntoView();
@@ -59,7 +59,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("clothes").scrollIntoView();
@@ -71,7 +71,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("design").scrollIntoView();
@@ -83,7 +83,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("emoticons").scrollIntoView();
@@ -95,7 +95,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("files").scrollIntoView();
@@ -107,7 +107,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("medical").scrollIntoView();
@@ -119,7 +119,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("loaders").scrollIntoView();
@@ -131,7 +131,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("maps").scrollIntoView();
@@ -143,7 +143,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("media").scrollIntoView();
@@ -155,7 +155,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("objects").scrollIntoView();
@@ -167,7 +167,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("school").scrollIntoView();
@@ -179,7 +179,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("shopping").scrollIntoView();
@@ -191,7 +191,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("sport").scrollIntoView();
@@ -203,7 +203,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("technology").scrollIntoView();
@@ -215,7 +215,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("text").scrollIntoView();
@@ -227,7 +227,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("gestures").scrollIntoView();
@@ -239,7 +239,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("transportation").scrollIntoView();
@@ -251,7 +251,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("travel").scrollIntoView();
@@ -263,7 +263,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("interface").scrollIntoView();
@@ -275,7 +275,7 @@ function NucleoIcons() {
             <li>
               <a
                 href="#pablo"
-                onClick={e => {
+                onClick={(e) => {
                   e.preventDefault();
                   setOpen(!open);
                   document.getElementById("users").scrollIntoView();

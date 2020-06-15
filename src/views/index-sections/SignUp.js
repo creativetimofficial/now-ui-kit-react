@@ -14,7 +14,7 @@ import {
   InputGroupText,
   InputGroup,
   Container,
-  Row
+  Row,
 } from "reactstrap";
 
 // core components
@@ -31,7 +31,7 @@ function SignUp() {
           backgroundImage: "url(" + require("assets/img/bg11.jpg") + ")",
           backgroundSize: "cover",
           backgroundPosition: "top center",
-          minHeight: "700px"
+          minHeight: "700px",
         }}
       >
         <Container>
@@ -47,7 +47,7 @@ function SignUp() {
                       className="btn-neutral btn-icon btn-round"
                       color="facebook"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-facebook-square"></i>
                     </Button>
@@ -55,7 +55,7 @@ function SignUp() {
                       className="btn-neutral btn-icon btn-round"
                       color="twitter"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                       size="lg"
                     >
                       <i className="fab fa-twitter"></i>
@@ -64,7 +64,7 @@ function SignUp() {
                       className="btn-neutral btn-icon btn-round"
                       color="google"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-google-plus"></i>
                     </Button>
@@ -128,7 +128,7 @@ function SignUp() {
                     className="btn-neutral btn-round"
                     color="info"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                     size="lg"
                   >
                     Get Started

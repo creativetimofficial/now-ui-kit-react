@@ -9,7 +9,7 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -30,7 +30,7 @@ function LandingPage() {
       document.body.classList.remove("landing-page");
       document.body.classList.remove("sidebar-collapse");
     };
-  },[]);
+  }, []);
   return (
     <>
       <ExamplesNavbar />
@@ -58,7 +58,7 @@ function LandingPage() {
                     className="image-container image-left"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/login.jpg") + ")"
+                        "url(" + require("assets/img/login.jpg") + ")",
                     }}
                   >
                     <p className="blockquote blockquote-info">
@@ -73,7 +73,7 @@ function LandingPage() {
                     className="image-container"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg3.jpg") + ")"
+                        "url(" + require("assets/img/bg3.jpg") + ")",
                     }}
                   ></div>
                 </Col>
@@ -82,7 +82,7 @@ function LandingPage() {
                     className="image-container image-right"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg1.jpg") + ")"
+                        "url(" + require("assets/img/bg1.jpg") + ")",
                     }}
                   ></div>
                   <h3>
@@ -141,7 +141,7 @@ function LandingPage() {
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                       add some{" "}
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         links
                       </a>{" "}
                       for people to be able to follow them outside the site.
@@ -150,7 +150,7 @@ function LandingPage() {
                       className="btn-icon btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-twitter"></i>
                     </Button>
@@ -158,7 +158,7 @@ function LandingPage() {
                       className="btn-icon btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-instagram"></i>
                     </Button>
@@ -166,7 +166,7 @@ function LandingPage() {
                       className="btn-icon btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-facebook-square"></i>
                     </Button>
@@ -185,7 +185,7 @@ function LandingPage() {
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                       add some{" "}
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         links
                       </a>{" "}
                       for people to be able to follow them outside the site.
@@ -194,7 +194,7 @@ function LandingPage() {
                       className="btn-icon btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-twitter"></i>
                     </Button>
@@ -202,7 +202,7 @@ function LandingPage() {
                       className="btn-icon btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-linkedin"></i>
                     </Button>
@@ -221,7 +221,7 @@ function LandingPage() {
                       You can write here details about one of your team members.
                       You can give more details about what they do. Feel free to
                       add some{" "}
-                      <a href="#pablo" onClick={e => e.preventDefault()}>
+                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
                         links
                       </a>{" "}
                       for people to be able to follow them outside the site.
@@ -230,7 +230,7 @@ function LandingPage() {
                       className="btn-icon btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-google-plus"></i>
                     </Button>
@@ -238,7 +238,7 @@ function LandingPage() {
                       className="btn-icon btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-youtube"></i>
                     </Button>
@@ -246,7 +246,7 @@ function LandingPage() {
                       className="btn-icon btn-round"
                       color="info"
                       href="#pablo"
-                      onClick={e => e.preventDefault()}
+                      onClick={(e) => e.preventDefault()}
                     >
                       <i className="fab fa-twitter"></i>
                     </Button>
@@ -311,7 +311,7 @@ function LandingPage() {
                     className="btn-round"
                     color="info"
                     href="#pablo"
-                    onClick={e => e.preventDefault()}
+                    onClick={(e) => e.preventDefault()}
                     size="lg"
                   >
                     Send Message
