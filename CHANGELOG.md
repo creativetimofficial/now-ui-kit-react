@@ -7,6 +7,8 @@
 ### Added components
 ### Deleted dependencies
 ### Added dependencies
++ gulp@4.0.2 (for Creative Tim copyrights)
++ gulp-append-prepend@1.0.8 (for Creative Tim copyrights)
 ### Updated dependencies
 ```
 moment             2.24.0   →    2.26.0
