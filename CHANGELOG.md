@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.4.0] 2019-06-15
+## [1.4.0] 2020-06-15
 ### Bug fixing
 - Other Now UI React products
   - https://github.com/creativetimofficial/ct-now-ui-dashboard-pro-react/issues/10 (added `window.scrollTo(0, 0)` and `document.body.scrollTop = 0` to all pages so when you navigate to new page you are sent to the first line of the page)
