@@ -41,7 +41,7 @@ function LoginPage() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/login.jpg") + ")",
+            backgroundImage: "url(" + require("assets/img/login.jpg").default + ")",
           }}
         ></div>
         <div className="content">
@@ -53,7 +53,7 @@ function LoginPage() {
                     <div className="logo-container">
                       <img
                         alt="..."
-                        src={require("assets/img/now-logo.png")}
+                        src={require("assets/img/now-logo.png").default}
                       ></img>
                     </div>
                   </CardHeader>
