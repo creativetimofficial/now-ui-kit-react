@@ -126,9 +126,9 @@ function IndexNavbar() {
                 <Button
                   className="nav-link btn-neutral"
                   color="info"
-                  href="#pablo"
+                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nukr-index-navbar"
                   id="upgrade-to-pro"
-                  onClick={(e) => e.preventDefault()}
+                  target="_blank"
                 >
                   <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
                   <p>Upgrade to PRO</p>

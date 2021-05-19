@@ -212,7 +212,8 @@ function Navbars() {
           <div
             className="navigation-example"
             style={{
-              backgroundImage: "url(" + require("assets/img/bg7.jpg") + ")",
+              backgroundImage:
+                "url(" + require("assets/img/bg7.jpg").default + ")",
             }}
           >
             <Navbar className="bg-primary" expand="lg">
