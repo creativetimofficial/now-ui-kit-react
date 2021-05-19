@@ -129,7 +129,7 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={.default("assets/img/bg1.jpg").default}
+                          src={require("assets/img/bg1.jpg").default}
                         ></img>
                         <img
                           alt="..."
