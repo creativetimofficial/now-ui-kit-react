@@ -41,7 +41,8 @@ function LoginPage() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/login.jpg").default + ")",
+            backgroundImage:
+              "url(" + require("assets/img/login.jpg").default + ")",
           }}
         ></div>
         <div className="content">
