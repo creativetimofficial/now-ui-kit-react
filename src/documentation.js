@@ -6,7 +6,7 @@
 
 * Product Page: https://www.creative-tim.com/product/now-ui-kit-react
 * Copyright 2021 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit-react/blob/master/LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit-react/blob/main/LICENSE.md)
 
 * Coded by Creative Tim
 
