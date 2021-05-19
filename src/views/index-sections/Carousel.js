@@ -14,17 +14,17 @@ import {
 
 const items = [
   {
-    src: require("assets/img/bg1.jpg"),
+    src: require("assets/img/bg1.jpg").default,
     altText: "Nature, United States",
     caption: "Nature, United States",
   },
   {
-    src: require("assets/img/bg3.jpg"),
+    src: require("assets/img/bg3.jpg").default,
     altText: "Somewhere Beyond, United States",
     caption: "Somewhere Beyond, United States",
   },
   {
-    src: require("assets/img/bg4.jpg"),
+    src: require("assets/img/bg4.jpg").default,
     altText: "Yellowstone National Park, United States",
     caption: "Yellowstone National Park, United States",
   },
