@@ -1,6 +1,6 @@
 # Change Log
 
-## [1.5.0] 2021-05-
+## [1.5.0] 2021-05-19
 ### Bug fixing
 ### Major style changes
 ### Deleted components
