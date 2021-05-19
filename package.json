@@ -1,25 +1,25 @@
 {
   "name": "now-ui-kit-react",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "private": true,
   "homepage": "https://demos.creative-tim.com/now-ui-kit-react",
   "dependencies": {
     "gh-pages": "3.0.0",
-    "history": "5.0.0",
     "gulp": "4.0.2",
-    "gulp-append-prepend": "1.0.8",
-    "moment": "2.26.0",
-    "node-sass": "4.14.1",
-    "nouislider": "14.5.0",
-    "react": "16.13.1",
+    "gulp-append-prepend": "1.0.9",
+    "history": "5.0.0",
+    "moment": "2.29.1",
+    "node-sass": "6.0.0",
+    "nouislider": "15.1.0",
+    "react": "17.0.2",
     "react-bootstrap-switch": "15.5.3",
-    "react-datetime": "2.16.3",
-    "react-dom": "16.13.1",
+    "react-datetime": "3.0.4",
+    "react-dom": "17.0.2",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
-    "react-scripts": "3.4.1",
-    "react-syntax-highlighter": "12.2.1",
-    "reactstrap": "8.4.1"
+    "react-scripts": "4.0.3",
+    "react-syntax-highlighter": "15.4.3",
+    "reactstrap": "8.9.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -48,6 +48,7 @@
     ]
   },
   "optionalDependencies": {
-    "typescript": "3.9.5"
+    "@babel/core": "7.14.3",
+    "typescript": "4.2.4"
   }
 }

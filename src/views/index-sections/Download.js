@@ -70,9 +70,9 @@ function Download() {
               <Button
                 className="btn-neutral btn-round"
                 color="default"
-                href="http://demos.creative-tim.com/now-ui-kit-pro-react/#/presentation?ref=nukr-index-page"
+                href="http://creative-tim.com/product/now-ui-kit-pro-react?ref=nukr-index-page"
                 size="lg"
-                disabled
+                target="_blank"
               >
                 <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
                 Upgrade to PRO
