@@ -1,5 +1,34 @@
 # Change Log
 
+## [1.5.0] 2021-05-
+### Bug fixing
+### Major style changes
+### Deleted components
+### Added components
+### Deleted dependencies
+### Added dependencies
+- `@babel/core@7.14.3` (to stop warnings on install)
+### Updated dependencies
+```
+gulp-append-prepend     1.0.8   →    1.0.9
+moment                 2.26.0   →   2.29.1
+node-sass              4.14.1   →    6.0.0
+nouislider             14.5.0   →   15.1.0
+react                 16.13.1   →   17.0.2
+react-datetime         2.16.3   →    3.0.4
+react-dom             16.13.1   →   17.0.2
+react-scripts           3.4.1   →    4.0.3
+reactstrap              8.4.1   →    8.9.0
+typescript              3.9.5   →    4.2.4
+```
+### Warning
+_While in development some of the plugins that were used for this product will throw some warnings - note, this only happens in development, the UI or the functionality of the product is not affected, also, if the issues will persist in React 17, we'll drop usage of those plugins, and replace them with other ones._
+_Warnings might appear while doing an npm install - they do not affect the UI or the functionality of the product, and they appear because of NodeJS and not from the product itself._
+```
+npm WARN react-datetime@3.0.4 requires a peer of react@^16.5.0 but none is installed. You must install peer dependencies yourself.
+```
+_In our next update we'll replace this plugin with something else to stop these._
+
 ## [1.4.0] 2020-06-15
 ### Bug fixing
 - Other Now UI React products
