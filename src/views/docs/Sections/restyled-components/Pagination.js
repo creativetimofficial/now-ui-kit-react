@@ -310,9 +310,10 @@ class PaginationDocs extends React.Component {
         <h2 id="disabled-and-active-states">Disabled and active states</h2>
         <p>
           Pagination links are customizable for different circumstances. Use{" "}
-          <code className="highlighter-rouge">disabled</code> for links that appear
-          un-clickable and <code className="highlighter-rouge">active</code> to
-          indicate the current page.
+          <code className="highlighter-rouge">disabled</code> for links that
+          appear un-clickable and{" "}
+          <code className="highlighter-rouge">active</code> to indicate the
+          current page.
         </p>
         <div className="bd-example" data-example-id="">
           <nav aria-label="...">
