@@ -28,6 +28,7 @@ _Warnings might appear while doing an npm install - they do not affect the UI or
 npm WARN react-datetime@3.0.4 requires a peer of react@^16.5.0 but none is installed. You must install peer dependencies yourself.
 ```
 _In our next update we'll replace this plugin with something else to stop these._
+_You will also have the following message: found 80 vulnerabilities (1 low, 79 moderate). This comes from react-scripts, and will be fixed in the next version. NOTE: the product works as expected with these vulnerabilities._
 
 ## [1.4.0] 2020-06-15
 ### Bug fixing
