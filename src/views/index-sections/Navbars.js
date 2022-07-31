@@ -14,7 +14,7 @@ import {
   Nav,
   Container,
   Row,
-  Col,
+  Col
 } from "reactstrap";
 
 // core components
@@ -212,8 +212,7 @@ function Navbars() {
           <div
             className="navigation-example"
             style={{
-              backgroundImage:
-                "url(" + require("assets/img/bg7.jpg").default + ")",
+              backgroundImage: "url(" + require("assets/img/bg7.jpg") + ")"
             }}
           >
             <Navbar className="bg-primary" expand="lg">

@@ -17,7 +17,7 @@ function Examples() {
                 <img
                   alt="..."
                   className="img-raised"
-                  src={require("assets/img/landing.jpg").default}
+                  src={require("assets/img/landing.jpg")}
                 ></img>
               </a>
               <Button
@@ -35,7 +35,7 @@ function Examples() {
                 <img
                   alt="..."
                   className="img-raised"
-                  src={require("assets/img/profile.jpg").default}
+                  src={require("assets/img/profile.jpg")}
                 ></img>
               </a>
               <Button
