@@ -13,7 +13,7 @@ import {
   InputGroupText,
   InputGroup,
   Container,
-  Col,
+  Col
 } from "reactstrap";
 
 // core components
@@ -41,8 +41,7 @@ function LoginPage() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage:
-              "url(" + require("assets/img/login.jpg").default + ")",
+            backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
           }}
         ></div>
         <div className="content">
@@ -54,7 +53,7 @@ function LoginPage() {
                     <div className="logo-container">
                       <img
                         alt="..."
-                        src={require("assets/img/now-logo.png").default}
+                        src={require("assets/img/now-logo.png")}
                       ></img>
                     </div>
                   </CardHeader>

@@ -7,27 +7,27 @@ import {
   Col,
   Carousel,
   CarouselItem,
-  CarouselIndicators,
+  CarouselIndicators
 } from "reactstrap";
 
 // core components
 
 const items = [
   {
-    src: require("assets/img/bg1.jpg").default,
+    src: require("assets/img/bg1.jpg"),
     altText: "Nature, United States",
-    caption: "Nature, United States",
+    caption: "Nature, United States"
   },
   {
-    src: require("assets/img/bg3.jpg").default,
+    src: require("assets/img/bg3.jpg"),
     altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States",
+    caption: "Somewhere Beyond, United States"
   },
   {
-    src: require("assets/img/bg4.jpg").default,
+    src: require("assets/img/bg4.jpg"),
     altText: "Yellowstone National Park, United States",
-    caption: "Yellowstone National Park, United States",
-  },
+    caption: "Yellowstone National Park, United States"
+  }
 ];
 
 function CarouselSection() {

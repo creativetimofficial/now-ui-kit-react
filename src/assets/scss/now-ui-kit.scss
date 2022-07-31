@@ -1,11 +1,11 @@
 /*!
 
  =========================================================
- * Now UI Kit React - v1.5.0 based on Now UI Kit - v1.3.0
+ * Now UI Kit React - v1.5.1 based on Now UI Kit - v1.3.0
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/now-ui-kit-react
- * Copyright 2021 Creative Tim (http://www.creative-tim.com)
+ * Copyright 2022 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit-react/blob/main/LICENSE.md)
 
  * Designed by www.invisionapp.com Coded by www.creative-tim.com
@@ -16,8 +16,8 @@
 
  */
 
-@import 'now-ui-kit/variables';
-@import 'now-ui-kit/mixins';
+@import "now-ui-kit/variables";
+@import "now-ui-kit/mixins";
 
 // Plugins CSS
 @import "now-ui-kit/plugins/plugin-bootstrap-switch";
@@ -57,8 +57,7 @@
 @import "now-ui-kit/example-pages";
 @import "now-ui-kit/sections";
 
-
 @import "now-ui-kit/responsive";
 
 // React
-@import "react/react-differences"
+@import "react/react-differences";

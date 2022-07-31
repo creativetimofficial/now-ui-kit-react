@@ -1,11 +1,11 @@
 /*
 
 =========================================================
-* Now UI Kit React - v1.5.0
+* Now UI Kit React - v1.5.1
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/now-ui-kit-react
-* Copyright 2021 Creative Tim (http://www.creative-tim.com)
+* Copyright 2022 Creative Tim (http://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit-react/blob/main/LICENSE.md)
 
 * Designed by www.invisionapp.com Coded by www.creative-tim.com
@@ -16,7 +16,7 @@
 
 */
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 // styles for this kit
@@ -31,7 +31,9 @@ import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <BrowserRouter>
     <Switch>
       <Switch>
@@ -56,6 +58,5 @@ ReactDOM.render(
         <Redirect from="/" to="/index" />
       </Switch>
     </Switch>
-  </BrowserRouter>,
-  document.getElementById("root")
+  </BrowserRouter>
 );

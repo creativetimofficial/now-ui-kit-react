@@ -11,7 +11,7 @@ import {
   Container,
   Row,
   Col,
-  UncontrolledTooltip,
+  UncontrolledTooltip
 } from "reactstrap";
 
 // core components
@@ -129,24 +129,24 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg1.jpg").default}
+                          src={require("assets/img/bg1.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg3.jpg").default}
+                          src={require("assets/img/bg3.jpg")}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg").default}
+                          src={require("assets/img/bg8.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg").default}
+                          src={require("assets/img/bg7.jpg")}
                         ></img>
                       </Col>
                     </Row>
@@ -159,24 +159,24 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg6.jpg").default}
+                          src={require("assets/img/bg6.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg11.jpg").default}
+                          src={require("assets/img/bg11.jpg")}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg").default}
+                          src={require("assets/img/bg7.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg").default}
+                          src={require("assets/img/bg8.jpg")}
                         ></img>
                       </Col>
                     </Row>
@@ -189,24 +189,24 @@ function ProfilePage() {
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg3.jpg").default}
+                          src={require("assets/img/bg3.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg").default}
+                          src={require("assets/img/bg8.jpg")}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg").default}
+                          src={require("assets/img/bg7.jpg")}
                         ></img>
                         <img
                           alt="..."
                           className="img-raised"
-                          src={require("assets/img/bg6.jpg").default}
+                          src={require("assets/img/bg6.jpg")}
                         ></img>
                       </Col>
                     </Row>
