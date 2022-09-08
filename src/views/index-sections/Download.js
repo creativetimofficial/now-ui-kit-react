@@ -48,7 +48,7 @@ function Download() {
             </Col>
           </Row>
           <br></br>
-          <br></br>
+          {/* <br></br>
           <br></br>
           <Row className="text-center mt-5">
             <Col className="ml-auto mr-auto" md="8">
@@ -79,7 +79,7 @@ function Download() {
               </Button>
             </Col>
           </Row>
-          <br></br>
+          <br></br> */}
           <br></br>
           <Row className="justify-content-md-center sharing-area text-center">
             <Col className="text-center" lg="8" md="12">

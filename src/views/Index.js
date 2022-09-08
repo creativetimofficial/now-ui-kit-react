@@ -43,20 +43,21 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
+          <Carousel />
+          <SignUp />
+          <Examples />
+          <Download />
+{/*  
           <Images />
-          <BasicElements />
+        <BasicElements />
           <Navbars />
           <Tabs />
           <Pagination />
           <Notifications />
           <Typography />
           <Javascript />
-          <Carousel />
-          <NucleoIcons />
-          <CompleteExamples />
-          <SignUp />
-          <Examples />
-          <Download />
+          <NucleoIcons /> */}
+          {/* <CompleteExamples /> */}
         </div>
         <DarkFooter />
       </div>

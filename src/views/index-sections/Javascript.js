@@ -1,6 +1,6 @@
 import React from "react";
 // react plugins that creates an input with a date picker
-import Datetime from "react-datetime";
+/* import Datetime from "react-datetime"; */
 // reactstrap components
 import {
   Button,
@@ -173,10 +173,10 @@ function Javascript() {
                 <Col md="6">
                   <div className="datepicker-container">
                     <FormGroup>
-                      <Datetime
+                      {/* <Datetime
                         timeFormat={false}
                         inputProps={{ placeholder: "Datetime Picker Here" }}
-                      />
+                      /> */}
                     </FormGroup>
                   </div>
                 </Col>
