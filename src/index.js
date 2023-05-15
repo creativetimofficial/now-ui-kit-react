@@ -1,11 +1,11 @@
 /*
 
 =========================================================
-* Now UI Kit React - v1.5.1
+* Now UI Kit React - v1.5.2
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/now-ui-kit-react
-* Copyright 2022 Creative Tim (http://www.creative-tim.com)
+* Copyright 2023 Creative Tim (http://www.creative-tim.com)
 * Licensed under MIT (https://github.com/creativetimofficial/now-ui-kit-react/blob/main/LICENSE.md)
 
 * Designed by www.invisionapp.com Coded by www.creative-tim.com
